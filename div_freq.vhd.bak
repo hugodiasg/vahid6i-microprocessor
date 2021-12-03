@@ -1,0 +1,39 @@
+-- Divisor de frequencia
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_misc.all;
+use ieee.numeric_std.all;
+
+entity divisor is
+port ( 
+		reset:			in			std_logic;
+		clk_in:				in			std_logic;
+		clk_out:			out		std_logic
+		);
+end divisor;
+
+architecture arch of divisor is
+signal sig_clk_in : std_logic;
+signal sig_prescale: std_logic_vector(24 downto 0) := (others => '0');
+begin
+	process(reset,clk_in)
+	begin
+		if reset = '1' then
+			sig_clk_in <= '0';
+			sig_prescale <= (others => '0');
+		elsif clk_in'event and clk_in = '1' then
+			--if sig_prescale = "1011111010111100001000000" then -- prescale = 50 MHz/1 Hz/2 = (25x10^6) em binário
+			if sig_prescale = "000000000000000000011" then -- prescale = 50 MHz/1 Hz/2 = (25x10^6) em binário
+				sig_prescale <= (others => '0');
+				sig_clk_in <= not sig_clk_in;
+			else
+				sig_prescale <=sig_prescale + 1;
+			end if;
+		end if;
+	end process;
+	clk_out <= sig_clk_in;
+end arch;
+
+

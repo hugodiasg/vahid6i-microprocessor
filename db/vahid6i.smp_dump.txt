@@ -1,0 +1,14 @@
+
+State Machine - |vahid6i_div|uc:uc_0|bc:bc_0|current_state
+Name current_state.Saltar current_state.Saltar_se_zero current_state.Subtrair current_state.Carregar_Const current_state.Somar current_state.Armazenar current_state.Carregar current_state.Decod current_state.Busca2 current_state.Busca1 current_state.Inicio 
+current_state.Inicio 0 0 0 0 0 0 0 0 0 0 0 
+current_state.Busca1 0 0 0 0 0 0 0 0 0 1 1 
+current_state.Busca2 0 0 0 0 0 0 0 0 1 0 1 
+current_state.Decod 0 0 0 0 0 0 0 1 0 0 1 
+current_state.Carregar 0 0 0 0 0 0 1 0 0 0 1 
+current_state.Armazenar 0 0 0 0 0 1 0 0 0 0 1 
+current_state.Somar 0 0 0 0 1 0 0 0 0 0 1 
+current_state.Carregar_Const 0 0 0 1 0 0 0 0 0 0 1 
+current_state.Subtrair 0 0 1 0 0 0 0 0 0 0 1 
+current_state.Saltar_se_zero 0 1 0 0 0 0 0 0 0 0 1 
+current_state.Saltar 1 0 0 0 0 0 0 0 0 0 1 

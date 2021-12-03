@@ -1,0 +1,214 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do vahid6i_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/constants.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package constants
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/div_freq.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package NUMERIC_STD
+# -- Compiling entity div_freq
+# -- Compiling architecture arch of div_freq
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity alu
+# -- Compiling architecture arch of alu
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/regf.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity regf
+# -- Compiling architecture arch of regf
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/muxf.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity muxf
+# -- Compiling architecture arch of muxf
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/memd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity memd
+# -- Compiling architecture arch of memd
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/po.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity po
+# -- Compiling architecture arch of po
+# -- Loading entity muxf
+# -- Loading entity regf
+# -- Loading entity alu
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/bc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity bc
+# -- Compiling architecture arc_bc of bc
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/ir.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity ir
+# -- Compiling architecture arc_ir of ir
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/pc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity pc
+# -- Compiling architecture arc_pc of pc
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/I.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity I
+# -- Compiling architecture arc_I of I
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/uc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity uc
+# -- Compiling architecture arch of uc
+# -- Loading entity bc
+# -- Loading entity pc
+# -- Loading entity ir
+# vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/vahid6i_div.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package constants
+# -- Compiling entity vahid6i_div
+# -- Compiling architecture arch of vahid6i_div
+# -- Loading entity uc
+# -- Loading entity I
+# -- Loading entity po
+# -- Loading entity memd
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity div_freq
+# 
+vsim work.vahid6i_div
+# vsim work.vahid6i_div 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.constants
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.vahid6i_div(arch)
+# Loading work.uc(arch)
+# Loading work.bc(arc_bc)
+# Loading work.pc(arc_pc)
+# Loading work.ir(arc_ir)
+# Loading work.i(arc_i)
+# Loading work.po(arch)
+# Loading work.muxf(arch)
+# Loading work.regf(arch)
+# Loading work.alu(arch)
+# Loading work.memd(arch)
+# Loading work.div_freq(arch)
+add wave -position insertpoint  \
+sim:/vahid6i_div/leds
+add wave -position insertpoint  \
+sim:/vahid6i_div/clock_out
+force -freeze sim:/vahid6i_div/clock_out 1 0, 0 {50 ps} -r 100
+add wave -position insertpoint  \
+sim:/vahid6i_div/reset
+force -freeze sim:/vahid6i_div/reset 1 0
+run
+force -freeze sim:/vahid6i_div/reset 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

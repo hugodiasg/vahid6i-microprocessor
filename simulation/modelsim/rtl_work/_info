@@ -1,0 +1,514 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hdg19\OneDrive\Área de Trabalho\7P\Laboratório de Microprocessadores e Microcontroladores\Projetos\1 - Microprocessador (Vahid)\ProjetoFinal - I Unidade\simulation\modelsim
+Ealu
+Z1 w1629625248
+Z2 DPx4 work 9 constants 0 22 a3;FQaM9Q?8f@Tj1n3aX]3
+Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\hdg19\OneDrive\Área de Trabalho\7P\Laboratório de Microprocessadores e Microcontroladores\Projetos\1 - Microprocessador (Vahid)\ProjetoFinal - I Unidade\simulation\modelsim
+Z7 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/alu.vhd
+Z8 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/alu.vhd
+l0
+L8
+VBj_ccn[lN`doNccaBBg:W0
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1631146249.712000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/alu.vhd|
+Z12 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/alu.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 f67YT]ZIBFk?ICOE2XKgX2
+!i10b 1
+Aarch
+R2
+R3
+R4
+R5
+Z15 DEx4 work 3 alu 0 22 Bj_ccn[lN`doNccaBBg:W0
+l20
+L18
+V1VC>^_:T1:fSn5CgTGQHb3
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 iXee::O[zn1KM_AHdLo[P3
+!i10b 1
+Ebc
+Z16 w1631035771
+R2
+R3
+R4
+R5
+R6
+Z17 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/bc.vhd
+Z18 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/bc.vhd
+l0
+L6
+V>:?miO8SOEAZEWm9IJ4z`0
+R9
+31
+Z19 !s108 1631146257.173000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/bc.vhd|
+Z21 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/bc.vhd|
+R13
+R14
+!s100 XJL4n_fO8I8IJ;S556=5Z2
+!i10b 1
+Aarc_bc
+R2
+R3
+R4
+R5
+Z22 DEx4 work 2 bc 0 22 >:?miO8SOEAZEWm9IJ4z`0
+l39
+L34
+VeA[OHm_I;LHVH_f[^>?lR0
+R9
+31
+R19
+R20
+R21
+R13
+R14
+!s100 nLeOg5?1S^Cc0b[_b82]=2
+!i10b 1
+Pconstants
+R3
+R4
+R5
+w1631022515
+R6
+8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/constants.vhd
+FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/constants.vhd
+l0
+L6
+Va3;FQaM9Q?8f@Tj1n3aX]3
+R9
+31
+R13
+R14
+!s100 Po<=C_gznemMK@5Ga<8PN1
+!i10b 1
+!s108 1631146248.809000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/constants.vhd|
+!s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/constants.vhd|
+Ediv_freq
+Z23 w1631053126
+R3
+Z24 DPx8 synopsys 10 attributes 0 22 J^T`lPA_8_J<l8kQiVE]>2
+Z25 DPx4 ieee 14 std_logic_misc 0 22 >dU:RInm^_6_mBJ^<6QGY2
+Z26 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z27 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+R4
+R5
+R6
+Z28 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/div_freq.vhd
+Z29 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/div_freq.vhd
+l0
+L9
+VViQF=7N:U5?QYDI[J>9?l0
+R9
+31
+Z30 !s108 1631146249.229000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/div_freq.vhd|
+Z32 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/div_freq.vhd|
+R13
+R14
+!s100 gIKz:ONCoOLYElC3zT08F2
+!i10b 1
+Aarch
+R3
+R24
+R25
+R26
+R27
+R4
+R5
+Z33 DEx4 work 8 div_freq 0 22 ViQF=7N:U5?QYDI[J>9?l0
+l20
+L17
+V@?HGS5zW>`z_32MCA1gNK2
+R9
+31
+R30
+R31
+R32
+R13
+R14
+!s100 1742W3B]4@FTc0_WGX4gT2
+!i10b 1
+Ei
+Z34 w1631049357
+R2
+R3
+R4
+R5
+R6
+Z35 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/I.vhd
+Z36 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/I.vhd
+l0
+L6
+V?BNYTJ3OfbS[RM2z;AEn53
+R9
+31
+Z37 !s108 1631146258.450000
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/I.vhd|
+Z39 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/I.vhd|
+R13
+R14
+!s100 ?A:Rh>dUn;9]J0hbPB98B1
+!i10b 1
+Aarc_i
+R2
+R3
+R4
+R5
+Z40 DEx4 work 1 i 0 22 ?BNYTJ3OfbS[RM2z;AEn53
+l37
+L14
+VZkci8j50_PDVFUo>PI3OB1
+R9
+31
+R37
+R38
+R39
+R13
+R14
+!s100 G:R4TYKo`VdfdWIHB[Im>2
+!i10b 1
+Eir
+Z41 w1631039873
+R2
+R3
+R4
+R5
+R6
+Z42 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/ir.vhd
+Z43 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/ir.vhd
+l0
+L6
+V0E39fQSZgC=ffE=F:?ih31
+R9
+31
+Z44 !s108 1631146257.535000
+Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/ir.vhd|
+Z46 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/ir.vhd|
+R13
+R14
+!s100 RaIgT8WG:b7CO37A<`R]i0
+!i10b 1
+Aarc_ir
+R2
+R3
+R4
+R5
+Z47 DEx4 work 2 ir 0 22 0E39fQSZgC=ffE=F:?ih31
+l16
+L15
+V51]@[0EJYOE=5IV_96Y3i2
+R9
+31
+R44
+R45
+R46
+R13
+R14
+!s100 l51FggF5=J=M[7n0zHod82
+!i10b 1
+Ememd
+Z48 w1631039641
+R2
+R3
+R4
+R5
+R6
+Z49 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/memd.vhd
+Z50 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/memd.vhd
+l0
+L8
+V@TU>6J1lL]`BKn1Q[O9M72
+R9
+31
+Z51 !s108 1631146252.185000
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/memd.vhd|
+Z53 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/memd.vhd|
+R13
+R14
+!s100 0[S0h;jR90EIbjlgRAhXD1
+!i10b 1
+Aarch
+R2
+R3
+R4
+R5
+Z54 DEx4 work 4 memd 0 22 @TU>6J1lL]`BKn1Q[O9M72
+l43
+L18
+VVFGc[coR^;VMMDjg7bQDi0
+R9
+31
+R51
+R52
+R53
+R13
+R14
+!s100 BB<=ZOP:iJO7Wa9CFnInW1
+!i10b 1
+Emuxf
+Z55 w1629724881
+R2
+R3
+R4
+R5
+R6
+Z56 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/muxf.vhd
+Z57 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/muxf.vhd
+l0
+L8
+VLk:OU4<eFNliV;CBB5QKj0
+R9
+31
+Z58 !s108 1631146251.826000
+Z59 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/muxf.vhd|
+Z60 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/muxf.vhd|
+R13
+R14
+!s100 CF5ZDAD:=bgcgAX2FMY_n3
+!i10b 1
+Aarch
+R2
+R3
+R4
+R5
+Z61 DEx4 work 4 muxf 0 22 Lk:OU4<eFNliV;CBB5QKj0
+l20
+L18
+V7ZdBzgbJSoomT5g6GJ?G11
+R9
+31
+R58
+R59
+R60
+R13
+R14
+!s100 j7>4VlAPkKVX<Yf^nUJmJ0
+!i10b 1
+Epc
+Z62 w1631025181
+R2
+R3
+R4
+R5
+R6
+Z63 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/pc.vhd
+Z64 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/pc.vhd
+l0
+L6
+VhWbDb;3T:RcTj=I:d1gNK2
+R9
+31
+Z65 !s108 1631146257.970000
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/pc.vhd|
+Z67 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/pc.vhd|
+R13
+R14
+!s100 YzHJ0]8Yc2<P^=XPUJ]UX3
+!i10b 1
+Aarc_pc
+R2
+R3
+R4
+R5
+Z68 DEx4 work 2 pc 0 22 hWbDb;3T:RcTj=I:d1gNK2
+l17
+L14
+V?8^V?:Ege_oejb?L5RCaB1
+R9
+31
+R65
+R66
+R67
+R13
+R14
+!s100 KcHD<Y9[zAj71X>U=[:K;1
+!i10b 1
+Epo
+Z69 w1629725042
+R2
+R3
+R4
+R5
+R6
+Z70 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/po.vhd
+Z71 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/po.vhd
+l0
+L8
+VGVK_]H4<[897d<U^V]JlQ2
+R9
+31
+Z72 !s108 1631146254.735000
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/po.vhd|
+Z74 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/po.vhd|
+R13
+R14
+!s100 3CD0g:A>V6AaR=2>g?]T[0
+!i10b 1
+Aarch
+R15
+Z75 DEx4 work 4 regf 0 22 [YL8QgLV<g2jON:i1Tzm90
+R61
+R2
+R3
+R4
+R5
+Z76 DEx4 work 2 po 0 22 GVK_]H4<[897d<U^V]JlQ2
+l60
+L26
+V_I?N2=<HNQolUJmMhJXZJ0
+R9
+31
+R72
+R73
+R74
+R13
+R14
+!s100 j<kkdPA5@Dmhzmz3FP9`21
+!i10b 1
+Eregf
+Z77 w1630614121
+R2
+R3
+R4
+R5
+R6
+Z78 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/regf.vhd
+Z79 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/regf.vhd
+l0
+L8
+V[YL8QgLV<g2jON:i1Tzm90
+R9
+31
+Z80 !s108 1631146250.294000
+Z81 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/regf.vhd|
+Z82 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/regf.vhd|
+R13
+R14
+!s100 8cR?]BCCLlARP@zEnbn:71
+!i10b 1
+Aarch
+R2
+R3
+R4
+R5
+R75
+l20
+L18
+VWdldUabam24kD]NA_bab?1
+R9
+31
+R80
+R81
+R82
+R13
+R14
+!s100 4z6;`doo3Wa>IKlcck23X1
+!i10b 1
+Euc
+Z83 w1631048364
+R2
+R3
+R4
+R5
+R6
+Z84 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/uc.vhd
+Z85 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/uc.vhd
+l0
+L8
+V[ZiPNKT_2oNT?@``]QPmj0
+R9
+31
+Z86 !s108 1631146258.906000
+Z87 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/uc.vhd|
+Z88 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/uc.vhd|
+R13
+R14
+!s100 MB1Nz7=CV5cZ`9bAV@XF[1
+!i10b 1
+Aarch
+R47
+R68
+R22
+R2
+R3
+R4
+R5
+Z89 DEx4 work 2 uc 0 22 [ZiPNKT_2oNT?@``]QPmj0
+l88
+L33
+V]L3[NiAmh]cWT_^@4;zl?3
+R9
+31
+R86
+R87
+R88
+R13
+R14
+!s100 :QVYJWF=HOlheLAFUDR`d1
+!i10b 1
+Evahid6i_div
+Z90 w1631048619
+R2
+R3
+R4
+R5
+R6
+Z91 8C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/vahid6i_div.vhd
+Z92 FC:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/vahid6i_div.vhd
+l0
+L8
+VOLf:=mYS`AP7LfoE@FSHK1
+!s100 9Xj5=Pnf7OXlUcCDFUngL2
+R9
+31
+!i10b 1
+Z93 !s108 1631146259.447000
+Z94 !s90 -reportprogress|300|-93|-work|work|C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/vahid6i_div.vhd|
+Z95 !s107 C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/ProjetoFinal - I Unidade/vahid6i_div.vhd|
+R13
+R14
+Aarch
+R24
+R25
+R26
+R27
+R33
+R54
+R76
+R40
+R89
+R2
+R3
+R4
+R5
+DEx4 work 11 vahid6i_div 0 22 OLf:=mYS`AP7LfoE@FSHK1
+l115
+L18
+VFXmb<`Z8=l5HbzCX80oDF0
+!s100 Z2b<hhlDfSH<<Vlm:b0eH1
+R9
+31
+!i10b 1
+R93
+R94
+R95
+R13
+R14
