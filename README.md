@@ -27,7 +27,7 @@ Here are the information about the FSM, RTL Diagram, layout and maximum clock fr
 
 #### Layout
 
-<img src="https://user-images.githubusercontent.com/80465879/228379847-3473104d-aadd-4a13-9c03-316dc1dd8392.png" width="800h" >
+<img src="https://user-images.githubusercontent.com/80465879/228379957-f285fc67-3ca5-4dd2-88d6-6cde5ba81787.png" width="800h" >
 
 #### Specs
 
