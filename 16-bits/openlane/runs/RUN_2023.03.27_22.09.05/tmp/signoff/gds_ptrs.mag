@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 48554 50698
+string GDS_END 6093970
+string GDS_FILE /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/results/signoff/vahid6i.magic.gds
+string GDS_START 811906
+<< end >>

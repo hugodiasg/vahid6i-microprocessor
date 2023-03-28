@@ -1,0 +1,35 @@
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: clock (input port clocked by clk_48)
+Endpoint: led_clock (output port clocked by clk_48)
+Path Group: clk_48
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk_48 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          3.00    3.00 v input external delay
+                  1.21    0.88    3.88 v clock (in)
+   335    0.57                           clock (net)
+                  1.21    0.00    3.88 v _3424_/A (sky130_fd_sc_hd__buf_2)
+                  0.11    0.51    4.38 v _3424_/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           led_clock (net)
+                  0.11    0.00    4.38 v led_clock (out)
+                                  4.38   data arrival time
+
+                  0.00    0.00    0.00   clock clk_48 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -3.00   -2.75   output external delay
+                                 -2.75   data required time
+-----------------------------------------------------------------------------
+                                 -2.75   data required time
+                                 -4.38   data arrival time
+-----------------------------------------------------------------------------
+                                  7.13   slack (MET)
+
+

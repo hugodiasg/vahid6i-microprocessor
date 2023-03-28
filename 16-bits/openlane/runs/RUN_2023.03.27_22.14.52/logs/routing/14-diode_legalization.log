@@ -1,0 +1,22 @@
+OpenROAD 6840b7481d49c83870f79646cf979e66f22f6833 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/vahid6i/runs/RUN_2023.03.27_22.14.52/tmp/13-vahid6i.odb'...
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           69100.3 u
+legalized HPWL          70610.7 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 741 instances
+[INFO DPL-0021] HPWL before           70610.7 u
+[INFO DPL-0022] HPWL after            69100.3 u
+[INFO DPL-0023] HPWL delta               -2.1 %
+Setting global connections for newly added cells...
+Writing OpenROAD database to /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.14.52/tmp/routing/diode.odb...
+Writing netlist to /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.14.52/tmp/routing/diode.nl.v...
+Writing powered netlist to /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.14.52/tmp/routing/diode.pnl.v...
+Writing layout to /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.14.52/tmp/routing/diode.def...
