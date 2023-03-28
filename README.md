@@ -32,5 +32,5 @@ Here are the information about the FSM, RTL Diagram, layout and maximum clock fr
 Name | Value
 --------- | ------:
 Number of pins | 80
-Area | 
-Max. freq. | 0.062 mm²
+Area | 0.062 mm²
+Max. freq. |  Hz
