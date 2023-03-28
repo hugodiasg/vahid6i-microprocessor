@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/Arquivos/constants.vhd}
+vcom -93 -work work {C:/Users/hdg19/OneDrive/Área de Trabalho/7P/Laboratório de Microprocessadores e Microcontroladores/Projetos/1 - Microprocessador (Vahid)/Arquivos/alu.vhd}
+

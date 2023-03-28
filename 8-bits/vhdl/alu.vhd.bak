@@ -1,0 +1,45 @@
+-- ALU 16 bits com funções de soma e subtração, e detecção igual a 0 da entrada A
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+USE work.constants.all;
+
+ENTITY ALU16bits IS
+	PORT (
+	a					:	IN unsigned (15 downto 0); 
+	b					:	IN unsigned (15 downto 0);
+	alu_s0,alu_s1	:	IN STD_LOGIC;
+	alu_out			:	IN 	bit_vector (1 downto 0); 
+	zero				:	OUT bit);
+END ALU16bits;
+
+ARCHITECTURE arch OF ALU16bits IS 
+	
+--	SIGNAL a		:	unsigned (15 downto 0):= "0000000000000001"; 
+--	SIGNAL b		:	unsigned (15 downto 0):= "0000000000000001";
+	
+	BEGIN
+		--Detector de zero da entrada a
+		zeros: PROCESS(a)
+		BEGIN
+			IF(a=0) THEN
+				zero<='1';
+			ELSE
+				zero<='0';
+			END IF;
+		END PROCESS zeros;
+
+		--alu
+		alu: PROCESS(s, a, b)
+			BEGIN
+			CASE s IS
+			WHEN "00" => c<=a;
+			WHEN "01" => c<=a+b;
+			WHEN "10" => c<=a-b;
+			WHEN "11" => c<="ZZZZZZZZZZZZZZZZ";
+			END CASE;	
+		END PROCESS alu;
+	
+END arch;
+

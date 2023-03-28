@@ -1,0 +1,31 @@
+OpenROAD 6840b7481d49c83870f79646cf979e66f22f6833 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/tmp/merged.nom.lef at line 930.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/tmp/merged.nom.lef
+Reading netlist...
+[WARNING STA-0337] port 'clk_48' not found.
+[INFO]: Setting output delay to: 3.0
+[INFO]: Setting input delay to: 3.0
+[WARNING STA-0337] port 'clk_48' not found.
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[WARNING STA-0559] transition time can not be specified for virtual clocks.
+[INFO]: Setting timing derate to: 0.5 %
+[INFO IFP-0001] Added 85 rows of 503 site unithd with height 1.
+[INFO IFP-0030] Inserted 0 tiecells using sky130_fd_sc_hd__conb_1/LO.
+[INFO IFP-0030] Inserted 0 tiecells using sky130_fd_sc_hd__conb_1/HI.
+[INFO] Extracting DIE_AREA and CORE_AREA from the floorplan
+[INFO] Floorplanned on a die area of 0.0 0.0 242.77 253.49 (microns). Saving to /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/reports/floorplan/3-initial_fp_die_area.rpt.
+[INFO] Floorplanned on a core area of 5.52 10.88 236.9 242.08 (microns). Saving to /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/reports/floorplan/3-initial_fp_core_area.rpt.
+Writing OpenROAD database to /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/tmp/floorplan/3-initial_fp.odb...
+Writing layout to /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/tmp/floorplan/3-initial_fp.def...
+Writing timing constraints to /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/tmp/floorplan/3-initial_fp.sdc...

@@ -1,0 +1,274 @@
+OpenROAD 6840b7481d49c83870f79646cf979e66f22f6833 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/vahid6i/runs/RUN_2023.03.27_21.25.06/results/routing/vahid6i.odb'...
+[WARNING STA-0357] virtual clock clk_48 can not be propagated.
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: clock (input port clocked by clk_48)
+Endpoint: led_clock (output port clocked by clk_48)
+Path Group: clk_48
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk_48 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          3.00    3.00 v input external delay
+                  0.01    0.00    3.00 v clock (in)
+     1    0.00                           clock (net)
+                  0.01    0.00    3.00 v input33/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.08    3.09 v input33/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net33 (net)
+                  0.04    0.00    3.09 v fanout187/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.14    0.18    3.27 v fanout187/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.04                           net187 (net)
+                  0.14    0.00    3.27 v fanout186/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.20    3.47 v fanout186/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net186 (net)
+                  0.11    0.00    3.47 v fanout167/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.19    3.66 v fanout167/X (sky130_fd_sc_hd__clkbuf_2)
+     4    0.03                           net167 (net)
+                  0.11    0.00    3.66 v fanout159/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.08    0.15    3.81 v fanout159/X (sky130_fd_sc_hd__clkbuf_1)
+     3    0.01                           net159 (net)
+                  0.08    0.00    3.82 v _3424_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.02    0.10    3.91 v _3424_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net78 (net)
+                  0.02    0.00    3.91 v output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.17    4.08 v output78/X (sky130_fd_sc_hd__clkbuf_4)
+     1    0.03                           led_clock (net)
+                  0.08    0.00    4.08 v led_clock (out)
+                                  4.08   data arrival time
+
+                  0.00    0.00    0.00   clock clk_48 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -3.00   -2.75   output external delay
+                                 -2.75   data required time
+-----------------------------------------------------------------------------
+                                 -2.75   data required time
+                                 -4.08   data arrival time
+-----------------------------------------------------------------------------
+                                  6.83   slack (MET)
+
+
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: clock (input port clocked by clk_48)
+Endpoint: led_clock (output port clocked by clk_48)
+Path Group: clk_48
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk_48 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          3.00    3.00 ^ input external delay
+                  0.02    0.01    3.01 ^ clock (in)
+     1    0.00                           clock (net)
+                  0.02    0.00    3.01 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.08    0.10    3.11 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net33 (net)
+                  0.08    0.00    3.11 ^ fanout187/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.21    0.24    3.35 ^ fanout187/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.04                           net187 (net)
+                  0.21    0.00    3.35 ^ fanout186/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.25    3.60 ^ fanout186/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net186 (net)
+                  0.16    0.00    3.60 ^ fanout167/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.23    3.84 ^ fanout167/X (sky130_fd_sc_hd__clkbuf_2)
+     4    0.03                           net167 (net)
+                  0.16    0.00    3.84 ^ fanout159/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.16    0.20    4.04 ^ fanout159/X (sky130_fd_sc_hd__clkbuf_1)
+     3    0.01                           net159 (net)
+                  0.16    0.00    4.04 ^ _3424_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.11    4.15 ^ _3424_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net78 (net)
+                  0.04    0.00    4.15 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.11    0.19    4.34 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
+     1    0.03                           led_clock (net)
+                  0.11    0.00    4.35 ^ led_clock (out)
+                                  4.35   data arrival time
+
+                  0.00   15.00   15.00   clock clk_48 (rise edge)
+                          0.00   15.00   clock network delay (ideal)
+                         -0.25   14.75   clock uncertainty
+                          0.00   14.75   clock reconvergence pessimism
+                         -3.00   11.75   output external delay
+                                 11.75   data required time
+-----------------------------------------------------------------------------
+                                 11.75   data required time
+                                 -4.35   data arrival time
+-----------------------------------------------------------------------------
+                                  7.40   slack (MET)
+
+
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: clock (input port clocked by clk_48)
+Endpoint: led_clock (output port clocked by clk_48)
+Path Group: clk_48
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk_48 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          3.00    3.00 ^ input external delay
+                  0.02    0.01    3.01 ^ clock (in)
+     1    0.00                           clock (net)
+                  0.02    0.00    3.01 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.08    0.10    3.11 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net33 (net)
+                  0.08    0.00    3.11 ^ fanout187/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.21    0.24    3.35 ^ fanout187/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.04                           net187 (net)
+                  0.21    0.00    3.35 ^ fanout186/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.25    3.60 ^ fanout186/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net186 (net)
+                  0.16    0.00    3.60 ^ fanout167/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.23    3.84 ^ fanout167/X (sky130_fd_sc_hd__clkbuf_2)
+     4    0.03                           net167 (net)
+                  0.16    0.00    3.84 ^ fanout159/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.16    0.20    4.04 ^ fanout159/X (sky130_fd_sc_hd__clkbuf_1)
+     3    0.01                           net159 (net)
+                  0.16    0.00    4.04 ^ _3424_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.11    4.15 ^ _3424_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net78 (net)
+                  0.04    0.00    4.15 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.11    0.19    4.34 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
+     1    0.03                           led_clock (net)
+                  0.11    0.00    4.35 ^ led_clock (out)
+                                  4.35   data arrival time
+
+                  0.00   15.00   15.00   clock clk_48 (rise edge)
+                          0.00   15.00   clock network delay (ideal)
+                         -0.25   14.75   clock uncertainty
+                          0.00   14.75   clock reconvergence pessimism
+                         -3.00   11.75   output external delay
+                                 11.75   data required time
+-----------------------------------------------------------------------------
+                                 11.75   data required time
+                                 -4.35   data arrival time
+-----------------------------------------------------------------------------
+                                  7.40   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+parastic_annotation_check
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+parastic_annotation_check
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+fanout97/X                                6      9     -3 (VIOLATED)
+_2667_/X                                  6      8     -2 (VIOLATED)
+_2123_/X                                  6      7        (VIOLATED)
+_2144_/X                                  6      7        (VIOLATED)
+_2272_/X                                  6      7        (VIOLATED)
+_3283_/Q                                  6      7        (VIOLATED)
+_3292_/Q                                  6      7        (VIOLATED)
+_3295_/Q                                  6      7        (VIOLATED)
+_3297_/Q                                  6      7        (VIOLATED)
+fanout84/X                                6      7        (VIOLATED)
+fanout90/X                                6      7        (VIOLATED)
+fanout98/X                                6      7        (VIOLATED)
+
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 12
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 7.40
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 6.83
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clk_48
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             5.18e-04   3.68e-04   3.07e-09   8.86e-04  40.5%
+Combinational          6.25e-04   6.79e-04   1.22e-08   1.30e-03  59.5%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.14e-03   1.05e-03   1.52e-08   2.19e-03 100.0%
+                          52.2%      47.8%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 23626 u^2 44% utilization.
+area_report_end
+Setting global connections for newly added cells...
+[WARNING] Did not save OpenROAD database!
+Writing SDF to /openlane/designs/vahid6i/runs/RUN_2023.03.27_21.25.06/results/routing/mca/process_corner_nom/vahid6i.sdf...
+Writing timing model to /openlane/designs/vahid6i/runs/RUN_2023.03.27_21.25.06/results/routing/mca/process_corner_nom/vahid6i.lib...

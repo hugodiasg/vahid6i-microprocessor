@@ -1,0 +1,12 @@
+magic
+tech sky130A
+timestamp 0
+<< properties >>
+string FIXED_BBOX 0 0 0 0
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 6093970
+string GDS_FILE /openlane/designs/vahid6i/runs/RUN_2023.03.27_22.09.05/results/signoff/vahid6i.magic.gds
+string GDS_START 811906
+<< end >>
+

@@ -13,7 +13,7 @@ END pc;
 
 ARCHITECTURE arc_pc OF pc IS
 SIGNAL PC_count	: STD_LOGIC_VECTOR (15 downto 0):="0000000000000000";
-SIGNAL sig_I_addr	: STD_LOGIC_VECTOR (15 downto 0);
+--SIGNAL sig_I_addr	: STD_LOGIC_VECTOR (15 downto 0);
 BEGIN
 
 	PROCESS(clock,PC_ld)
@@ -24,7 +24,7 @@ BEGIN
 				ELSIF (PC_clr='1') THEN
 					PC_count<="0000000000000000";	
 				ELSIF (PC_ld='1') THEN
-					PC_count<=std_logic_vector(unsigned(PC_count)+("00000000" & unsigned(IR_inc))-x"0001");		
+					PC_count<=std_logic_vector(unsigned(PC_count)+("00000000" & unsigned(IR_inc)));		
 				END IF;
 				IF (PC_count>"0000000000001110") THEN	
 					PC_count<="0000000000000000";

@@ -1,0 +1,43 @@
+v 4
+file . "../pc_tb.vhd" "ad6737c65499e5cadc3832eb16ff5b4d185af145" "20230327203632.702":
+  entity pc_tb at 1( 0) + 0 on 459;
+  architecture pc_tb_bhv of pc_tb at 9( 74) + 0 on 460;
+file . "../vahid6i_memd_I_tb.vhd" "5c9a170c57275bec2c68e84570962f9f52f6896e" "20230327210943.824":
+  entity vahid6i_memd_i_tb at 1( 0) + 0 on 555;
+  architecture vahid6i_memd_i_tb_bhv of vahid6i_memd_i_tb at 10( 99) + 0 on 556;
+file . "../po.vhd" "acb388dfc44ee8edd29fb87be3eed69bfe63ac07" "20230327210943.795":
+  entity po at 3( 24) + 0 on 539;
+  architecture arch_po of po at 26( 622) + 0 on 540;
+file . "../regf.vhd" "66816a407a38a80b174a7eb01a9c130a78b94a92" "20230327210943.787":
+  entity regf at 3( 24) + 0 on 535;
+  architecture arch of regf at 18( 410) + 0 on 536;
+file . "../uc.vhd" "fb506b8595345b63439687d4bf738bced906f538" "20230327210943.809":
+  entity uc at 3( 24) + 0 on 547;
+  architecture arch of uc at 33( 819) + 0 on 548;
+file . "../bc.vhd" "8f370b3833acf46443992267151fadd30347dbe7" "20230327210943.805":
+  entity bc at 1( 0) + 0 on 545;
+  architecture arc_bc of bc at 34( 842) + 0 on 546;
+file . "../I.vhd" "e6f7b8e7758cfe60baabd1ea40b4d7c2afa30057" "20230327210943.812":
+  entity i at 1( 0) + 0 on 549;
+  architecture arc_i of i at 14( 286) + 0 on 550;
+file . "../pc.vhd" "2dca98459a55d2b4266d7af84fb6be5af564f5b4" "20230327210943.802":
+  entity pc at 1( 0) + 0 on 543;
+  architecture arc_pc of pc at 14( 296) + 0 on 544;
+file . "../alu.vhd" "1262d0dc35cd2d9f08ae30515e6dfe2c1fd0633d" "20230327210943.782":
+  entity alu at 3( 91) + 0 on 533;
+  architecture arch of alu at 20( 412) + 0 on 534;
+file . "../alu_tb.vhd" "1fc653bf80e38c3152916be9141370448a93cb18" "20230324144541.516":
+  entity alu_tb at 1( 0) + 0 on 29;
+  architecture alu_tb_bhv of alu_tb at 9( 76) + 0 on 30;
+file . "../memd.vhd" "4bc93b7c6f57acdc6d76f5a864af34ed289596a5" "20230327210943.816":
+  entity memd at 3( 18) + 0 on 551;
+  architecture arch of memd at 18( 378) + 0 on 552;
+file . "../ir.vhd" "81423222e200c28c2b7893bf4b60135017c9b4db" "20230327210943.798":
+  entity ir at 1( 0) + 0 on 541;
+  architecture arc_ir of ir at 15( 321) + 0 on 542;
+file . "../muxf.vhd" "15a1fc520ce40617b4049c07bb5d2d8c2de3f61f" "20230327210943.790":
+  entity muxf at 3( 23) + 0 on 537;
+  architecture arch of muxf at 18( 375) + 0 on 538;
+file . "../vahid6i.vhd" "e713f627bc730b345b9429bfe2a3b4ba6684e88e" "20230327210943.820":
+  entity vahid6i at 3( 52) + 0 on 553;
+  architecture arch of vahid6i at 27( 707) + 0 on 554;
