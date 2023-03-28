@@ -1,9 +1,9 @@
 ### Microprocessor
 The 6 instructions microprocessor is based on the architecture of chapter 8.4 of VAHID, Frank. Sistemas digitais: projeto, otimização e HDLs. 
 
-<img src="https://user-images.githubusercontent.com/80465879/228121315-ee3245db-e1bc-4f31-a2cf-df98102a244e.png" width="600h" >
+<img src="https://user-images.githubusercontent.com/80465879/228121315-ee3245db-e1bc-4f31-a2cf-df98102a244e.png" width="800h" >
 
-<img src="https://user-images.githubusercontent.com/80465879/228124099-325b6887-cfce-4a94-a15f-736de8f6da07.png" width="600h" >
+<img src="https://user-images.githubusercontent.com/80465879/228124099-325b6887-cfce-4a94-a15f-736de8f6da07.png" width="800h" >
 
 
 ### Repository divison
@@ -23,9 +23,12 @@ Here are the information about the FSM, RTL Diagram, layout and maximum clock fr
 
 #### RTL Diagram
 
+
+<img src="https://user-images.githubusercontent.com/80465879/228353385-617dca33-00a0-4157-87b5-2fa423035832.png" width="800h" >
+
 #### Layout
 
-<img src="https://user-images.githubusercontent.com/80465879/228124033-aa80b96b-e4df-49e1-8936-19a7b38cf44c.png" width="600h" >
+<img src="https://user-images.githubusercontent.com/80465879/228124033-aa80b96b-e4df-49e1-8936-19a7b38cf44c.png" width="800h" >
 
 #### Specs
 
