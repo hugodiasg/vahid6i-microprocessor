@@ -8,7 +8,7 @@ The 6 instructions microprocessor is based on the architecture of chapter 8.4 of
 
 ### Repository divison
 
-There are two microprocessors, one wich work with **16 bits** and other wich work with **8 bits**. This second are a modification of the original architecture of chapter 8.4. Both microprocessor was developed with:
+There are two microprocessors in this repo, one which work with **16 bits** and other which work with **8 bits**. This second are a modification of the original architecture of chapter 8.4. Both microprocessor was developed with:
 - GHDL to simulation of VHDL files;
 - GTKWave to analyze the waves;
 - Yosys-GHDL-plugin to convert VHDL files to Verilog;
