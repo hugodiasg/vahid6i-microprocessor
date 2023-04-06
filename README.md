@@ -52,5 +52,5 @@ Here are the information about the RTL Diagram, layout and maximum clock frequen
 Name | Value
 --------- | ------:
 Number of pins | 50
-Area | 0.038 mm²
+Area | 0.038 mm² (189.68 x 200.4 μm)
 Max. freq. |  Hz
