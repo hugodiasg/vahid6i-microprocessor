@@ -17,9 +17,7 @@ There are two microprocessors in this repo, one which work with **16 bits** and 
 
 ### 16 Bits Microprocessor
 
-Here are the information about the FSM, RTL Diagram, layout and maximum clock frequency.
-
-#### FSM
+Here are the information about the RTL Diagram, layout and maximum clock frequency.
 
 #### RTL Diagram
 
@@ -34,5 +32,25 @@ Here are the information about the FSM, RTL Diagram, layout and maximum clock fr
 Name | Value
 --------- | ------:
 Number of pins | 80
+Area | 0.062 mm²
+Max. freq. |  Hz
+
+### 8 Bits Microprocessor
+
+Here are the information about the RTL Diagram, layout and maximum clock frequency.
+
+#### RTL Diagram
+
+<img src="https://user-images.githubusercontent.com/80465879/230406491-776b2ba6-799a-41fe-a62e-673b06e31217.png" width="800h" >
+
+#### Layout
+
+<img src="https://user-images.githubusercontent.com/80465879/230406907-34903350-0521-4cdf-9595-12e194a07b55.png" width="800h" >
+
+#### Specs
+
+Name | Value
+--------- | ------:
+Number of pins | 50
 Area | 0.062 mm²
 Max. freq. |  Hz
