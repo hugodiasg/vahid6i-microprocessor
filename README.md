@@ -32,7 +32,7 @@ Here are the information about the RTL Diagram, layout and maximum clock frequen
 Name | Value
 --------- | ------:
 Number of pins | 80
-Area | 0.062 mm²
+Area | 0.062 mm² (245.52 x 256.24 μm)
 Max. freq. |  Hz
 
 ### 8 Bits Microprocessor
@@ -52,5 +52,5 @@ Here are the information about the RTL Diagram, layout and maximum clock frequen
 Name | Value
 --------- | ------:
 Number of pins | 50
-Area | 0.038 mm² (189.68 x 200.4 μm)
+Area | 0.038 mm² (189.68 x 200.40 μm)
 Max. freq. |  Hz
