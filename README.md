@@ -41,16 +41,16 @@ Here are the information about the RTL Diagram, layout and maximum clock frequen
 
 #### RTL Diagram
 
-<img src="https://user-images.githubusercontent.com/80465879/230406491-776b2ba6-799a-41fe-a62e-673b06e31217.png" width="800h" >
+<img src="https://user-images.githubusercontent.com/80465879/230414153-51d1facc-adf8-4e9f-935b-2fd79852b486.png" width="800h" >
 
 #### Layout
 
-<img src="https://user-images.githubusercontent.com/80465879/230406907-34903350-0521-4cdf-9595-12e194a07b55.png" width="800h" >
+<img src="https://user-images.githubusercontent.com/80465879/230413767-720b84a8-2e50-4b70-bcd1-7164395dee97.png" width="800h" >
 
 #### Specs
 
 Name | Value
 --------- | ------:
 Number of pins | 50
-Area | 0.062 mm²
+Area | 0.038 mm²
 Max. freq. |  Hz
