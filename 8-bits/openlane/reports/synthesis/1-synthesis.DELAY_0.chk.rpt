@@ -1,0 +1,36 @@
+
+23. Executing CHECK pass (checking for obvious problems).
+Checking module vahid6i...
+Warning: Wire vahid6i.\leds [3] is used but has no driver.
+Warning: Wire vahid6i.\leds [2] is used but has no driver.
+Warning: Wire vahid6i.\leds [1] is used but has no driver.
+Warning: Wire vahid6i.\leds [0] is used but has no driver.
+Warning: Wire vahid6i.\led_clock is used but has no driver.
+Warning: Wire vahid6i.\I_rd is used but has no driver.
+Warning: Wire vahid6i.\I_addr [7] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [6] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [5] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [4] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [3] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [2] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [1] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [0] is used but has no driver.
+Warning: Wire vahid6i.\D_wr is used but has no driver.
+Warning: Wire vahid6i.\D_rd is used but has no driver.
+Warning: Wire vahid6i.\D_addr [7] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [6] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [5] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [4] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [3] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [2] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [1] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [0] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [7] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [6] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [5] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [4] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [3] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [2] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [1] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [0] is used but has no driver.
+Found and reported 32 problems.

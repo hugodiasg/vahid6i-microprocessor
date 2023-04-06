@@ -1,0 +1,2995 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.22 (git sha1 f109fa3d4c5, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: /openlane/designs/vahid6i/src/vahid6i.v
+Parsing SystemVerilog input from `/openlane/designs/vahid6i/src/vahid6i.v' to AST representation.
+Warning: Yosys has only limited support for tri-state logic at the moment. (/openlane/designs/vahid6i/src/vahid6i.v:41)
+Warning: Yosys has only limited support for tri-state logic at the moment. (/openlane/designs/vahid6i/src/vahid6i.v:1111)
+Warning: Yosys has only limited support for tri-state logic at the moment. (/openlane/designs/vahid6i/src/vahid6i.v:1163)
+Generating RTLIL representation for module `\alu'.
+Generating RTLIL representation for module `\bc'.
+Generating RTLIL representation for module `\ir'.
+Generating RTLIL representation for module `\muxf'.
+Generating RTLIL representation for module `\pc'.
+Generating RTLIL representation for module `\po'.
+Generating RTLIL representation for module `\regf'.
+Generating RTLIL representation for module `\uc'.
+Generating RTLIL representation for module `\vahid6i'.
+Successfully finished Verilog frontend.
+
+2. Generating Graphviz representation of design.
+Writing dot description to `/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/hierarchy.dot'.
+Dumping module vahid6i to page 1.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \vahid6i
+Used module:     \uc
+Used module:         \pc
+Used module:         \ir
+Used module:         \bc
+Used module:     \po
+Used module:         \regf
+Used module:         \muxf
+Used module:         \alu
+
+3.2. Analyzing design hierarchy..
+Top module:  \vahid6i
+Used module:     \uc
+Used module:         \pc
+Used module:         \ir
+Used module:         \bc
+Used module:     \po
+Used module:         \regf
+Used module:         \muxf
+Used module:         \alu
+Removed 0 unused modules.
+
+4. Executing TRIBUF pass.
+
+5. Executing SYNTH pass.
+
+5.1. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1.1. Analyzing design hierarchy..
+Top module:  \vahid6i
+Used module:     \uc
+Used module:         \pc
+Used module:         \ir
+Used module:         \bc
+Used module:     \po
+Used module:         \regf
+Used module:         \muxf
+Used module:         \alu
+
+5.1.2. Analyzing design hierarchy..
+Top module:  \vahid6i
+Used module:     \uc
+Used module:         \pc
+Used module:         \ir
+Used module:         \bc
+Used module:     \po
+Used module:         \regf
+Used module:         \muxf
+Used module:         \alu
+Removed 0 unused modules.
+
+5.2. Executing PROC pass (convert processes to netlists).
+
+5.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:1323$316 in module regf.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:1321$315 in module regf.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:1315$306 in module regf.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$291 in module muxf.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$277 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$270 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$263 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$257 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$252 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$245 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$238 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$231 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$224 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$217 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$210 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$203 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$196 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$189 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$182 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$175 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$168 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$161 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$154 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$147 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$140 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$133 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:0$126 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:1045$107 in module bc.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/vahid6i/src/vahid6i.v:1042$105 in module bc.
+Removed a total of 0 dead cases.
+
+5.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 145 assignments to connections.
+
+5.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\pc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1175$304'.
+  Set init value: \_6_ = 8'00000000
+Found init rule in `\ir.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1111$285'.
+  Set init value: \_1_ = 8'x
+Found init rule in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:62$282'.
+  Set init value: \_12_ = 4'0000
+
+5.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~29 debug messages>
+
+5.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1323$316'.
+     1/1: $1\_1_[7:0]
+Creating decoders for process `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1321$315'.
+     1/1: $1\_0_[7:0]
+Creating decoders for process `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1315$306'.
+     1/3: $1$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$312
+     2/3: $1$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_DATA[7:0]$311
+     3/3: $1$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_ADDR[4:0]$310
+Creating decoders for process `\pc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1175$304'.
+Creating decoders for process `\pc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1195$303'.
+Creating decoders for process `\muxf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$291'.
+     1/1: $1\471$func$/openlane/designs/vahid6i/src/vahid6i.v:1163$287.$result[7:0]$296
+Creating decoders for process `\ir.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1111$285'.
+Creating decoders for process `\ir.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1121$284'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:62$282'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$277'.
+     1/1: $1\407$func$/openlane/designs/vahid6i/src/vahid6i.v:1038$60.$result[3:0]$281
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$270'.
+     1/1: $1\359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$59.$result[7:0]$276
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$263'.
+     1/1: $1\358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$58.$result[7:0]$269
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$257'.
+     1/1: $1\357$func$/openlane/designs/vahid6i/src/vahid6i.v:933$57.$result[3:0]$262
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$252'.
+     1/1: $1\339$func$/openlane/designs/vahid6i/src/vahid6i.v:902$56.$result[3:0]$256
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$245'.
+     1/1: $1\286$func$/openlane/designs/vahid6i/src/vahid6i.v:868$55.$result[0:0]$251
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$238'.
+     1/1: $1\283$func$/openlane/designs/vahid6i/src/vahid6i.v:831$54.$result[0:0]$244
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$231'.
+     1/1: $1\280$func$/openlane/designs/vahid6i/src/vahid6i.v:794$53.$result[0:0]$237
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$224'.
+     1/1: $1\276$func$/openlane/designs/vahid6i/src/vahid6i.v:757$52.$result[0:0]$230
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$217'.
+     1/1: $1\270$func$/openlane/designs/vahid6i/src/vahid6i.v:720$51.$result[0:0]$223
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$210'.
+     1/1: $1\264$func$/openlane/designs/vahid6i/src/vahid6i.v:683$50.$result[3:0]$216
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$203'.
+     1/1: $1\263$func$/openlane/designs/vahid6i/src/vahid6i.v:646$49.$result[3:0]$209
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$196'.
+     1/1: $1\262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$48.$result[3:0]$202
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$189'.
+     1/1: $1\261$func$/openlane/designs/vahid6i/src/vahid6i.v:572$47.$result[0:0]$195
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$182'.
+     1/1: $1\256$func$/openlane/designs/vahid6i/src/vahid6i.v:535$46.$result[0:0]$188
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$175'.
+     1/1: $1\251$func$/openlane/designs/vahid6i/src/vahid6i.v:498$45.$result[0:0]$181
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$168'.
+     1/1: $1\248$func$/openlane/designs/vahid6i/src/vahid6i.v:461$44.$result[0:0]$174
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$161'.
+     1/1: $1\245$func$/openlane/designs/vahid6i/src/vahid6i.v:424$43.$result[7:0]$167
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$154'.
+     1/1: $1\244$func$/openlane/designs/vahid6i/src/vahid6i.v:387$42.$result[0:0]$160
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$147'.
+     1/1: $1\241$func$/openlane/designs/vahid6i/src/vahid6i.v:350$41.$result[0:0]$153
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$140'.
+     1/1: $1\238$func$/openlane/designs/vahid6i/src/vahid6i.v:313$40.$result[0:0]$146
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$133'.
+     1/1: $1\232$func$/openlane/designs/vahid6i/src/vahid6i.v:276$39.$result[0:0]$139
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$126'.
+     1/1: $1\229$func$/openlane/designs/vahid6i/src/vahid6i.v:239$38.$result[0:0]$132
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1081$125'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1079$124'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1077$123'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1075$122'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1073$121'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1071$120'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1069$119'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1067$118'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1065$117'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1063$116'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1061$115'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1059$114'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1057$113'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1055$112'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1053$111'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1051$110'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1049$109'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1047$108'.
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1045$107'.
+     1/1: $1\_16_[7:0]
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1042$105'.
+     1/1: $1\_14_[7:0]
+Creating decoders for process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1039$103'.
+
+5.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+Latch inferred for signal `\regf.\_1_' from process `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1323$316': $auto$proc_dlatch.cc:427:proc_dlatch$566
+Latch inferred for signal `\regf.\_0_' from process `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1321$315': $auto$proc_dlatch.cc:427:proc_dlatch$577
+No latch inferred for signal `\muxf.\471$func$/openlane/designs/vahid6i/src/vahid6i.v:1163$286.$result' from process `\muxf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$291'.
+No latch inferred for signal `\muxf.\471$func$/openlane/designs/vahid6i/src/vahid6i.v:1163$287.$result' from process `\muxf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$291'.
+No latch inferred for signal `\muxf.\471$func$/openlane/designs/vahid6i/src/vahid6i.v:1163$287.b' from process `\muxf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$291'.
+No latch inferred for signal `\muxf.\471$func$/openlane/designs/vahid6i/src/vahid6i.v:1163$287.s' from process `\muxf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$291'.
+No latch inferred for signal `\bc.\407$func$/openlane/designs/vahid6i/src/vahid6i.v:1038$37.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$277'.
+No latch inferred for signal `\bc.\407$func$/openlane/designs/vahid6i/src/vahid6i.v:1038$60.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$277'.
+No latch inferred for signal `\bc.\407$func$/openlane/designs/vahid6i/src/vahid6i.v:1038$60.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$277'.
+No latch inferred for signal `\bc.\359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$270'.
+No latch inferred for signal `\bc.\359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$59.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$270'.
+No latch inferred for signal `\bc.\359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$59.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$270'.
+No latch inferred for signal `\bc.\359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$59.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$270'.
+No latch inferred for signal `\bc.\359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$59.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$270'.
+No latch inferred for signal `\bc.\358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$263'.
+No latch inferred for signal `\bc.\358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$58.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$263'.
+No latch inferred for signal `\bc.\358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$58.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$263'.
+No latch inferred for signal `\bc.\358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$58.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$263'.
+No latch inferred for signal `\bc.\358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$58.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$263'.
+No latch inferred for signal `\bc.\357$func$/openlane/designs/vahid6i/src/vahid6i.v:933$34.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$257'.
+No latch inferred for signal `\bc.\357$func$/openlane/designs/vahid6i/src/vahid6i.v:933$57.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$257'.
+No latch inferred for signal `\bc.\357$func$/openlane/designs/vahid6i/src/vahid6i.v:933$57.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$257'.
+No latch inferred for signal `\bc.\357$func$/openlane/designs/vahid6i/src/vahid6i.v:933$57.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$257'.
+No latch inferred for signal `\bc.\339$func$/openlane/designs/vahid6i/src/vahid6i.v:902$33.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$252'.
+No latch inferred for signal `\bc.\339$func$/openlane/designs/vahid6i/src/vahid6i.v:902$56.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$252'.
+No latch inferred for signal `\bc.\339$func$/openlane/designs/vahid6i/src/vahid6i.v:902$56.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$252'.
+No latch inferred for signal `\bc.\286$func$/openlane/designs/vahid6i/src/vahid6i.v:868$32.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$245'.
+No latch inferred for signal `\bc.\286$func$/openlane/designs/vahid6i/src/vahid6i.v:868$55.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$245'.
+No latch inferred for signal `\bc.\286$func$/openlane/designs/vahid6i/src/vahid6i.v:868$55.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$245'.
+No latch inferred for signal `\bc.\286$func$/openlane/designs/vahid6i/src/vahid6i.v:868$55.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$245'.
+No latch inferred for signal `\bc.\286$func$/openlane/designs/vahid6i/src/vahid6i.v:868$55.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$245'.
+No latch inferred for signal `\bc.\283$func$/openlane/designs/vahid6i/src/vahid6i.v:831$31.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$238'.
+No latch inferred for signal `\bc.\283$func$/openlane/designs/vahid6i/src/vahid6i.v:831$54.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$238'.
+No latch inferred for signal `\bc.\283$func$/openlane/designs/vahid6i/src/vahid6i.v:831$54.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$238'.
+No latch inferred for signal `\bc.\283$func$/openlane/designs/vahid6i/src/vahid6i.v:831$54.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$238'.
+No latch inferred for signal `\bc.\283$func$/openlane/designs/vahid6i/src/vahid6i.v:831$54.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$238'.
+No latch inferred for signal `\bc.\280$func$/openlane/designs/vahid6i/src/vahid6i.v:794$30.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$231'.
+No latch inferred for signal `\bc.\280$func$/openlane/designs/vahid6i/src/vahid6i.v:794$53.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$231'.
+No latch inferred for signal `\bc.\280$func$/openlane/designs/vahid6i/src/vahid6i.v:794$53.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$231'.
+No latch inferred for signal `\bc.\280$func$/openlane/designs/vahid6i/src/vahid6i.v:794$53.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$231'.
+No latch inferred for signal `\bc.\280$func$/openlane/designs/vahid6i/src/vahid6i.v:794$53.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$231'.
+No latch inferred for signal `\bc.\276$func$/openlane/designs/vahid6i/src/vahid6i.v:757$29.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$224'.
+No latch inferred for signal `\bc.\276$func$/openlane/designs/vahid6i/src/vahid6i.v:757$52.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$224'.
+No latch inferred for signal `\bc.\276$func$/openlane/designs/vahid6i/src/vahid6i.v:757$52.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$224'.
+No latch inferred for signal `\bc.\276$func$/openlane/designs/vahid6i/src/vahid6i.v:757$52.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$224'.
+No latch inferred for signal `\bc.\276$func$/openlane/designs/vahid6i/src/vahid6i.v:757$52.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$224'.
+No latch inferred for signal `\bc.\270$func$/openlane/designs/vahid6i/src/vahid6i.v:720$28.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$217'.
+No latch inferred for signal `\bc.\270$func$/openlane/designs/vahid6i/src/vahid6i.v:720$51.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$217'.
+No latch inferred for signal `\bc.\270$func$/openlane/designs/vahid6i/src/vahid6i.v:720$51.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$217'.
+No latch inferred for signal `\bc.\270$func$/openlane/designs/vahid6i/src/vahid6i.v:720$51.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$217'.
+No latch inferred for signal `\bc.\270$func$/openlane/designs/vahid6i/src/vahid6i.v:720$51.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$217'.
+No latch inferred for signal `\bc.\264$func$/openlane/designs/vahid6i/src/vahid6i.v:683$27.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$210'.
+No latch inferred for signal `\bc.\264$func$/openlane/designs/vahid6i/src/vahid6i.v:683$50.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$210'.
+No latch inferred for signal `\bc.\264$func$/openlane/designs/vahid6i/src/vahid6i.v:683$50.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$210'.
+No latch inferred for signal `\bc.\264$func$/openlane/designs/vahid6i/src/vahid6i.v:683$50.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$210'.
+No latch inferred for signal `\bc.\264$func$/openlane/designs/vahid6i/src/vahid6i.v:683$50.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$210'.
+No latch inferred for signal `\bc.\263$func$/openlane/designs/vahid6i/src/vahid6i.v:646$26.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$203'.
+No latch inferred for signal `\bc.\263$func$/openlane/designs/vahid6i/src/vahid6i.v:646$49.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$203'.
+No latch inferred for signal `\bc.\263$func$/openlane/designs/vahid6i/src/vahid6i.v:646$49.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$203'.
+No latch inferred for signal `\bc.\263$func$/openlane/designs/vahid6i/src/vahid6i.v:646$49.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$203'.
+No latch inferred for signal `\bc.\263$func$/openlane/designs/vahid6i/src/vahid6i.v:646$49.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$203'.
+No latch inferred for signal `\bc.\262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$196'.
+No latch inferred for signal `\bc.\262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$48.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$196'.
+No latch inferred for signal `\bc.\262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$48.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$196'.
+No latch inferred for signal `\bc.\262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$48.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$196'.
+No latch inferred for signal `\bc.\262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$48.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$196'.
+No latch inferred for signal `\bc.\261$func$/openlane/designs/vahid6i/src/vahid6i.v:572$24.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$189'.
+No latch inferred for signal `\bc.\261$func$/openlane/designs/vahid6i/src/vahid6i.v:572$47.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$189'.
+No latch inferred for signal `\bc.\261$func$/openlane/designs/vahid6i/src/vahid6i.v:572$47.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$189'.
+No latch inferred for signal `\bc.\261$func$/openlane/designs/vahid6i/src/vahid6i.v:572$47.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$189'.
+No latch inferred for signal `\bc.\261$func$/openlane/designs/vahid6i/src/vahid6i.v:572$47.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$189'.
+No latch inferred for signal `\bc.\256$func$/openlane/designs/vahid6i/src/vahid6i.v:535$23.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$182'.
+No latch inferred for signal `\bc.\256$func$/openlane/designs/vahid6i/src/vahid6i.v:535$46.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$182'.
+No latch inferred for signal `\bc.\256$func$/openlane/designs/vahid6i/src/vahid6i.v:535$46.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$182'.
+No latch inferred for signal `\bc.\256$func$/openlane/designs/vahid6i/src/vahid6i.v:535$46.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$182'.
+No latch inferred for signal `\bc.\256$func$/openlane/designs/vahid6i/src/vahid6i.v:535$46.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$182'.
+No latch inferred for signal `\bc.\251$func$/openlane/designs/vahid6i/src/vahid6i.v:498$22.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$175'.
+No latch inferred for signal `\bc.\251$func$/openlane/designs/vahid6i/src/vahid6i.v:498$45.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$175'.
+No latch inferred for signal `\bc.\251$func$/openlane/designs/vahid6i/src/vahid6i.v:498$45.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$175'.
+No latch inferred for signal `\bc.\251$func$/openlane/designs/vahid6i/src/vahid6i.v:498$45.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$175'.
+No latch inferred for signal `\bc.\251$func$/openlane/designs/vahid6i/src/vahid6i.v:498$45.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$175'.
+No latch inferred for signal `\bc.\248$func$/openlane/designs/vahid6i/src/vahid6i.v:461$21.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$168'.
+No latch inferred for signal `\bc.\248$func$/openlane/designs/vahid6i/src/vahid6i.v:461$44.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$168'.
+No latch inferred for signal `\bc.\248$func$/openlane/designs/vahid6i/src/vahid6i.v:461$44.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$168'.
+No latch inferred for signal `\bc.\248$func$/openlane/designs/vahid6i/src/vahid6i.v:461$44.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$168'.
+No latch inferred for signal `\bc.\248$func$/openlane/designs/vahid6i/src/vahid6i.v:461$44.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$168'.
+No latch inferred for signal `\bc.\245$func$/openlane/designs/vahid6i/src/vahid6i.v:424$20.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$161'.
+No latch inferred for signal `\bc.\245$func$/openlane/designs/vahid6i/src/vahid6i.v:424$43.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$161'.
+No latch inferred for signal `\bc.\245$func$/openlane/designs/vahid6i/src/vahid6i.v:424$43.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$161'.
+No latch inferred for signal `\bc.\245$func$/openlane/designs/vahid6i/src/vahid6i.v:424$43.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$161'.
+No latch inferred for signal `\bc.\245$func$/openlane/designs/vahid6i/src/vahid6i.v:424$43.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$161'.
+No latch inferred for signal `\bc.\244$func$/openlane/designs/vahid6i/src/vahid6i.v:387$19.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$154'.
+No latch inferred for signal `\bc.\244$func$/openlane/designs/vahid6i/src/vahid6i.v:387$42.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$154'.
+No latch inferred for signal `\bc.\244$func$/openlane/designs/vahid6i/src/vahid6i.v:387$42.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$154'.
+No latch inferred for signal `\bc.\244$func$/openlane/designs/vahid6i/src/vahid6i.v:387$42.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$154'.
+No latch inferred for signal `\bc.\244$func$/openlane/designs/vahid6i/src/vahid6i.v:387$42.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$154'.
+No latch inferred for signal `\bc.\241$func$/openlane/designs/vahid6i/src/vahid6i.v:350$18.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$147'.
+No latch inferred for signal `\bc.\241$func$/openlane/designs/vahid6i/src/vahid6i.v:350$41.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$147'.
+No latch inferred for signal `\bc.\241$func$/openlane/designs/vahid6i/src/vahid6i.v:350$41.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$147'.
+No latch inferred for signal `\bc.\241$func$/openlane/designs/vahid6i/src/vahid6i.v:350$41.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$147'.
+No latch inferred for signal `\bc.\241$func$/openlane/designs/vahid6i/src/vahid6i.v:350$41.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$147'.
+No latch inferred for signal `\bc.\238$func$/openlane/designs/vahid6i/src/vahid6i.v:313$17.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$140'.
+No latch inferred for signal `\bc.\238$func$/openlane/designs/vahid6i/src/vahid6i.v:313$40.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$140'.
+No latch inferred for signal `\bc.\238$func$/openlane/designs/vahid6i/src/vahid6i.v:313$40.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$140'.
+No latch inferred for signal `\bc.\238$func$/openlane/designs/vahid6i/src/vahid6i.v:313$40.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$140'.
+No latch inferred for signal `\bc.\238$func$/openlane/designs/vahid6i/src/vahid6i.v:313$40.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$140'.
+No latch inferred for signal `\bc.\232$func$/openlane/designs/vahid6i/src/vahid6i.v:276$16.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$133'.
+No latch inferred for signal `\bc.\232$func$/openlane/designs/vahid6i/src/vahid6i.v:276$39.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$133'.
+No latch inferred for signal `\bc.\232$func$/openlane/designs/vahid6i/src/vahid6i.v:276$39.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$133'.
+No latch inferred for signal `\bc.\232$func$/openlane/designs/vahid6i/src/vahid6i.v:276$39.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$133'.
+No latch inferred for signal `\bc.\232$func$/openlane/designs/vahid6i/src/vahid6i.v:276$39.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$133'.
+No latch inferred for signal `\bc.\229$func$/openlane/designs/vahid6i/src/vahid6i.v:239$15.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$126'.
+No latch inferred for signal `\bc.\229$func$/openlane/designs/vahid6i/src/vahid6i.v:239$38.$result' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$126'.
+No latch inferred for signal `\bc.\229$func$/openlane/designs/vahid6i/src/vahid6i.v:239$38.a' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$126'.
+No latch inferred for signal `\bc.\229$func$/openlane/designs/vahid6i/src/vahid6i.v:239$38.b' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$126'.
+No latch inferred for signal `\bc.\229$func$/openlane/designs/vahid6i/src/vahid6i.v:239$38.s' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$126'.
+Latch inferred for signal `\bc.\_16_' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1045$107': $auto$proc_dlatch.cc:427:proc_dlatch$588
+Latch inferred for signal `\bc.\_14_' from process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1042$105': $auto$proc_dlatch.cc:427:proc_dlatch$599
+
+5.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\regf.$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_ADDR' using process `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1315$306'.
+  created $dff cell `$procdff$600' with positive edge clock.
+Creating register for signal `\regf.$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_DATA' using process `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1315$306'.
+  created $dff cell `$procdff$601' with positive edge clock.
+Creating register for signal `\regf.$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN' using process `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1315$306'.
+  created $dff cell `$procdff$602' with positive edge clock.
+Creating register for signal `\pc.\_6_' using process `\pc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1195$303'.
+  created $dff cell `$procdff$603' with positive edge clock.
+Creating register for signal `\ir.\_1_' using process `\ir.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1121$284'.
+  created $dff cell `$procdff$604' with positive edge clock.
+Creating register for signal `\bc.\_34_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1081$125'.
+  created $dff cell `$procdff$605' with positive edge clock.
+Creating register for signal `\bc.\_33_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1079$124'.
+  created $dff cell `$procdff$606' with positive edge clock.
+Creating register for signal `\bc.\_32_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1077$123'.
+  created $dff cell `$procdff$607' with positive edge clock.
+Creating register for signal `\bc.\_31_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1075$122'.
+  created $dff cell `$procdff$608' with positive edge clock.
+Creating register for signal `\bc.\_30_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1073$121'.
+  created $dff cell `$procdff$609' with positive edge clock.
+Creating register for signal `\bc.\_29_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1071$120'.
+  created $dff cell `$procdff$610' with positive edge clock.
+Creating register for signal `\bc.\_28_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1069$119'.
+  created $dff cell `$procdff$611' with positive edge clock.
+Creating register for signal `\bc.\_27_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1067$118'.
+  created $dff cell `$procdff$612' with positive edge clock.
+Creating register for signal `\bc.\_26_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1065$117'.
+  created $dff cell `$procdff$613' with positive edge clock.
+Creating register for signal `\bc.\_25_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1063$116'.
+  created $dff cell `$procdff$614' with positive edge clock.
+Creating register for signal `\bc.\_24_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1061$115'.
+  created $dff cell `$procdff$615' with positive edge clock.
+Creating register for signal `\bc.\_23_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1059$114'.
+  created $dff cell `$procdff$616' with positive edge clock.
+Creating register for signal `\bc.\_22_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1057$113'.
+  created $dff cell `$procdff$617' with positive edge clock.
+Creating register for signal `\bc.\_21_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1055$112'.
+  created $dff cell `$procdff$618' with positive edge clock.
+Creating register for signal `\bc.\_20_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1053$111'.
+  created $dff cell `$procdff$619' with positive edge clock.
+Creating register for signal `\bc.\_19_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1051$110'.
+  created $dff cell `$procdff$620' with positive edge clock.
+Creating register for signal `\bc.\_18_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1049$109'.
+  created $dff cell `$procdff$621' with positive edge clock.
+Creating register for signal `\bc.\_17_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1047$108'.
+  created $dff cell `$procdff$622' with positive edge clock.
+Creating register for signal `\bc.\_12_' using process `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1039$103'.
+  created $dff cell `$procdff$623' with positive edge clock.
+
+5.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1323$316'.
+Removing empty process `regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1323$316'.
+Found and cleaned up 1 empty switch in `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1321$315'.
+Removing empty process `regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1321$315'.
+Found and cleaned up 1 empty switch in `\regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1315$306'.
+Removing empty process `regf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1315$306'.
+Removing empty process `pc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1175$304'.
+Removing empty process `pc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1195$303'.
+Found and cleaned up 1 empty switch in `\muxf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$291'.
+Removing empty process `muxf.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$291'.
+Removing empty process `ir.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1111$285'.
+Removing empty process `ir.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1121$284'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:62$282'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$277'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$277'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$270'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$270'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$263'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$263'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$257'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$257'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$252'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$252'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$245'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$245'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$238'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$238'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$231'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$231'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$224'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$224'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$217'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$217'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$210'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$210'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$203'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$203'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$196'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$196'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$189'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$189'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$182'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$182'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$175'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$175'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$168'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$168'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$161'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$161'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$154'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$154'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$147'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$147'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$140'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$140'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$133'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$133'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$126'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:0$126'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1081$125'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1079$124'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1077$123'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1075$122'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1073$121'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1071$120'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1069$119'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1067$118'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1065$117'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1063$116'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1061$115'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1059$114'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1057$113'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1055$112'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1053$111'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1051$110'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1049$109'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1047$108'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1045$107'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1045$107'.
+Found and cleaned up 1 empty switch in `\bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1042$105'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1042$105'.
+Removing empty process `bc.$proc$/openlane/designs/vahid6i/src/vahid6i.v:1039$103'.
+Cleaned up 29 empty switches.
+
+5.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+Optimizing module uc.
+Optimizing module regf.
+<suppressed ~10 debug messages>
+Optimizing module po.
+Optimizing module pc.
+Optimizing module muxf.
+<suppressed ~1 debug messages>
+Optimizing module ir.
+Optimizing module bc.
+<suppressed ~18 debug messages>
+Optimizing module alu.
+<suppressed ~1 debug messages>
+
+5.3. Executing FLATTEN pass (flatten design).
+Deleting now unused module uc.
+Deleting now unused module regf.
+Deleting now unused module po.
+Deleting now unused module pc.
+Deleting now unused module muxf.
+Deleting now unused module ir.
+Deleting now unused module bc.
+Deleting now unused module alu.
+<suppressed ~8 debug messages>
+
+5.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 11 unused cells and 440 unused wires.
+<suppressed ~18 debug messages>
+
+5.6. Executing CHECK pass (checking for obvious problems).
+Checking module vahid6i...
+Found and reported 0 problems.
+
+5.7. Executing OPT pass (performing simple optimizations).
+
+5.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+<suppressed ~24 debug messages>
+Removed a total of 8 cells.
+
+5.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~28 debug messages>
+
+5.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+    Consolidated identical input bits for $mux cell $flatten\po_0.\regf_0.$procmux$324:
+      Old ports: A=8'00000000, B=8'11111111, Y=$flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309
+      New ports: A=1'0, B=1'1, Y=$flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309 [0]
+      New connections: $flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309 [7:1] = { $flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309 [0] $flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309 [0] $flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309 [0] $flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309 [0] $flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309 [0] $flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309 [0] $flatten\po_0.\regf_0.$0$memwr$\rf$/openlane/designs/vahid6i/src/vahid6i.v:1317$305_EN[7:0]$309 [0] }
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$401: { \uc_0.bc_0._36_ $auto$opt_reduce.cc:134:opt_pmux$626 }
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$408: { \uc_0.bc_0._36_ $auto$opt_reduce.cc:134:opt_pmux$628 }
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$418: { \uc_0.bc_0._36_ $auto$opt_reduce.cc:134:opt_pmux$630 }
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$428: $auto$opt_reduce.cc:134:opt_pmux$632
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$434: $auto$opt_reduce.cc:134:opt_pmux$634
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$443: { $auto$opt_reduce.cc:134:opt_pmux$638 $auto$opt_reduce.cc:134:opt_pmux$636 }
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$452: { \uc_0.bc_0._40_ $auto$opt_reduce.cc:134:opt_pmux$640 }
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$461: { \uc_0.bc_0._43_ $auto$opt_reduce.cc:134:opt_pmux$642 }
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$494: $auto$opt_reduce.cc:134:opt_pmux$644
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$507: $auto$opt_reduce.cc:134:opt_pmux$646
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$520: $auto$opt_reduce.cc:134:opt_pmux$648
+    New ctrl vector for $pmux cell $flatten\uc_0.\bc_0.$procmux$524: { $auto$opt_reduce.cc:134:opt_pmux$652 $auto$opt_reduce.cc:134:opt_pmux$650 }
+  Optimizing cells in module \vahid6i.
+Performed a total of 13 changes.
+
+5.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+<suppressed ~12 debug messages>
+Removed a total of 4 cells.
+
+5.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+5.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~28 debug messages>
+
+5.7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+5.7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+5.7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.7.16. Finished OPT passes. (There is nothing left to do.)
+
+5.8. Executing FSM pass (extract and optimize FSM).
+
+5.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking vahid6i.uc_0.bc_0._12_ as FSM state register:
+    Register has an initialization value.
+
+5.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+5.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+5.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+5.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+5.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+5.9. Executing OPT pass (performing simple optimizations).
+
+5.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~28 debug messages>
+
+5.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+5.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\uc_0.\pc_0.$procdff$603 ($dff) from module vahid6i (D = \uc_0.pc_0._5_, Q = \uc_0.pc_0._6_).
+Adding EN signal on $flatten\uc_0.\ir_0.$procdff$604 ($dff) from module vahid6i (D = \I_data, Q = \uc_0.ir_0._1_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$622 ($dff) from module vahid6i (D = \uc_0.bc_0.229$func$/openlane/designs/vahid6i/src/vahid6i.v:239$15.$result, Q = \uc_0.bc_0._17_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$621 ($dff) from module vahid6i (D = \uc_0.bc_0.232$func$/openlane/designs/vahid6i/src/vahid6i.v:276$16.$result, Q = \uc_0.bc_0._18_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$620 ($dff) from module vahid6i (D = \uc_0.bc_0.238$func$/openlane/designs/vahid6i/src/vahid6i.v:313$17.$result, Q = \uc_0.bc_0._19_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$619 ($dff) from module vahid6i (D = 1'1, Q = \uc_0.bc_0._20_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$618 ($dff) from module vahid6i (D = 1'1, Q = \uc_0.bc_0._21_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$617 ($dff) from module vahid6i (D = \uc_0.bc_0._16_, Q = \uc_0.bc_0._22_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$616 ($dff) from module vahid6i (D = \uc_0.bc_0.248$func$/openlane/designs/vahid6i/src/vahid6i.v:461$21.$result, Q = \uc_0.bc_0._23_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$615 ($dff) from module vahid6i (D = \uc_0.bc_0.251$func$/openlane/designs/vahid6i/src/vahid6i.v:498$22.$result, Q = \uc_0.bc_0._24_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$614 ($dff) from module vahid6i (D = \uc_0.bc_0.256$func$/openlane/designs/vahid6i/src/vahid6i.v:535$23.$result, Q = \uc_0.bc_0._25_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$613 ($dff) from module vahid6i (D = \uc_0.bc_0.261$func$/openlane/designs/vahid6i/src/vahid6i.v:572$24.$result, Q = \uc_0.bc_0._26_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$612 ($dff) from module vahid6i (D = \uc_0.bc_0.262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result, Q = \uc_0.bc_0._27_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$611 ($dff) from module vahid6i (D = \uc_0.bc_0._14_ [3:0], Q = \uc_0.bc_0._28_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$610 ($dff) from module vahid6i (D = \uc_0.bc_0._16_ [7:4], Q = \uc_0.bc_0._29_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$609 ($dff) from module vahid6i (D = \uc_0.bc_0.270$func$/openlane/designs/vahid6i/src/vahid6i.v:720$28.$result, Q = \uc_0.bc_0._30_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$608 ($dff) from module vahid6i (D = \uc_0.bc_0.276$func$/openlane/designs/vahid6i/src/vahid6i.v:757$29.$result, Q = \uc_0.bc_0._31_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$607 ($dff) from module vahid6i (D = \uc_0.bc_0.280$func$/openlane/designs/vahid6i/src/vahid6i.v:794$30.$result, Q = \uc_0.bc_0._32_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$606 ($dff) from module vahid6i (D = \uc_0.bc_0.283$func$/openlane/designs/vahid6i/src/vahid6i.v:831$31.$result, Q = \uc_0.bc_0._33_).
+Adding EN signal on $flatten\uc_0.\bc_0.$procdff$605 ($dff) from module vahid6i (D = \uc_0.bc_0.286$func$/openlane/designs/vahid6i/src/vahid6i.v:868$32.$result, Q = \uc_0.bc_0._34_).
+Setting constant 1-bit at position 0 on $auto$ff.cc:266:slice$667 ($dffe) from module vahid6i.
+Setting constant 1-bit at position 0 on $auto$ff.cc:266:slice$666 ($dffe) from module vahid6i.
+
+5.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 7 unused cells and 12 unused wires.
+<suppressed ~14 debug messages>
+
+5.9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+<suppressed ~14 debug messages>
+
+5.9.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.9.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~22 debug messages>
+
+5.9.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+5.9.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+5.9.13. Executing OPT_DFF pass (perform DFF optimizations).
+Removing always-active EN on $auto$ff.cc:266:slice$656 ($dffe) from module vahid6i.
+
+5.9.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+5.9.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.9.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.9.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~22 debug messages>
+
+5.9.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+5.9.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.9.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.9.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+5.9.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.9.23. Finished OPT passes. (There is nothing left to do.)
+
+5.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell vahid6i.$flatten\po_0.\muxf_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:1145$289 ($eq).
+Removed top 7 bits (of 8) from port B of cell vahid6i.$flatten\uc_0.\pc_0.$sub$/openlane/designs/vahid6i/src/vahid6i.v:1191$299 ($sub).
+Removed top 3 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:191$62 ($eq).
+Removed top 2 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:192$63 ($eq).
+Removed top 2 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:193$64 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:194$65 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:195$66 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:196$67 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:202$73 ($eq).
+Removed top 3 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:870$75 ($eq).
+Removed top 2 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:871$76 ($eq).
+Removed top 2 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:872$77 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:873$78 ($eq).
+Removed top 3 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:875$80 ($eq).
+Removed top 2 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:876$81 ($eq).
+Removed top 2 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:877$82 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:878$83 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:879$84 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:903$85 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:995$96 ($eq).
+Removed top 1 bits (of 4) from port B of cell vahid6i.$flatten\uc_0.\bc_0.$eq$/openlane/designs/vahid6i/src/vahid6i.v:996$97 ($eq).
+Removed top 7 bits (of 8) from port B of cell vahid6i.$flatten\uc_0.\pc_0.$add$/openlane/designs/vahid6i/src/vahid6i.v:1189$297 ($add).
+
+5.11. Executing PEEPOPT pass (run peephole optimizers).
+
+5.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+5.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module vahid6i:
+  creating $macc model for $flatten\po_0.\alu_0.$add$/openlane/designs/vahid6i/src/vahid6i.v:37$8 ($add).
+  creating $macc model for $flatten\po_0.\alu_0.$sub$/openlane/designs/vahid6i/src/vahid6i.v:40$11 ($sub).
+  creating $macc model for $flatten\uc_0.\pc_0.$add$/openlane/designs/vahid6i/src/vahid6i.v:1189$297 ($add).
+  creating $macc model for $flatten\uc_0.\pc_0.$add$/openlane/designs/vahid6i/src/vahid6i.v:1190$298 ($add).
+  creating $macc model for $flatten\uc_0.\pc_0.$sub$/openlane/designs/vahid6i/src/vahid6i.v:1191$299 ($sub).
+  merging $macc model for $flatten\uc_0.\pc_0.$add$/openlane/designs/vahid6i/src/vahid6i.v:1190$298 into $flatten\uc_0.\pc_0.$sub$/openlane/designs/vahid6i/src/vahid6i.v:1191$299.
+  creating $alu model for $macc $flatten\uc_0.\pc_0.$add$/openlane/designs/vahid6i/src/vahid6i.v:1189$297.
+  creating $alu model for $macc $flatten\po_0.\alu_0.$sub$/openlane/designs/vahid6i/src/vahid6i.v:40$11.
+  creating $alu model for $macc $flatten\po_0.\alu_0.$add$/openlane/designs/vahid6i/src/vahid6i.v:37$8.
+  creating $macc cell for $flatten\uc_0.\pc_0.$sub$/openlane/designs/vahid6i/src/vahid6i.v:1191$299: $auto$alumacc.cc:365:replace_macc$701
+  creating $alu cell for $flatten\po_0.\alu_0.$add$/openlane/designs/vahid6i/src/vahid6i.v:37$8: $auto$alumacc.cc:485:replace_alu$702
+  creating $alu cell for $flatten\po_0.\alu_0.$sub$/openlane/designs/vahid6i/src/vahid6i.v:40$11: $auto$alumacc.cc:485:replace_alu$705
+  creating $alu cell for $flatten\uc_0.\pc_0.$add$/openlane/designs/vahid6i/src/vahid6i.v:1189$297: $auto$alumacc.cc:485:replace_alu$708
+  created 3 $alu and 1 $macc cells.
+
+5.14. Executing SHARE pass (SAT-based resource sharing).
+
+5.15. Executing OPT pass (performing simple optimizations).
+
+5.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~22 debug messages>
+
+5.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+5.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 1 unused cells and 1 unused wires.
+<suppressed ~2 debug messages>
+
+5.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~22 debug messages>
+
+5.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+5.15.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+5.15.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.15.16. Finished OPT passes. (There is nothing left to do.)
+
+5.16. Executing MEMORY pass.
+
+5.16.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+5.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+5.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+  Analyzing vahid6i.po_0.regf_0.rf write port 0.
+
+5.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+5.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `\po_0.regf_0.rf'[0] in module `\vahid6i': no output FF found.
+Checking read port `\po_0.regf_0.rf'[1] in module `\vahid6i': no output FF found.
+Checking read port address `\po_0.regf_0.rf'[0] in module `\vahid6i': merged address FF to cell.
+Checking read port address `\po_0.regf_0.rf'[1] in module `\vahid6i': merged address FF to cell.
+
+5.16.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+5.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+Consolidating read ports of memory vahid6i.po_0.regf_0.rf by address:
+
+5.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+5.16.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+5.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+5.18. Executing OPT pass (performing simple optimizations).
+
+5.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+<suppressed ~24 debug messages>
+
+5.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 1 unused cells and 7 unused wires.
+<suppressed ~3 debug messages>
+
+5.18.5. Finished fast OPT passes.
+
+5.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory \po_0.regf_0.rf in module \vahid6i:
+  created 21 $dff cells and 0 static cells of width 8.
+Extracted addr FF from read port 0 of vahid6i.po_0.regf_0.rf: $\po_0.regf_0.rf$rdreg[0]
+Extracted addr FF from read port 1 of vahid6i.po_0.regf_0.rf: $\po_0.regf_0.rf$rdreg[1]
+  read interface: 2 $dff and 62 $mux cells.
+  write interface: 21 write mux blocks.
+
+5.20. Executing OPT pass (performing simple optimizations).
+
+5.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+<suppressed ~76 debug messages>
+
+5.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~27 debug messages>
+
+5.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+    Consolidated identical input bits for $mux cell $auto$ff.cc:504:unmap_ce$714:
+      Old ports: A={ 1'0 \uc_0.bc_0._28_ }, B={ 1'0 \uc_0.bc_0._14_ [3:0] }, Y=$auto$rtlil.cc:2468:Mux$715
+      New ports: A=\uc_0.bc_0._28_, B=\uc_0.bc_0._14_ [3:0], Y=$auto$rtlil.cc:2468:Mux$715 [3:0]
+      New connections: $auto$rtlil.cc:2468:Mux$715 [4] = 1'0
+    Consolidated identical input bits for $mux cell $auto$ff.cc:504:unmap_ce$717:
+      Old ports: A={ 1'0 \uc_0.bc_0._29_ }, B={ 1'0 \uc_0.bc_0._16_ [7:4] }, Y=$auto$rtlil.cc:2468:Mux$718
+      New ports: A=\uc_0.bc_0._29_, B=\uc_0.bc_0._16_ [7:4], Y=$auto$rtlil.cc:2468:Mux$718 [3:0]
+      New connections: $auto$rtlil.cc:2468:Mux$718 [4] = 1'0
+    Consolidated identical input bits for $mux cell $flatten\uc_0.\bc_0.$ternary$/openlane/designs/vahid6i/src/vahid6i.v:904$86:
+      Old ports: A=4'0001, B=4'1100, Y=\uc_0.bc_0._79_
+      New ports: A=2'01, B=2'10, Y={ \uc_0.bc_0._79_ [2] \uc_0.bc_0._79_ [0] }
+      New connections: { \uc_0.bc_0._79_ [3] \uc_0.bc_0._79_ [1] } = { \uc_0.bc_0._79_ [2] 1'0 }
+  Optimizing cells in module \vahid6i.
+Performed a total of 3 changes.
+
+5.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.20.6. Executing OPT_SHARE pass.
+
+5.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 0 unused cells and 127 unused wires.
+<suppressed ~1 debug messages>
+
+5.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+<suppressed ~6 debug messages>
+
+5.20.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.20.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~27 debug messages>
+
+5.20.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+5.20.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.20.14. Executing OPT_SHARE pass.
+
+5.20.15. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $memory\po_0.regf_0.rf[9]$737 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[9]).
+Adding EN signal on $memory\po_0.regf_0.rf[8]$735 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[8]).
+Adding EN signal on $memory\po_0.regf_0.rf[7]$733 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[7]).
+Adding EN signal on $memory\po_0.regf_0.rf[6]$731 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[6]).
+Adding EN signal on $memory\po_0.regf_0.rf[5]$729 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[5]).
+Adding EN signal on $memory\po_0.regf_0.rf[4]$727 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[4]).
+Adding EN signal on $memory\po_0.regf_0.rf[3]$725 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[3]).
+Adding EN signal on $memory\po_0.regf_0.rf[2]$723 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[2]).
+Handling D = Q on $memory\po_0.regf_0.rf[20]$759 ($dff) from module vahid6i (removing D path).
+Adding EN signal on $memory\po_0.regf_0.rf[1]$721 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[1]).
+Handling D = Q on $memory\po_0.regf_0.rf[19]$757 ($dff) from module vahid6i (removing D path).
+Handling D = Q on $memory\po_0.regf_0.rf[18]$755 ($dff) from module vahid6i (removing D path).
+Handling D = Q on $memory\po_0.regf_0.rf[17]$753 ($dff) from module vahid6i (removing D path).
+Handling D = Q on $memory\po_0.regf_0.rf[16]$751 ($dff) from module vahid6i (removing D path).
+Adding EN signal on $memory\po_0.regf_0.rf[15]$749 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[15]).
+Adding EN signal on $memory\po_0.regf_0.rf[14]$747 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[14]).
+Adding EN signal on $memory\po_0.regf_0.rf[13]$745 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[13]).
+Adding EN signal on $memory\po_0.regf_0.rf[12]$743 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[12]).
+Adding EN signal on $memory\po_0.regf_0.rf[11]$741 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[11]).
+Adding EN signal on $memory\po_0.regf_0.rf[10]$739 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[10]).
+Adding EN signal on $memory\po_0.regf_0.rf[0]$719 ($dff) from module vahid6i (D = \po_0.regf_0.w_data, Q = \po_0.regf_0.rf[0]).
+Setting constant 0-bit at position 4 on $\po_0.regf_0.rf$rdreg[1] ($dff) from module vahid6i.
+Setting constant 0-bit at position 4 on $\po_0.regf_0.rf$rdreg[0] ($dff) from module vahid6i.
+
+5.20.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 16 unused cells and 22 unused wires.
+<suppressed ~17 debug messages>
+
+5.20.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+<suppressed ~10 debug messages>
+
+5.20.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.20.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~11 debug messages>
+
+5.20.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+5.20.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.20.22. Executing OPT_SHARE pass.
+
+5.20.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.20.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+5.20.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.20.26. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.20.27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~11 debug messages>
+
+5.20.28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+5.20.29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+5.20.30. Executing OPT_SHARE pass.
+
+5.20.31. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.20.32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+5.20.33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+5.20.34. Finished OPT passes. (There is nothing left to do.)
+
+5.21. Executing TECHMAP pass (map to technology primitives).
+
+5.21.1. Executing Verilog-2005 frontend: /build/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/build/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+5.21.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $dlatch.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$fc16b9f758000d363d24f130038bd99b46b4fa1b\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$a1bc51c02ce12ac21eb18988e83292af48ed7d72\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using template $paramod$c3cd1564c35d873179656addd6052d7ea8b6d991\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $tribuf.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper maccmap for cells of type $macc.
+  add \uc_0.pc_0._6_ (8 bits, unsigned)
+  add \uc_0.ir_0._1_ (8 bits, unsigned)
+  add 8'11111111 (8 bits, unsigned)
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod$9398518f3a66906c93ac7eaad9a961f31111e0c1\_90_pmux for cells of type $pmux.
+Using template $paramod$a13703aa027da371a1931fc542d213d7de559b19\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001000 for cells of type $fa.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~680 debug messages>
+
+5.22. Executing OPT pass (performing simple optimizations).
+
+5.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+<suppressed ~383 debug messages>
+
+5.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+<suppressed ~345 debug messages>
+Removed a total of 115 cells.
+
+5.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 47 unused cells and 440 unused wires.
+<suppressed ~48 debug messages>
+
+5.22.5. Finished fast OPT passes.
+
+5.23. Executing ABC pass (technology mapping using ABC).
+
+5.23.1. Extracting gate netlist of module `\vahid6i' to `<abc-temp-dir>/input.blif'..
+Extracted 757 gates and 984 wires to a netlist network with 225 inputs and 118 outputs.
+
+5.23.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+5.23.1.2. Re-integrating ABC results.
+ABC RESULTS:               NOT cells:       15
+ABC RESULTS:              XNOR cells:       15
+ABC RESULTS:               MUX cells:      300
+ABC RESULTS:               AND cells:       16
+ABC RESULTS:              NAND cells:       13
+ABC RESULTS:                OR cells:       96
+ABC RESULTS:             ORNOT cells:       26
+ABC RESULTS:               NOR cells:       45
+ABC RESULTS:            ANDNOT cells:      122
+ABC RESULTS:               XOR cells:       43
+ABC RESULTS:        internal signals:      641
+ABC RESULTS:           input signals:      225
+ABC RESULTS:          output signals:      118
+Removing temp directory.
+
+5.24. Executing OPT pass (performing simple optimizations).
+
+5.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+<suppressed ~125 debug messages>
+
+5.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+5.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 7 unused cells and 618 unused wires.
+<suppressed ~74 debug messages>
+
+5.24.5. Finished fast OPT passes.
+
+5.25. Executing HIERARCHY pass (managing design hierarchy).
+
+5.25.1. Analyzing design hierarchy..
+Top module:  \vahid6i
+
+5.25.2. Analyzing design hierarchy..
+Top module:  \vahid6i
+Removed 0 unused modules.
+
+5.26. Printing statistics.
+
+=== vahid6i ===
+
+   Number of wires:                951
+   Number of wire bits:           2610
+   Number of public wires:         347
+   Number of public wire bits:    1998
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                911
+     $_ANDNOT_                     122
+     $_AND_                         16
+     $_DFFE_PN_                      6
+     $_DFFE_PP_                    162
+     $_DFF_P_                       20
+     $_DLATCH_N_                    16
+     $_DLATCH_P_                    16
+     $_MUX_                        300
+     $_NAND_                        13
+     $_NOR_                         45
+     $_NOT_                          8
+     $_ORNOT_                       26
+     $_OR_                          96
+     $_TBUF_                         8
+     $_XNOR_                        15
+     $_XOR_                         42
+
+5.27. Executing CHECK pass (checking for obvious problems).
+Checking module vahid6i...
+Found and reported 0 problems.
+
+6. Generating Graphviz representation of design.
+Writing dot description to `/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/post_techmap.dot'.
+Dumping module vahid6i to page 1.
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [0] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [3] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [4] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [5] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [6] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._29_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._29_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._29_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._29_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._28_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._28_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._28_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._28_ [3] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [0] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [0] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [0] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [0] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [1] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [1] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [0] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [0] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [1] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [0] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [1] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [2] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [2] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [1] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [1] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [1] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [0] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [2] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [2] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [3] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [3] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [2] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [2] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [2] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [3] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [3] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [4] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [4] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [3] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [3] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [2] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [3] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [4] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [4] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [5] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [5] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [4] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [4] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [4] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [5] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [5] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [6] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [6] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [5] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [5] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [5] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [4] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [6] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [6] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [7] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [7] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [6] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [6] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [6] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [7] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [0] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [1] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [2] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [3] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [4] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [5] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [6] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [7] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [0] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [1] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [2] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [3] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [4] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [5] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [6] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [7] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0.262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0.262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result [3] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [0] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [0] 1
+Warning: WIDTHLABEL \D_R_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [1] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [1] 1
+Warning: WIDTHLABEL \D_R_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [1] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [2] 1
+Warning: WIDTHLABEL \D_R_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [2] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [3] 1
+Warning: WIDTHLABEL \D_R_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [3] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [4] 1
+Warning: WIDTHLABEL \D_R_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [4] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [5] 1
+Warning: WIDTHLABEL \D_R_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [5] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [6] 1
+Warning: WIDTHLABEL \D_R_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [6] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [7] 1
+Warning: WIDTHLABEL \D_R_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [3] 1
+Warning: WIDTHLABEL \leds [0] 1
+Warning: WIDTHLABEL \leds [1] 1
+Warning: WIDTHLABEL \leds [2] 1
+Warning: WIDTHLABEL \leds [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [0] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [1] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [2] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [3] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [4] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [5] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [6] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[5] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._5_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._0_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [0] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [1] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [2] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [4] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [5] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [6] 1
+Warning: WIDTHLABEL \po_0.regf_0._3_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0._1_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[6] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[7] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[8] [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[0]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[9] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[1] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[15] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[14] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[13] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[12] [7] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [0] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [0] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [1] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [1] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [2] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [2] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [3] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [3] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [4] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [4] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [5] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [5] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [6] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [6] 1
+Warning: WIDTHLABEL \uc_0.pc_0._5_ [7] 1
+Warning: WIDTHLABEL \uc_0.pc_0._6_ [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[4] [7] 1
+Warning: WIDTHLABEL \I_data [0] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [0] 1
+Warning: WIDTHLABEL \I_data [1] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [1] 1
+Warning: WIDTHLABEL \I_data [2] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [2] 1
+Warning: WIDTHLABEL \I_data [3] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [3] 1
+Warning: WIDTHLABEL \I_data [4] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [4] 1
+Warning: WIDTHLABEL \I_data [5] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [5] 1
+Warning: WIDTHLABEL \I_data [6] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [6] 1
+Warning: WIDTHLABEL \I_data [7] 1
+Warning: WIDTHLABEL \uc_0.ir_0._1_ [7] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [0] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [1] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [2] 1
+Warning: WIDTHLABEL $\po_0.regf_0.rf$rdreg[1]$q [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[3] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[10] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[2] [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[0] [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0.next_state [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._12_ [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [0] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [1] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [2] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [3] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [4] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [5] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [6] 1
+Warning: WIDTHLABEL \po_0.regf_0.w_data [7] 1
+Warning: WIDTHLABEL \po_0.regf_0.rf[11] [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0.359$func$/openlane/designs/vahid6i/src/vahid6i.v:987$36.$result [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._22_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._22_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._22_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._22_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._22_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._22_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._22_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._22_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0.358$func$/openlane/designs/vahid6i/src/vahid6i.v:960$35.$result [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [4] 1
+Warning: WIDTHLABEL \uc_0.bc_0._29_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [5] 1
+Warning: WIDTHLABEL \uc_0.bc_0._29_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [6] 1
+Warning: WIDTHLABEL \uc_0.bc_0._29_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._16_ [7] 1
+Warning: WIDTHLABEL \uc_0.bc_0._29_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._28_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._28_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._28_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._14_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._28_ [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0.262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [0] 1
+Warning: WIDTHLABEL \uc_0.bc_0.262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [1] 1
+Warning: WIDTHLABEL \uc_0.bc_0.262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [2] 1
+Warning: WIDTHLABEL \uc_0.bc_0.262$func$/openlane/designs/vahid6i/src/vahid6i.v:609$25.$result [3] 1
+Warning: WIDTHLABEL \uc_0.bc_0._27_ [3] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [0] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [0] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [1] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [1] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [2] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [2] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [3] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [3] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [4] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [4] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [5] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [5] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [6] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [6] 1
+Warning: WIDTHLABEL \po_0.alu_0._10_ [7] 1
+Warning: WIDTHLABEL \po_0.alu_0._11_ [7] 1
+
+7. Executing SHARE pass (SAT-based resource sharing).
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \vahid6i..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \vahid6i.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\vahid6i'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module vahid6i.
+
+8.9. Finished OPT passes. (There is nothing left to do.)
+
+9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 0 unused cells and 278 unused wires.
+<suppressed ~278 debug messages>
+
+10. Printing statistics.
+
+=== vahid6i ===
+
+   Number of wires:                673
+   Number of wire bits:            933
+   Number of public wires:          69
+   Number of public wire bits:     321
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                911
+     $_ANDNOT_                     122
+     $_AND_                         16
+     $_DFFE_PN_                      6
+     $_DFFE_PP_                    162
+     $_DFF_P_                       20
+     $_DLATCH_N_                    16
+     $_DLATCH_P_                    16
+     $_MUX_                        300
+     $_NAND_                        13
+     $_NOR_                         45
+     $_NOT_                          8
+     $_ORNOT_                       26
+     $_OR_                          96
+     $_TBUF_                         8
+     $_XNOR_                        15
+     $_XOR_                         42
+
+mapping tbuf
+
+11. Executing TECHMAP pass (map to technology primitives).
+
+11.1. Executing Verilog-2005 frontend: /home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+11.2. Continuing TECHMAP pass.
+Using template \$_TBUF_ for cells of type $_TBUF_.
+No more expansions possible.
+<suppressed ~11 debug messages>
+
+12. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+Mapping vahid6i.$techmap$auto$simplemap.cc:294:simplemap_tribuf$1305.$not$/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v:5$3893 ($not).
+Mapping vahid6i.$techmap$auto$simplemap.cc:294:simplemap_tribuf$1304.$not$/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v:5$3893 ($not).
+Mapping vahid6i.$techmap$auto$simplemap.cc:294:simplemap_tribuf$1303.$not$/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v:5$3893 ($not).
+Mapping vahid6i.$techmap$auto$simplemap.cc:294:simplemap_tribuf$1302.$not$/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v:5$3893 ($not).
+Mapping vahid6i.$techmap$auto$simplemap.cc:294:simplemap_tribuf$1301.$not$/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v:5$3893 ($not).
+Mapping vahid6i.$techmap$auto$simplemap.cc:294:simplemap_tribuf$1300.$not$/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v:5$3893 ($not).
+Mapping vahid6i.$techmap$auto$simplemap.cc:294:simplemap_tribuf$1299.$not$/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v:5$3893 ($not).
+Mapping vahid6i.$techmap$auto$simplemap.cc:294:simplemap_tribuf$1298.$not$/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v:5$3893 ($not).
+
+13. Executing TECHMAP pass (map to technology primitives).
+
+13.1. Executing Verilog-2005 frontend: /home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+13.2. Continuing TECHMAP pass.
+Using template \$_DLATCH_N_ for cells of type $_DLATCH_N_.
+Using template \$_DLATCH_P_ for cells of type $_DLATCH_P_.
+No more expansions possible.
+<suppressed ~36 debug messages>
+
+14. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+15. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+15.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\vahid6i':
+  mapped 188 $_DFF_P_ cells to \sky130_fd_sc_hd__dfxtp_2 cells.
+
+16. Printing statistics.
+
+=== vahid6i ===
+
+   Number of wires:                969
+   Number of wire bits:           1229
+   Number of public wires:          69
+   Number of public wire bits:     321
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1087
+     $_ANDNOT_                     122
+     $_AND_                         16
+     $_MUX_                        468
+     $_NAND_                        13
+     $_NOR_                         45
+     $_NOT_                         16
+     $_ORNOT_                       26
+     $_OR_                          96
+     $_XNOR_                        15
+     $_XOR_                         42
+     sky130_fd_sc_hd__dfxtp_2      188
+     sky130_fd_sc_hd__dlxtn_1       16
+     sky130_fd_sc_hd__dlxtp_1       16
+     sky130_fd_sc_hd__ebufn_2        8
+
+[INFO]: USING STRATEGY DELAY 0
+
+17. Executing ABC pass (technology mapping using ABC).
+
+17.1. Extracting gate netlist of module `\vahid6i' to `/tmp/yosys-abc-g4PI7x/input.blif'..
+Extracted 859 gates and 1096 wires to a netlist network with 237 inputs and 232 outputs.
+
+17.1.1. Executing ABC.
+Running ABC command: "/build/bin/yosys-abc" -s -f /tmp/yosys-abc-g4PI7x/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-g4PI7x/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-g4PI7x/input.blif 
+ABC: + read_lib -w /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.03 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130A_merged" from "/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.05 sec
+ABC: Memory =    9.54 MB. Time =     0.05 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/synthesis.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
+ABC: Setting output load to be 33.442001.
+ABC: + read_constr /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/synthesis.sdc 
+ABC: + fx 
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 15000 -M 6 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + map -p -B 0.2 -A 0.9 -M 0 
+ABC: The cell areas are multiplied by the factor: <num_fanins> ^ (0.90).
+ABC: The cell delays are multiplied by the factor: <num_fanins> ^ (0.20).
+ABC: + retime -D -D 15000 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &dch 
+ABC: + &nf 
+ABC: + &put 
+ABC: + buffer -N 6 -S 750.0 
+ABC: + upsize -D 15000 
+ABC: Current delay (2607.91 ps) does not exceed the target delay (15000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 15000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =    929 ( 32.5 %)   Cap = 12.2 ff ( 11.6 %)   Area =     8186.60 ( 60.4 %)   Delay =  2815.77 ps  (  3.8 %)               
+ABC: Path  0 --       9 : 0    6 pi                       A =   0.00  Df =  44.1  -24.7 ps  S =  66.7 ps  Cin =  0.0 ff  Cout =  13.1 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     507 : 4    3 sky130_fd_sc_hd__or4bb_2 A =  12.51  Df = 685.1 -469.9 ps  S = 120.2 ps  Cin =  1.5 ff  Cout =   9.6 ff  Cmax = 312.2 ff  G =  613  
+ABC: Path  2 --     530 : 4    5 sky130_fd_sc_hd__o31a_2  A =  10.01  Df =1028.7 -446.9 ps  S =  92.2 ps  Cin =  2.3 ff  Cout =  14.0 ff  Cmax = 285.7 ff  G =  570  
+ABC: Path  3 --     531 : 2    6 sky130_fd_sc_hd__nor2_2  A =   6.26  Df =1412.1 -717.2 ps  S = 471.2 ps  Cin =  4.4 ff  Cout =  43.0 ff  Cmax = 141.9 ff  G =  963  
+ABC: Path  4 --     710 : 3    6 sky130_fd_sc_hd__and3_2  A =   7.51  Df =1727.7 -318.9 ps  S = 117.0 ps  Cin =  1.5 ff  Cout =  18.1 ff  Cmax = 309.5 ff  G = 1164  
+ABC: Path  5 --     711 : 1    6 sky130_fd_sc_hd__buf_1   A =   3.75  Df =1957.0 -385.2 ps  S = 231.0 ps  Cin =  2.1 ff  Cout =  19.0 ff  Cmax = 130.0 ff  G =  864  
+ABC: Path  6 --     712 : 1    6 sky130_fd_sc_hd__buf_1   A =   3.75  Df =2205.6 -454.8 ps  S = 233.9 ps  Cin =  2.1 ff  Cout =  19.3 ff  Cmax = 130.0 ff  G =  874  
+ABC: Path  7 --    1363 : 3    1 sky130_fd_sc_hd__mux2_2  A =  11.26  Df =2492.6 -409.4 ps  S =  45.5 ps  Cin =  2.3 ff  Cout =   2.2 ff  Cmax = 297.6 ff  G =   92  
+ABC: Path  8 --    1364 : 1    1 sky130_fd_sc_hd__buf_1   A =   3.75  Df =2815.8 -513.7 ps  S = 396.8 ps  Cin =  2.1 ff  Cout =  33.4 ff  Cmax = 130.0 ff  G = 1590  
+ABC: Start-point = pi8 (\uc_0.bc_0._12_ [2]).  End-point = po215 ($auto$rtlil.cc:2560:MuxGate$4205).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =  237/  232  lat =    0  nd =   929  edge =   2381  area =3555.83  delay =1392.06  lev = 12
+ABC: + write_blif /tmp/yosys-abc-g4PI7x/output.blif 
+
+17.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__nor2b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a221oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor4b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__mux4_2 cells:       64
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand2b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or2b_2 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__o311a_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__nand4b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o22ai_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:       36
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nor4_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o32ai_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a311o_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:       21
+ABC RESULTS:   sky130_fd_sc_hd__nand4_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__nor3b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o221ai_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand3_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__a41o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__and4bb_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__or4b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:       34
+ABC RESULTS:   sky130_fd_sc_hd__or4bb_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:       14
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:       30
+ABC RESULTS:   sky130_fd_sc_hd__and4b_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a2111oi_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or3b_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:       21
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:       25
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:       19
+ABC RESULTS:   sky130_fd_sc_hd__a32o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__mux2_2 cells:      174
+ABC RESULTS:   sky130_fd_sc_hd__buf_1 cells:      298
+ABC RESULTS:        internal signals:      627
+ABC RESULTS:           input signals:      237
+ABC RESULTS:          output signals:      232
+Removing temp directory.
+
+18. Executing SETUNDEF pass (replace undef values with defined constants).
+
+19. Executing HILOMAP pass (mapping to constant drivers).
+
+20. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \vahid6i..
+Removed 2 unused cells and 1221 unused wires.
+<suppressed ~20 debug messages>
+
+22. Executing INSBUF pass (insert buffer cells for connected wires).
+Added vahid6i.$auto$insbuf.cc:79:execute$5174: \clock -> \led_clock
+
+23. Executing CHECK pass (checking for obvious problems).
+Checking module vahid6i...
+Warning: Wire vahid6i.\leds [3] is used but has no driver.
+Warning: Wire vahid6i.\leds [2] is used but has no driver.
+Warning: Wire vahid6i.\leds [1] is used but has no driver.
+Warning: Wire vahid6i.\leds [0] is used but has no driver.
+Warning: Wire vahid6i.\led_clock is used but has no driver.
+Warning: Wire vahid6i.\I_rd is used but has no driver.
+Warning: Wire vahid6i.\I_addr [7] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [6] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [5] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [4] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [3] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [2] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [1] is used but has no driver.
+Warning: Wire vahid6i.\I_addr [0] is used but has no driver.
+Warning: Wire vahid6i.\D_wr is used but has no driver.
+Warning: Wire vahid6i.\D_rd is used but has no driver.
+Warning: Wire vahid6i.\D_addr [7] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [6] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [5] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [4] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [3] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [2] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [1] is used but has no driver.
+Warning: Wire vahid6i.\D_addr [0] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [7] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [6] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [5] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [4] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [3] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [2] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [1] is used but has no driver.
+Warning: Wire vahid6i.\D_W_data [0] is used but has no driver.
+Found and reported 32 problems.
+
+24. Printing statistics.
+
+=== vahid6i ===
+
+   Number of wires:               1139
+   Number of wire bits:           1177
+   Number of public wires:         250
+   Number of public wire bits:     288
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1159
+     sky130_fd_sc_hd__a2111oi_2      2
+     sky130_fd_sc_hd__a211o_2        4
+     sky130_fd_sc_hd__a211oi_2       2
+     sky130_fd_sc_hd__a21bo_2       19
+     sky130_fd_sc_hd__a21boi_2       1
+     sky130_fd_sc_hd__a21o_2        15
+     sky130_fd_sc_hd__a21oi_2       30
+     sky130_fd_sc_hd__a221o_2        6
+     sky130_fd_sc_hd__a221oi_2       1
+     sky130_fd_sc_hd__a22o_2         6
+     sky130_fd_sc_hd__a22oi_2        4
+     sky130_fd_sc_hd__a2bb2o_2       1
+     sky130_fd_sc_hd__a311o_2        4
+     sky130_fd_sc_hd__a31o_2        10
+     sky130_fd_sc_hd__a31oi_2        6
+     sky130_fd_sc_hd__a32o_2         1
+     sky130_fd_sc_hd__a41o_2         2
+     sky130_fd_sc_hd__and2_2        14
+     sky130_fd_sc_hd__and2b_2       36
+     sky130_fd_sc_hd__and3_2         3
+     sky130_fd_sc_hd__and4_2         2
+     sky130_fd_sc_hd__and4b_2       10
+     sky130_fd_sc_hd__and4bb_2       4
+     sky130_fd_sc_hd__buf_1        298
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__conb_1         1
+     sky130_fd_sc_hd__dfxtp_2      188
+     sky130_fd_sc_hd__dlxtn_1       16
+     sky130_fd_sc_hd__dlxtp_1       16
+     sky130_fd_sc_hd__ebufn_2        8
+     sky130_fd_sc_hd__inv_2          4
+     sky130_fd_sc_hd__mux2_2       174
+     sky130_fd_sc_hd__mux4_2        64
+     sky130_fd_sc_hd__nand2_2       21
+     sky130_fd_sc_hd__nand2b_2       1
+     sky130_fd_sc_hd__nand3_2        8
+     sky130_fd_sc_hd__nand3b_2       2
+     sky130_fd_sc_hd__nand4_2        4
+     sky130_fd_sc_hd__nand4b_2       1
+     sky130_fd_sc_hd__nor2_2        34
+     sky130_fd_sc_hd__nor2b_2        1
+     sky130_fd_sc_hd__nor3_2         3
+     sky130_fd_sc_hd__nor3b_2        2
+     sky130_fd_sc_hd__nor4_2         4
+     sky130_fd_sc_hd__nor4b_2        2
+     sky130_fd_sc_hd__o211a_2        1
+     sky130_fd_sc_hd__o211ai_2       3
+     sky130_fd_sc_hd__o21a_2         6
+     sky130_fd_sc_hd__o21ai_2       25
+     sky130_fd_sc_hd__o21ba_2        3
+     sky130_fd_sc_hd__o21bai_2       3
+     sky130_fd_sc_hd__o221a_2        1
+     sky130_fd_sc_hd__o221ai_2       2
+     sky130_fd_sc_hd__o22a_2        21
+     sky130_fd_sc_hd__o22ai_2        4
+     sky130_fd_sc_hd__o2bb2a_2       1
+     sky130_fd_sc_hd__o311a_2        3
+     sky130_fd_sc_hd__o31a_2         1
+     sky130_fd_sc_hd__o31ai_2        1
+     sky130_fd_sc_hd__o32ai_2        2
+     sky130_fd_sc_hd__or2_2          8
+     sky130_fd_sc_hd__or2b_2        15
+     sky130_fd_sc_hd__or3_2          8
+     sky130_fd_sc_hd__or3b_2         3
+     sky130_fd_sc_hd__or4_2          1
+     sky130_fd_sc_hd__or4b_2         1
+     sky130_fd_sc_hd__or4bb_2        2
+     sky130_fd_sc_hd__xnor2_2        5
+     sky130_fd_sc_hd__xor2_2         3
+
+   Chip area for module '\vahid6i': 12764.742400
+
+25. Executing Verilog backend.
+
+25.1. Executing BMUXMAP pass.
+
+25.2. Executing DEMUXMAP pass.
+Dumping module `\vahid6i'.
+
+26. Executing Liberty frontend.
+Imported 192 cell types from liberty file.
+
+27. Executing CHECK pass (checking for obvious problems).
+Checking module vahid6i...
+Found and reported 0 problems.
+
+Warnings: 335 unique messages, 1284 total
+End of script. Logfile hash: b58a41ed6b, CPU: user 0.84s system 0.00s, MEM: 34.07 MB peak
+Yosys 0.22 (git sha1 f109fa3d4c5, gcc 8.3.1 -fPIC -Os)
+Time spent: 39% 2x abc (0 sec), 10% 24x opt_expr (0 sec), ...

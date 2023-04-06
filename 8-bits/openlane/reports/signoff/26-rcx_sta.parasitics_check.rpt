@@ -1,0 +1,89 @@
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 1 unannotated drivers.
+ vahid6i_110/LO
+Found 0 partially unannotated drivers.
+parastic_annotation_check
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+fanout57/X                                6      7        (VIOLATED)
+
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 1
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 7.28
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 6.94
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clk_48
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             6.05e-04   7.05e-04   1.84e-09   1.31e-03  63.7%
+Combinational          3.30e-04   4.16e-04   7.31e-09   7.47e-04  36.3%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  9.36e-04   1.12e-03   9.15e-09   2.06e-03 100.0%
+                          45.5%      54.5%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 13727 u^2 44% utilization.
+area_report_end
+Setting global connections for newly added cells...
+[WARNING] Did not save OpenROAD database!
+Writing SDF to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/results/routing/mca/process_corner_nom/vahid6i.sdf...
+Writing timing model to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/results/routing/mca/process_corner_nom/vahid6i.lib...
+
