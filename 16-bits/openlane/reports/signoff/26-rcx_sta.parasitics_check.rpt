@@ -1,0 +1,98 @@
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+parastic_annotation_check
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+_1695_/X                                  6      7        (VIOLATED)
+_1708_/X                                  6      7        (VIOLATED)
+_1854_/X                                  6      7        (VIOLATED)
+_2173_/X                                  6      7        (VIOLATED)
+_2216_/X                                  6      7        (VIOLATED)
+_2271_/X                                  6      7        (VIOLATED)
+_2287_/X                                  6      7        (VIOLATED)
+_2297_/X                                  6      7        (VIOLATED)
+_3471_/Q                                  6      7        (VIOLATED)
+fanout83/X                                6      7        (VIOLATED)
+fanout96/X                                6      7        (VIOLATED)
+
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 11
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 7.33
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 6.84
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clk_48
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             5.10e-04   3.65e-04   3.07e-09   8.75e-04  28.7%
+Combinational          9.42e-04   1.23e-03   1.24e-08   2.17e-03  71.3%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.45e-03   1.60e-03   1.55e-08   3.05e-03 100.0%
+                          47.6%      52.4%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 24237 u^2 44% utilization.
+area_report_end
+Setting global connections for newly added cells...
+[WARNING] Did not save OpenROAD database!
+Writing SDF to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/mca/process_corner_nom/vahid6i.sdf...
+Writing timing model to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/mca/process_corner_nom/vahid6i.lib...
+

@@ -1,0 +1,53 @@
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: clock (input port clocked by clk_48)
+Endpoint: led_clock (output port clocked by clk_48)
+Path Group: clk_48
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk_48 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          3.00    3.00 v input external delay
+                  0.01    0.00    3.00 v clock (in)
+     1    0.00                           clock (net)
+                  0.01    0.00    3.00 v input33/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.05    0.09    3.09 v input33/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net33 (net)
+                  0.05    0.00    3.09 v fanout183/A (sky130_fd_sc_hd__buf_2)
+                  0.13    0.20    3.29 v fanout183/X (sky130_fd_sc_hd__buf_2)
+     4    0.05                           net183 (net)
+                  0.13    0.00    3.30 v fanout169/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.13    0.21    3.51 v fanout169/X (sky130_fd_sc_hd__clkbuf_2)
+     4    0.03                           net169 (net)
+                  0.13    0.00    3.51 v fanout165/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.08    0.16    3.67 v fanout165/X (sky130_fd_sc_hd__clkbuf_1)
+     3    0.01                           net165 (net)
+                  0.08    0.00    3.67 v fanout164/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.16    3.82 v fanout164/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net164 (net)
+                  0.08    0.00    3.83 v _3558_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.03    0.10    3.92 v _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net78 (net)
+                  0.03    0.00    3.92 v output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.17    4.09 v output78/X (sky130_fd_sc_hd__clkbuf_4)
+     1    0.03                           led_clock (net)
+                  0.08    0.00    4.09 v led_clock (out)
+                                  4.09   data arrival time
+
+                  0.00    0.00    0.00   clock clk_48 (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -3.00   -2.75   output external delay
+                                 -2.75   data required time
+-----------------------------------------------------------------------------
+                                 -2.75   data required time
+                                 -4.09   data arrival time
+-----------------------------------------------------------------------------
+                                  6.84   slack (MET)
+
+

@@ -1,0 +1,29 @@
+
+10. Printing statistics.
+
+=== vahid6i ===
+
+   Number of wires:               1050
+   Number of wire bits:           1513
+   Number of public wires:          68
+   Number of public wire bits:     523
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1464
+     $_ANDNOT_                     168
+     $_AND_                         21
+     $_DFFE_PN_                      6
+     $_DFFE_PP_                    316
+     $_DFF_P_                       12
+     $_DLATCH_P_                    32
+     $_MUX_                        556
+     $_NAND_                        32
+     $_NOR_                         40
+     $_NOT_                         14
+     $_ORNOT_                       35
+     $_OR_                         118
+     $_TBUF_                        16
+     $_XNOR_                        28
+     $_XOR_                         70
+
