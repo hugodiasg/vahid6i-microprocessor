@@ -8,9 +8,9 @@ USE ieee.numeric_std.all;
 ENTITY muxf IS
 	PORT (
 		s1,s0				: IN STD_LOGIC;
-		ans,D_R_data	: IN STD_LOGIC_VECTOR(15 downto 0);
+		ans,D_R_data	: IN STD_LOGIC_VECTOR(7 downto 0);
 		RF_W_data		: IN STD_LOGIC_VECTOR(7 downto 0);
-		W_data			: OUT STD_LOGIC_VECTOR(15 downto 0)
+		W_data			: OUT STD_LOGIC_VECTOR(7 downto 0)
 	); 
 --	zero				:	OUT STD_LOGIC);
 END muxf;
@@ -25,8 +25,8 @@ BEGIN
 		CASE s1_s0 IS
 			WHEN	"00" => W_data<=ans;
 			WHEN	"01" => W_data<=D_R_data;
-			WHEN	"10" => W_data<="00000000" & RF_W_data;
-			WHEN	OTHERS => W_data<="ZZZZZZZZZZZZZZZZ";
+			WHEN	"10" => W_data<=RF_W_data;
+			WHEN	OTHERS => W_data<="ZZZZZZZZ";
 		END CASE;
 	END PROCESS;
 	

@@ -9,10 +9,10 @@ USE ieee.numeric_std.all;
 
 ENTITY alu IS
 	PORT (
-		a,b		:	IN STD_LOGIC_VECTOR(15 downto 0); 
+		a,b		:	IN STD_LOGIC_VECTOR(7 downto 0); 
 		s0,s1		:	IN STD_LOGIC;
 		Rp_zero	:  OUT STD_LOGIC;
-		ans		:	OUT STD_LOGIC_VECTOR(15 downto 0)
+		ans		:	OUT STD_LOGIC_VECTOR(7 downto 0)
 	); 
 --	zero				:	OUT STD_LOGIC);
 END alu;
@@ -24,7 +24,7 @@ ARCHITECTURE arch OF alu IS
 		--Detectar se a entrada "a" é zero
 		zero:PROCESS(a, b, s0, s1) 
 		BEGIN
-			IF (a="0000000000000000") THEN
+			IF (a="00000000") THEN
 				Rp_zero<='1';
 			ELSE
 				Rp_Zero<='0';
@@ -41,7 +41,7 @@ ARCHITECTURE arch OF alu IS
 			ELSIF (s1='1' AND s0='0') THEN
 				ans<=std_logic_vector(unsigned(a)-unsigned(b)); --Subtração
 			ELSE
-				ans<="ZZZZZZZZZZZZZZZZ";								--Alta impedância
+				ans<="ZZZZZZZZ";								--Alta impedância
 			END IF;	
 		END PROCESS cases;
 	

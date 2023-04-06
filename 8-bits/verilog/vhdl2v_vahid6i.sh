@@ -1,0 +1,1 @@
+yosys -m ghdl -p 'ghdl --latches ../vhdl/vahid6i.vhd ../vhdl/uc.vhd ../vhdl/I.vhd ../vhdl/po.vhd ../vhdl/memd.vhd ../vhdl/bc.vhd ../vhdl/pc.vhd ../vhdl/ir.vhd ../vhdl/muxf.vhd ../vhdl/regf.vhd ../vhdl/alu.vhd -e vahid6i; write_verilog vahid6i'

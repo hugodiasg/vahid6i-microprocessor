@@ -26,9 +26,9 @@ BEGIN
 				ELSIF (PC_ld='1') THEN
 					PC_count<=std_logic_vector(unsigned(PC_count)+("00000000" & unsigned(IR_inc)));		
 				END IF;
-				IF (PC_count>"0000000000001110") THEN	
-					PC_count<="0000000000000000";
-				END IF;
+				--IF (PC_count>"0000000000001110") THEN	
+					--PC_count<="0000000000000000";
+				--END IF;
 		END IF;
 
 	END PROCESS;

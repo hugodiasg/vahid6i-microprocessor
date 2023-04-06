@@ -9,14 +9,14 @@ ENTITY regf IS
 	PORT (
 		W_addr,Rp_addr,Rq_addr	: IN STD_LOGIC_VECTOR(3 downto 0);
 		W_wr,Rp_rd,Rq_rd,clock	: IN STD_LOGIC;
-		W_data						: IN STD_LOGIC_VECTOR(15 downto 0);
-		Rq_data,Rp_data			: OUT STD_LOGIC_VECTOR(15 downto 0)
+		W_data						: IN STD_LOGIC_VECTOR(7 downto 0);
+		Rq_data,Rp_data			: OUT STD_LOGIC_VECTOR(7 downto 0)
 	); 
 --	zero				:	OUT STD_LOGIC);
 END regf;
 
 ARCHITECTURE arch OF regf IS 
- TYPE RAM IS ARRAY(natural RANGE <>) OF std_logic_vector (15 DOWNTO 0);
+ TYPE RAM IS ARRAY(natural RANGE <>) OF std_logic_vector (7 DOWNTO 0);
 	SIGNAL rf: RAM(0 to 20);
 BEGIN
 	PROCESS(W_addr,Rp_addr,Rq_addr,W_wr,Rp_rd,Rq_rd,clock,W_data)

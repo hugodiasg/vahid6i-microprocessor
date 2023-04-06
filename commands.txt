@@ -1,0 +1,6 @@
+Carregar constante- 0011 r3r2r1r0 c7c6c5c4 c3c2c1c0
+Subtrair- 0100 ra3ra2ra1ra0 rb3rb2rb1rb0 rc3rc2rc1rc
+Saltar se zero- 0101 ra3ra2ra1ra0 o7o6o5o4 o3o2o1o0
+Carregar- 0000 r3r2r1r0 d7d6d5d4 d3d2d1d0
+Armazenar- 0001 r3r2r1r0 d7d6d5d4 d3d2d1d0
+Somar-0010 ra3ra2ra1ra0 rb3rb2rb1r0 rc3rc2rc1rc0
