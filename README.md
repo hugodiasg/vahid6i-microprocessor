@@ -41,7 +41,7 @@ Here are the information about the RTL Diagram, layout and maximum clock frequen
 
 #### RTL Diagram
 
-<img src="https://user-images.githubusercontent.com/80465879/230414153-51d1facc-adf8-4e9f-935b-2fd79852b486.png" width="800h" >
+<img src="https://user-images.githubusercontent.com/80465879/230418664-d0ec618e-008e-4fb3-bdec-0cbdd9868bb4.png)" width="800h" >
 
 #### Layout
 
