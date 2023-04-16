@@ -54,3 +54,8 @@ Name | Value
 Number of pins | 50
 Area | 0.038 mm² (189.680 x 200.400 μm)
 Max. freq. |  Hz
+
+### Next Steps...
+- Run the STA (Static Timing Analysis) with OpenSTA to find the maximum clock frequency;
+- Add shift registers to reduce number of pins;
+- And send the design to Tiny Tapeout.
