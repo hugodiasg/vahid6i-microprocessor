@@ -33,7 +33,7 @@ Name | Value
 --------- | ------:
 Number of pins | 80
 Area | 0.065 mm² (249.555 x 260.275 μm)
-Max. freq. |  Hz
+Max. freq. | 66.7 MHz
 
 ### 8 Bits Microprocessor
 
@@ -53,7 +53,7 @@ Name | Value
 --------- | ------:
 Number of pins | 50
 Area | 0.038 mm² (189.680 x 200.400 μm)
-Max. freq. |  Hz
+Max. freq. | 66.7 MHz
 
 ### Next Steps...
 - Add shift registers to reduce number of pins;
