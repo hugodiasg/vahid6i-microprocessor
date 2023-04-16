@@ -6,7 +6,7 @@ string FIXED_BBOX 0 0 0 0
 string LEFclass BLOCK
 string LEFview TRUE
 string GDS_END 3720084
-string GDS_FILE /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/results/signoff/vahid6i.magic.gds
+string GDS_FILE /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/results/signoff/vahid6i.magic.gds
 string GDS_START 734380
 << end >>
 

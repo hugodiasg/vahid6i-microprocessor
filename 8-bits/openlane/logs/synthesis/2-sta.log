@@ -1,15 +1,15 @@
 OpenROAD 6840b7481d49c83870f79646cf979e66f22f6833 
 This program is licensed under the BSD-3 license. See the LICENSE file for details.
 Components of this program may be licensed under more restrictive licenses which must be honored.
-[INFO ODB-0222] Reading LEF file: /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/merged.nom.lef
+[INFO ODB-0222] Reading LEF file: /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/merged.nom.lef
 [WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
 The LEF parser will ignore this statement.
-To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/merged.nom.lef at line 930.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/merged.nom.lef at line 930.
 
 [INFO ODB-0223]     Created 13 technology layers
 [INFO ODB-0224]     Created 25 technology vias
 [INFO ODB-0225]     Created 441 library cells
-[INFO ODB-0226] Finished LEF file:  /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/merged.nom.lef
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/merged.nom.lef
 Reading netlist...
 [WARNING STA-0337] port 'clk_48' not found.
 [INFO]: Setting output delay to: 3.0
@@ -1603,4 +1603,4 @@ area_report
 Design area 12765 u^2 100% utilization.
 area_report_end
 [WARNING] Did not save OpenROAD database!
-Writing SDF to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/results/synthesis/vahid6i.sdf...
+Writing SDF to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/results/synthesis/vahid6i.sdf...

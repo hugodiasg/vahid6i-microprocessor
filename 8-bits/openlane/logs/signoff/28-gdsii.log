@@ -41,7 +41,7 @@ LEF read, Line 253 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ig
 LEF read, Line 290 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
 LEF read, Line 291 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
 LEF read: Processed 797 lines.
-Reading DEF data from file /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/results/routing/vahid6i.def.
+Reading DEF data from file /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/results/routing/vahid6i.def.
 This action cannot be undone.
   Processed 4 vias total.
   Processed 4034 subcell instances total.

@@ -42,7 +42,7 @@ ARCHITECTURE arch OF uc IS
 				--Sinais para o I
 				I_rd	: OUT STD_LOGIC;
 				-- Leds para ver os estados
-				--leds	: OUT STD_LOGIC_VECTOR (7 downto 0);
+				leds	: OUT STD_LOGIC_VECTOR (3 downto 0);
 				--Sinais de controle
 				--Memd
 				D_addr		:	OUT STD_LOGIC_VECTOR(7 downto 0); 
@@ -87,10 +87,10 @@ ARCHITECTURE arch OF uc IS
 	--SIGNAL IR_inc							: STD_LOGIC_VECTOR (7 downto 0):=IR_data_out(7 DOWNTO 0);
 BEGIN
 	
-	bc_0: bc PORT MAP(clock,reset,PC_clr,PC_ld,PC_inc,IR_data_out,IR_ld,I_rd,D_addr,D_rd,D_wr,RF_s1,RF_s0,RF_W_data,RF_W_addr,RF_Rp_addr,RF_Rq_addr,RF_W_wr,RF_Rp_rd,RF_Rq_rd,alu_s0,alu_s1,RF_Rp_zero);
+	bc_0: bc PORT MAP(clock,reset,PC_clr,PC_ld,PC_inc,IR_data_out,IR_ld,I_rd,leds,D_addr,D_rd,D_wr,RF_s1,RF_s0,RF_W_data,RF_W_addr,RF_Rp_addr,RF_Rq_addr,RF_W_wr,RF_Rp_rd,RF_Rq_rd,alu_s0,alu_s1,RF_Rp_zero);
 	pc_0: pc PORT MAP(clock, PC_inc, PC_clr, PC_ld,IR_data_out(7 DOWNTO 0),I_addr);
 	ir_0: ir PORT MAP(clock,I_data,IR_ld,IR_data_out);
 	
-	leds<=IR_data_out(15 downto 12);
+	--leds<=IR_data_out(15 downto 12);
 END arch;
 

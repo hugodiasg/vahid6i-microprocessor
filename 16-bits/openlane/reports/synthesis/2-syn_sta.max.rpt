@@ -12,13 +12,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock clk_48 (rise edge)
                           0.00    0.00   clock network delay (ideal)
                           3.00    3.00 ^ input external delay
-                  2.82    2.02    5.02 ^ clock (in)
-   335    0.63                           clock (net)
-                  2.82    0.00    5.02 ^ _3558_/A (sky130_fd_sc_hd__buf_2)
-                  0.19    0.53    5.55 ^ _3558_/X (sky130_fd_sc_hd__buf_2)
+                  2.88    2.07    5.07 ^ clock (in)
+   343    0.64                           clock (net)
+                  2.88    0.00    5.07 ^ _3702_/A (sky130_fd_sc_hd__buf_2)
+                  0.19    0.53    5.60 ^ _3702_/X (sky130_fd_sc_hd__buf_2)
      1    0.03                           led_clock (net)
-                  0.19    0.00    5.55 ^ led_clock (out)
-                                  5.55   data arrival time
+                  0.19    0.00    5.60 ^ led_clock (out)
+                                  5.60   data arrival time
 
                   0.00   15.00   15.00   clock clk_48 (rise edge)
                           0.00   15.00   clock network delay (ideal)
@@ -28,8 +28,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  11.75   data required time
 -----------------------------------------------------------------------------
                                  11.75   data required time
-                                 -5.55   data arrival time
+                                 -5.60   data arrival time
 -----------------------------------------------------------------------------
-                                  6.20   slack (MET)
+                                  6.15   slack (MET)
 
 

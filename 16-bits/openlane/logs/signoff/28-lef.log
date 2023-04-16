@@ -45,7 +45,7 @@ Cell vahid6i couldn't be read
 No such file or directory
 Creating new cell
 [INFO]: Writing abstract LEF
-Generating LEF output /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/signoff/vahid6i.lef for cell vahid6i:
+Generating LEF output /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/results/signoff/vahid6i.lef for cell vahid6i:
 Diagnostic:  Write LEF header for cell vahid6i
 Diagnostic:  Writing LEF output for cell vahid6i
 Diagnostic:  Scale value is 0.005000

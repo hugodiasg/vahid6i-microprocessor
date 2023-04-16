@@ -1,17 +1,17 @@
 CVC: Circuit Validation Check  Version 1.1.4
-CVC: Log output to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/reports/signoff/vahid6i.rpt
-CVC: Error output to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/reports/signoff/vahid6i.rpt.error.gz
-CVC: Debug output to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/reports/signoff/vahid6i.rpt.debug.gz
-CVC: Start: Thu Apr  6 14:50:27 2023
+CVC: Log output to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/reports/signoff/vahid6i.rpt
+CVC: Error output to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/reports/signoff/vahid6i.rpt.error.gz
+CVC: Debug output to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/reports/signoff/vahid6i.rpt.debug.gz
+CVC: Start: Sun Apr 16 13:49:55 2023
 
 Using the following parameters for CVC (Circuit Validation Check) from /home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/cvc/cvcrc
 CVC_TOP = 'vahid6i'
-CVC_NETLIST = '/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/tmp/signoff/vahid6i.cdl'
+CVC_NETLIST = '/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/tmp/signoff/vahid6i.cdl'
 CVC_MODE = 'vahid6i'
 CVC_MODEL_FILE = '/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/cvc/models'
-CVC_POWER_FILE = '/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/tmp/signoff/vahid6i.power'
+CVC_POWER_FILE = '/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/tmp/signoff/vahid6i.power'
 CVC_FUSE_FILE = ''
-CVC_REPORT_FILE = '/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/reports/signoff/vahid6i.rpt'
+CVC_REPORT_FILE = '/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/reports/signoff/vahid6i.rpt'
 CVC_REPORT_TITLE = 'CVC $CVC_TOP'
 CVC_CIRCUIT_ERROR_LIMIT = '100'
 CVC_SEARCH_LIMIT = '100'
@@ -45,10 +45,10 @@ End of parameters
 
 CVC: Reading device model settings...
 CVC: Reading power settings...
-CVC: Parsing netlist /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/tmp/signoff/vahid6i.cdl
+CVC: Parsing netlist /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/tmp/signoff/vahid6i.cdl
 
-Cdl fixed data size 119548
-Usage CDL: Time: 0  Memory: 10424  I/O: 8  Swap: 0
+Cdl fixed data size 122134
+Usage CDL: Time: 0  Memory: 10512  I/O: 4280  Swap: 0
 CVC: Counting and linking...
 Fatal error:could not find subcircuit: XFILLER_35_461(sky130_ef_sc_hd__decap_12) in vahid6i
 

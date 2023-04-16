@@ -83,7 +83,7 @@ library (vahid6i) {
     }
     pin("D_wr") {
       direction : output;
-      capacitance : 0.0010;
+      capacitance : 0.0011;
     }
     pin("I_rd") {
       direction : output;
@@ -91,32 +91,32 @@ library (vahid6i) {
     }
     pin("clock") {
       direction : input;
-      capacitance : 0.0032;
+      capacitance : 0.0033;
     }
     pin("led_clock") {
       direction : output;
-      capacitance : 0.0009;
+      capacitance : 0.0011;
       timing() {
         related_pin : "clock";
         timing_sense : positive_unate;
         timing_type : combinational;
 	cell_rise(template_1) {
-          values("2.31301,2.32213,2.34715,2.41379,2.61444,3.32228,5.87623");
+          values("2.28101,2.29013,2.31515,2.38178,2.58244,3.29031,5.84423");
 	}
 	rise_transition(template_1) {
-          values("0.03919,0.04586,0.06724,0.13823,0.40711,1.40261,4.99362");
+          values("0.03920,0.04586,0.06724,0.13822,0.40710,1.40279,4.99375");
 	}
 	cell_fall(template_2) {
-          values("2.03581,2.04364,2.06582,2.12200,2.27769,2.81393,4.74043");
+          values("2.15777,2.16559,2.18778,2.24396,2.39964,2.93588,4.86242");
 	}
 	fall_transition(template_2) {
-          values("0.03435,0.03976,0.05685,0.10957,0.30110,1.02075,3.64170");
+          values("0.03435,0.03976,0.05685,0.10957,0.30110,1.02075,3.64173");
 	}
       }
     }
     pin("reset") {
       direction : input;
-      capacitance : 0.0032;
+      capacitance : 0.0030;
     }
     pin("VPWR") {
       direction : input;
@@ -132,11 +132,11 @@ library (vahid6i) {
       capacitance : 0.0000;
     pin("D_R_data[15]") {
       direction : input;
-      capacitance : 0.0032;
+      capacitance : 0.0026;
     }
     pin("D_R_data[14]") {
       direction : input;
-      capacitance : 0.0029;
+      capacitance : 0.0028;
     }
     pin("D_R_data[13]") {
       direction : input;
@@ -148,11 +148,11 @@ library (vahid6i) {
     }
     pin("D_R_data[11]") {
       direction : input;
-      capacitance : 0.0028;
+      capacitance : 0.0021;
     }
     pin("D_R_data[10]") {
       direction : input;
-      capacitance : 0.0029;
+      capacitance : 0.0026;
     }
     pin("D_R_data[9]") {
       direction : input;
@@ -160,39 +160,39 @@ library (vahid6i) {
     }
     pin("D_R_data[8]") {
       direction : input;
-      capacitance : 0.0036;
+      capacitance : 0.0031;
     }
     pin("D_R_data[7]") {
       direction : input;
-      capacitance : 0.0042;
+      capacitance : 0.0037;
     }
     pin("D_R_data[6]") {
       direction : input;
-      capacitance : 0.0022;
+      capacitance : 0.0021;
     }
     pin("D_R_data[5]") {
       direction : input;
-      capacitance : 0.0026;
+      capacitance : 0.0027;
     }
     pin("D_R_data[4]") {
       direction : input;
-      capacitance : 0.0022;
+      capacitance : 0.0029;
     }
     pin("D_R_data[3]") {
       direction : input;
-      capacitance : 0.0032;
+      capacitance : 0.0033;
     }
     pin("D_R_data[2]") {
       direction : input;
-      capacitance : 0.0029;
+      capacitance : 0.0034;
     }
     pin("D_R_data[1]") {
       direction : input;
-      capacitance : 0.0032;
+      capacitance : 0.0025;
     }
     pin("D_R_data[0]") {
       direction : input;
-      capacitance : 0.0036;
+      capacitance : 0.0026;
     }
     }
     bus("D_W_data") {
@@ -205,39 +205,39 @@ library (vahid6i) {
     }
     pin("D_W_data[14]") {
       direction : output;
-      capacitance : 0.0006;
+      capacitance : 0.0007;
     }
     pin("D_W_data[13]") {
       direction : output;
-      capacitance : 0.0007;
+      capacitance : 0.0010;
     }
     pin("D_W_data[12]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0012;
     }
     pin("D_W_data[11]") {
       direction : output;
-      capacitance : 0.0007;
+      capacitance : 0.0009;
     }
     pin("D_W_data[10]") {
       direction : output;
-      capacitance : 0.0006;
+      capacitance : 0.0007;
     }
     pin("D_W_data[9]") {
       direction : output;
-      capacitance : 0.0023;
+      capacitance : 0.0025;
     }
     pin("D_W_data[8]") {
       direction : output;
-      capacitance : 0.0014;
+      capacitance : 0.0011;
     }
     pin("D_W_data[7]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0007;
     }
     pin("D_W_data[6]") {
       direction : output;
-      capacitance : 0.0006;
+      capacitance : 0.0005;
     }
     pin("D_W_data[5]") {
       direction : output;
@@ -245,19 +245,19 @@ library (vahid6i) {
     }
     pin("D_W_data[4]") {
       direction : output;
-      capacitance : 0.0007;
+      capacitance : 0.0013;
     }
     pin("D_W_data[3]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0009;
     }
     pin("D_W_data[2]") {
       direction : output;
-      capacitance : 0.0007;
+      capacitance : 0.0006;
     }
     pin("D_W_data[1]") {
       direction : output;
-      capacitance : 0.0006;
+      capacitance : 0.0005;
     }
     pin("D_W_data[0]") {
       direction : output;
@@ -270,15 +270,15 @@ library (vahid6i) {
       capacitance : 0.0000;
     pin("D_addr[7]") {
       direction : output;
-      capacitance : 0.0010;
+      capacitance : 0.0011;
     }
     pin("D_addr[6]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0007;
     }
     pin("D_addr[5]") {
       direction : output;
-      capacitance : 0.0011;
+      capacitance : 0.0010;
     }
     pin("D_addr[4]") {
       direction : output;
@@ -294,11 +294,11 @@ library (vahid6i) {
     }
     pin("D_addr[1]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0010;
     }
     pin("D_addr[0]") {
       direction : output;
-      capacitance : 0.0010;
+      capacitance : 0.0011;
     }
     }
     bus("I_addr") {
@@ -307,15 +307,15 @@ library (vahid6i) {
       capacitance : 0.0000;
     pin("I_addr[15]") {
       direction : output;
-      capacitance : 0.0007;
+      capacitance : 0.0006;
     }
     pin("I_addr[14]") {
       direction : output;
-      capacitance : 0.0006;
+      capacitance : 0.0008;
     }
     pin("I_addr[13]") {
       direction : output;
-      capacitance : 0.0011;
+      capacitance : 0.0012;
     }
     pin("I_addr[12]") {
       direction : output;
@@ -323,7 +323,7 @@ library (vahid6i) {
     }
     pin("I_addr[11]") {
       direction : output;
-      capacitance : 0.0015;
+      capacitance : 0.0014;
     }
     pin("I_addr[10]") {
       direction : output;
@@ -331,11 +331,11 @@ library (vahid6i) {
     }
     pin("I_addr[9]") {
       direction : output;
-      capacitance : 0.0010;
+      capacitance : 0.0011;
     }
     pin("I_addr[8]") {
       direction : output;
-      capacitance : 0.0011;
+      capacitance : 0.0012;
     }
     pin("I_addr[7]") {
       direction : output;
@@ -351,11 +351,11 @@ library (vahid6i) {
     }
     pin("I_addr[4]") {
       direction : output;
-      capacitance : 0.0011;
+      capacitance : 0.0010;
     }
     pin("I_addr[3]") {
       direction : output;
-      capacitance : 0.0009;
+      capacitance : 0.0012;
     }
     pin("I_addr[2]") {
       direction : output;
@@ -367,7 +367,7 @@ library (vahid6i) {
     }
     pin("I_addr[0]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0007;
     }
     }
     bus("I_data") {
@@ -380,11 +380,11 @@ library (vahid6i) {
     }
     pin("I_data[14]") {
       direction : input;
-      capacitance : 0.0030;
+      capacitance : 0.0023;
     }
     pin("I_data[13]") {
       direction : input;
-      capacitance : 0.0039;
+      capacitance : 0.0037;
     }
     pin("I_data[12]") {
       direction : input;
@@ -396,11 +396,11 @@ library (vahid6i) {
     }
     pin("I_data[10]") {
       direction : input;
-      capacitance : 0.0029;
+      capacitance : 0.0028;
     }
     pin("I_data[9]") {
       direction : input;
-      capacitance : 0.0032;
+      capacitance : 0.0028;
     }
     pin("I_data[8]") {
       direction : input;
@@ -408,7 +408,7 @@ library (vahid6i) {
     }
     pin("I_data[7]") {
       direction : input;
-      capacitance : 0.0027;
+      capacitance : 0.0028;
     }
     pin("I_data[6]") {
       direction : input;
@@ -420,7 +420,7 @@ library (vahid6i) {
     }
     pin("I_data[4]") {
       direction : input;
-      capacitance : 0.0030;
+      capacitance : 0.0029;
     }
     pin("I_data[3]") {
       direction : input;
@@ -428,15 +428,15 @@ library (vahid6i) {
     }
     pin("I_data[2]") {
       direction : input;
-      capacitance : 0.0023;
+      capacitance : 0.0029;
     }
     pin("I_data[1]") {
       direction : input;
-      capacitance : 0.0028;
+      capacitance : 0.0026;
     }
     pin("I_data[0]") {
       direction : input;
-      capacitance : 0.0035;
+      capacitance : 0.0033;
     }
     }
     bus("leds") {
@@ -445,7 +445,7 @@ library (vahid6i) {
       capacitance : 0.0000;
     pin("leds[3]") {
       direction : output;
-      capacitance : 0.0008;
+      capacitance : 0.0007;
     }
     pin("leds[2]") {
       direction : output;
@@ -457,7 +457,7 @@ library (vahid6i) {
     }
     pin("leds[0]") {
       direction : output;
-      capacitance : 0.0016;
+      capacitance : 0.0010;
     }
     }
   }

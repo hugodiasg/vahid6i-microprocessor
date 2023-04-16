@@ -136,6 +136,6 @@ Loading DRC CIF style.
 No errors found.
 [INFO]: COUNT: 0
 [INFO]: Should be divided by 3 or 4
-[INFO]: DRC Checking DONE (/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/reports/signoff/drc.rpt)
-[INFO]: Saving mag view with DRC errors (/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/results/signoff/vahid6i.drc.mag)
+[INFO]: DRC Checking DONE (/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/reports/signoff/drc.rpt)
+[INFO]: Saving mag view with DRC errors (/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/results/signoff/vahid6i.drc.mag)
 [INFO]: Saved

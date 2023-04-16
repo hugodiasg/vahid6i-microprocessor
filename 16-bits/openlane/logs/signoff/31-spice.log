@@ -41,146 +41,123 @@ LEF read, Line 253 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ig
 LEF read, Line 290 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
 LEF read, Line 291 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
 LEF read: Processed 797 lines.
-Reading DEF data from file /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/vahid6i.def.
+Reading DEF data from file /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/results/routing/vahid6i.def.
 This action cannot be undone.
   Processed 4 vias total.
-  Processed 6944 subcell instances total.
+  Processed 7112 subcell instances total.
   Processed 84 pins total.
   Processed 2 special nets total.
-  Processed 2218 nets total.
-DEF read: Processed 42235 lines.
-Moving label "D_W_data[10]" from metal2 to via2 in cell vahid6i.
-Moving label "D_W_data[11]" from metal2 to via2 in cell vahid6i.
+  Processed 2304 nets total.
+DEF read: Processed 43513 lines.
 Moving label "D_W_data[1]" from metal2 to via2 in cell vahid6i.
-Moving label "D_addr[4]" from metal2 to via2 in cell vahid6i.
-Moving label "I_data[2]" from metal2 to via2 in cell vahid6i.
-Moving label "_0008_" from metal1 to via1 in cell vahid6i.
-Moving label "_0012_" from metal1 to via1 in cell vahid6i.
-Moving label "_0013_" from metal1 to via1 in cell vahid6i.
-Moving label "_0016_" from metal1 to via1 in cell vahid6i.
-Moving label "_0017_" from metal1 to via1 in cell vahid6i.
-Moving label "_0039_" from metal1 to via1 in cell vahid6i.
+Moving label "I_data[1]" from metal2 to via2 in cell vahid6i.
+Moving label "_0009_" from metal1 to via1 in cell vahid6i.
+Moving label "_0019_" from metal1 to via1 in cell vahid6i.
+Moving label "_0028_" from metal1 to via1 in cell vahid6i.
+Moving label "_0029_" from metal1 to via1 in cell vahid6i.
+Moving label "_0032_" from metal1 to via1 in cell vahid6i.
+Moving label "_0040_" from metal1 to via1 in cell vahid6i.
+Moving label "_0044_" from metal1 to via1 in cell vahid6i.
+Moving label "_0055_" from metal1 to via1 in cell vahid6i.
 Moving label "_0059_" from metal1 to via1 in cell vahid6i.
-Moving label "_0065_" from metal1 to via1 in cell vahid6i.
 Moving label "_0068_" from metal1 to via1 in cell vahid6i.
-Moving label "_0073_" from metal1 to via1 in cell vahid6i.
-Moving label "_0078_" from metal1 to via1 in cell vahid6i.
-Moving label "_0080_" from metal1 to via1 in cell vahid6i.
-Moving label "_0081_" from metal1 to via1 in cell vahid6i.
-Moving label "_0087_" from metal1 to via1 in cell vahid6i.
-Moving label "_0092_" from metal1 to via1 in cell vahid6i.
-Moving label "_0094_" from metal1 to via1 in cell vahid6i.
-Moving label "_0106_" from metal1 to via1 in cell vahid6i.
-Moving label "_0113_" from metal1 to via1 in cell vahid6i.
+Moving label "_0071_" from metal1 to via1 in cell vahid6i.
+Moving label "_0072_" from metal1 to via1 in cell vahid6i.
+Moving label "_0076_" from metal1 to via1 in cell vahid6i.
+Moving label "_0095_" from metal1 to via1 in cell vahid6i.
+Moving label "_0114_" from metal1 to viali in cell vahid6i.
+Moving label "_0115_" from metal1 to via1 in cell vahid6i.
+Moving label "_0117_" from metal1 to via1 in cell vahid6i.
 Moving label "_0125_" from metal1 to via1 in cell vahid6i.
-Moving label "_0126_" from metal1 to viali in cell vahid6i.
-Moving label "_0135_" from metal1 to via1 in cell vahid6i.
-Moving label "_0138_" from metal1 to via1 in cell vahid6i.
-Moving label "_0144_" from metal1 to via1 in cell vahid6i.
-Moving label "_0153_" from metal1 to via1 in cell vahid6i.
-Moving label "_0154_" from metal1 to via1 in cell vahid6i.
-Moving label "_0159_" from metal2 to via2 in cell vahid6i.
-Moving label "_0163_" from metal1 to via1 in cell vahid6i.
-Moving label "_0165_" from metal1 to via1 in cell vahid6i.
-Moving label "_0169_" from metal1 to via1 in cell vahid6i.
-Moving label "_0171_" from metal1 to via1 in cell vahid6i.
-Moving label "_0174_" from metal1 to via1 in cell vahid6i.
-Moving label "_0176_" from metal1 to via1 in cell vahid6i.
+Moving label "_0131_" from metal1 to viali in cell vahid6i.
+Moving label "_0132_" from metal1 to via1 in cell vahid6i.
+Moving label "_0136_" from metal1 to via1 in cell vahid6i.
+Moving label "_0139_" from metal1 to via1 in cell vahid6i.
+Moving label "_0170_" from metal1 to via1 in cell vahid6i.
+Moving label "_0172_" from metal1 to via1 in cell vahid6i.
 Moving label "_0179_" from metal1 to via1 in cell vahid6i.
-Moving label "_0182_" from metal1 to via1 in cell vahid6i.
+Moving label "_0184_" from metal1 to via1 in cell vahid6i.
+Moving label "_0185_" from metal1 to via1 in cell vahid6i.
 Moving label "_0186_" from metal1 to via1 in cell vahid6i.
-Moving label "_0189_" from metal1 to via1 in cell vahid6i.
-Moving label "_0198_" from metal1 to via1 in cell vahid6i.
-Moving label "_0205_" from metal1 to via1 in cell vahid6i.
+Moving label "_0187_" from metal1 to via1 in cell vahid6i.
+Moving label "_0215_" from metal1 to via1 in cell vahid6i.
 Moving label "_0217_" from metal1 to via1 in cell vahid6i.
-Moving label "_0221_" from metal1 to via1 in cell vahid6i.
-Moving label "_0226_" from metal1 to via1 in cell vahid6i.
-Moving label "_0238_" from metal1 to via1 in cell vahid6i.
+Moving label "_0228_" from metal1 to via1 in cell vahid6i.
+Moving label "_0235_" from metal1 to via1 in cell vahid6i.
+Moving label "_0242_" from metal1 to via1 in cell vahid6i.
+Moving label "_0245_" from metal1 to via1 in cell vahid6i.
+Moving label "_0256_" from metal1 to via1 in cell vahid6i.
+Moving label "_0262_" from metal1 to via1 in cell vahid6i.
 Moving label "_0269_" from metal1 to via1 in cell vahid6i.
-Moving label "_0272_" from metal1 to via1 in cell vahid6i.
-Moving label "_0284_" from metal1 to via1 in cell vahid6i.
-Moving label "_0289_" from metal1 to via1 in cell vahid6i.
+Moving label "_0271_" from metal1 to via1 in cell vahid6i.
+Moving label "_0277_" from metal1 to via1 in cell vahid6i.
+Moving label "_0278_" from metal1 to via1 in cell vahid6i.
+Moving label "_0288_" from metal1 to via1 in cell vahid6i.
 Moving label "_0290_" from metal1 to via1 in cell vahid6i.
-Moving label "_0311_" from metal1 to via1 in cell vahid6i.
-Moving label "_0318_" from metal1 to via1 in cell vahid6i.
-Moving label "_0320_" from metal1 to via1 in cell vahid6i.
-Moving label "_0329_" from metal1 to via1 in cell vahid6i.
-Moving label "_0330_" from metal1 to via1 in cell vahid6i.
-Moving label "_0331_" from metal1 to via1 in cell vahid6i.
-Moving label "_0395_" from metal2 to via2 in cell vahid6i.
-Moving label "_0405_" from metal2 to via2 in cell vahid6i.
-Moving label "_0425_" from metal1 to viali in cell vahid6i.
-Moving label "_0432_" from metal2 to via1 in cell vahid6i.
-Moving label "_0570_" from metal2 to via2 in cell vahid6i.
-Moving label "_0581_" from metal2 to via2 in cell vahid6i.
-Moving label "_0694_" from metal2 to via2 in cell vahid6i.
-Moving label "_0706_" from metal1 to viali in cell vahid6i.
-Moving label "_0719_" from metal2 to via2 in cell vahid6i.
-Moving label "_0734_" from metal2 to via2 in cell vahid6i.
-Moving label "_0751_" from metal1 to viali in cell vahid6i.
-Moving label "_0777_" from metal1 to viali in cell vahid6i.
-Moving label "_0966_" from metal1 to via1 in cell vahid6i.
-Moving label "_1000_" from metal1 to via1 in cell vahid6i.
-Moving label "_1018_" from metal1 to viali in cell vahid6i.
-Moving label "_1135_" from metal2 to via2 in cell vahid6i.
-Moving label "_1162_" from metal1 to via1 in cell vahid6i.
-Moving label "_1243_" from metal2 to via1 in cell vahid6i.
-Moving label "_1258_" from metal1 to viali in cell vahid6i.
-Moving label "_1312_" from metal2 to via1 in cell vahid6i.
-Moving label "_1315_" from metal1 to viali in cell vahid6i.
-Moving label "_1328_" from metal1 to viali in cell vahid6i.
-Moving label "_1461_" from metal2 to via2 in cell vahid6i.
-Moving label "_1466_" from metal2 to via2 in cell vahid6i.
-Moving label "_1498_" from metal2 to via2 in cell vahid6i.
-Moving label "_1520_" from metal2 to via1 in cell vahid6i.
-Moving label "net111" from metal1 to viali in cell vahid6i.
-Moving label "net115" from metal2 to via2 in cell vahid6i.
-Moving label "net12" from metal3 to via3 in cell vahid6i.
-Moving label "net35" from metal2 to via1 in cell vahid6i.
-Moving label "net5" from metal2 to via2 in cell vahid6i.
-Moving label "net62" from metal2 to via2 in cell vahid6i.
-Moving label "net83" from metal2 to via2 in cell vahid6i.
-Moving label "net86" from metal1 to via1 in cell vahid6i.
-Moving label "net9" from metal2 to via2 in cell vahid6i.
-Moving label "net90" from metal2 to via2 in cell vahid6i.
-Moving label "net95" from metal2 to via2 in cell vahid6i.
-Moving label "net96" from metal2 to via2 in cell vahid6i.
-Moving label "po_0._1_\[9\]" from metal2 to via1 in cell vahid6i.
+Moving label "_0298_" from metal1 to via1 in cell vahid6i.
+Moving label "_0310_" from metal1 to via1 in cell vahid6i.
+Moving label "_0317_" from metal1 to via1 in cell vahid6i.
+Moving label "_0321_" from metal1 to via1 in cell vahid6i.
+Moving label "_0328_" from metal1 to via1 in cell vahid6i.
+Moving label "_0333_" from metal1 to via1 in cell vahid6i.
+Moving label "_0339_" from metal1 to via1 in cell vahid6i.
+Moving label "_0362_" from metal2 to via1 in cell vahid6i.
+Moving label "_0374_" from metal2 to via2 in cell vahid6i.
+Moving label "_0462_" from metal2 to via2 in cell vahid6i.
+Moving label "_0475_" from metal2 to via2 in cell vahid6i.
+Moving label "_0476_" from metal2 to via2 in cell vahid6i.
+Moving label "_0552_" from metal2 to via2 in cell vahid6i.
+Moving label "_0584_" from metal2 to via2 in cell vahid6i.
+Moving label "_0600_" from metal2 to via2 in cell vahid6i.
+Moving label "_0626_" from metal1 to via1 in cell vahid6i.
+Moving label "_0660_" from metal2 to via1 in cell vahid6i.
+Moving label "_0780_" from metal1 to via1 in cell vahid6i.
+Moving label "_0788_" from metal1 to via1 in cell vahid6i.
+Moving label "_0851_" from metal1 to viali in cell vahid6i.
+Moving label "_0967_" from metal1 to viali in cell vahid6i.
+Moving label "_1181_" from metal2 to via2 in cell vahid6i.
+Moving label "_1197_" from metal1 to via1 in cell vahid6i.
+Moving label "_1211_" from metal2 to via2 in cell vahid6i.
+Moving label "_1230_" from metal1 to via1 in cell vahid6i.
+Moving label "_1237_" from metal2 to via2 in cell vahid6i.
+Moving label "_1263_" from metal1 to via1 in cell vahid6i.
+Moving label "_1290_" from metal2 to via1 in cell vahid6i.
+Moving label "_1296_" from metal2 to via2 in cell vahid6i.
+Moving label "_1378_" from metal2 to via2 in cell vahid6i.
+Moving label "_1416_" from metal2 to via2 in cell vahid6i.
+Moving label "_1436_" from metal1 to via1 in cell vahid6i.
+Moving label "_1531_" from metal1 to via1 in cell vahid6i.
+Moving label "_1562_" from metal2 to via2 in cell vahid6i.
+Moving label "_1596_" from metal2 to via2 in cell vahid6i.
+Moving label "_1600_" from metal2 to via2 in cell vahid6i.
+Moving label "net2" from metal2 to via2 in cell vahid6i.
+Moving label "net29" from metal3 to via3 in cell vahid6i.
+Moving label "net32" from metal3 to via3 in cell vahid6i.
+Moving label "net38" from metal2 to via2 in cell vahid6i.
+Moving label "net46" from metal2 to via2 in cell vahid6i.
+Moving label "net6" from metal2 to via2 in cell vahid6i.
+Moving label "po_0._1_\[5\]" from metal1 to via1 in cell vahid6i.
 Moving label "po_0.alu_0._11_\[1\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.alu_0._11_\[2\]" from metal1 to viali in cell vahid6i.
-Moving label "po_0.alu_0._11_\[4\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.muxf_0.rf_w_data\[0\]" from metal2 to via1 in cell vahid6i.
-Moving label "po_0.regf_0._3_\[1\]" from metal2 to via2 in cell vahid6i.
-Moving label "po_0.regf_0._3_\[3\]" from metal2 to via2 in cell vahid6i.
-Moving label "po_0.regf_0._3_\[7\]" from metal2 to via2 in cell vahid6i.
-Moving label "po_0.regf_0._5_\[6\]" from metal2 to via2 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[0\]\[5\]" from metal2 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[10\]\[0\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0._5_\[9\]" from metal2 to via2 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[10\]\[11\]" from metal1 to via1 in cell vahid6i.
 Moving label "po_0.regf_0.rf\[10\]\[15\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[10\]\[1\]" from metal1 to via1 in cell vahid6i.
 Moving label "po_0.regf_0.rf\[10\]\[2\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[10\]\[5\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[14\]\[10\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[14\]\[11\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[14\]\[12\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[14\]\[13\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[14\]\[0\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[14\]\[13\]" from metal2 to via1 in cell vahid6i.
 Moving label "po_0.regf_0.rf\[14\]\[14\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[14\]\[15\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[14\]\[7\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[14\]\[8\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[14\]\[9\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[15\]\[15\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[2\]\[11\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[2\]\[2\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[14\]\[1\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[14\]\[2\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[14\]\[4\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[15\]\[5\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[2\]\[13\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[2\]\[1\]" from metal1 to via1 in cell vahid6i.
 Moving label "po_0.regf_0.rf\[2\]\[3\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[2\]\[5\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[2\]\[4\]" from metal1 to via1 in cell vahid6i.
 Moving label "po_0.regf_0.rf\[2\]\[9\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[5\]\[2\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[6\]\[0\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[6\]\[10\]" from metal1 to via1 in cell vahid6i.
-Moving label "po_0.regf_0.rf\[6\]\[14\]" from metal1 to via1 in cell vahid6i.
 Moving label "po_0.regf_0.rf\[6\]\[15\]" from metal1 to via1 in cell vahid6i.
-Moving label "uc_0._01_" from metal1 to viali in cell vahid6i.
+Moving label "po_0.regf_0.rf\[6\]\[3\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[6\]\[5\]" from metal1 to via1 in cell vahid6i.
+Moving label "po_0.regf_0.rf\[6\]\[6\]" from metal1 to via1 in cell vahid6i.
 Processing vahid6i
 Extracting sky130_fd_sc_hd__clkbuf_4 into sky130_fd_sc_hd__clkbuf_4.ext:
 Extracting sky130_fd_sc_hd__buf_2 into sky130_fd_sc_hd__buf_2.ext:
@@ -189,116 +166,119 @@ Extracting sky130_fd_sc_hd__decap_3 into sky130_fd_sc_hd__decap_3.ext:
 Extracting sky130_fd_sc_hd__fill_2 into sky130_fd_sc_hd__fill_2.ext:
 Extracting sky130_fd_sc_hd__diode_2 into sky130_fd_sc_hd__diode_2.ext:
 Extracting sky130_ef_sc_hd__decap_12 into sky130_ef_sc_hd__decap_12.ext:
-Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
-Extracting sky130_fd_sc_hd__decap_8 into sky130_fd_sc_hd__decap_8.ext:
 Extracting sky130_fd_sc_hd__tapvpwrvgnd_1 into sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
+Extracting sky130_fd_sc_hd__decap_4 into sky130_fd_sc_hd__decap_4.ext:
+Extracting sky130_fd_sc_hd__decap_8 into sky130_fd_sc_hd__decap_8.ext:
 Extracting sky130_fd_sc_hd__dlymetal6s2s_1 into sky130_fd_sc_hd__dlymetal6s2s_1.ext:
 Extracting sky130_fd_sc_hd__decap_6 into sky130_fd_sc_hd__decap_6.ext:
-Extracting sky130_fd_sc_hd__clkbuf_1 into sky130_fd_sc_hd__clkbuf_1.ext:
-Extracting sky130_fd_sc_hd__mux2_1 into sky130_fd_sc_hd__mux2_1.ext:
-Extracting sky130_fd_sc_hd__decap_4 into sky130_fd_sc_hd__decap_4.ext:
 Extracting sky130_fd_sc_hd__dfxtp_1 into sky130_fd_sc_hd__dfxtp_1.ext:
+Extracting sky130_fd_sc_hd__mux2_1 into sky130_fd_sc_hd__mux2_1.ext:
+Extracting sky130_fd_sc_hd__clkbuf_1 into sky130_fd_sc_hd__clkbuf_1.ext:
 Extracting sky130_fd_sc_hd__mux4_1 into sky130_fd_sc_hd__mux4_1.ext:
 Extracting sky130_fd_sc_hd__buf_4 into sky130_fd_sc_hd__buf_4.ext:
-Extracting sky130_fd_sc_hd__a21o_1 into sky130_fd_sc_hd__a21o_1.ext:
 Extracting sky130_fd_sc_hd__a21bo_1 into sky130_fd_sc_hd__a21bo_1.ext:
+Extracting sky130_fd_sc_hd__o22a_1 into sky130_fd_sc_hd__o22a_1.ext:
 Extracting sky130_fd_sc_hd__dlxtp_1 into sky130_fd_sc_hd__dlxtp_1.ext:
 Extracting sky130_fd_sc_hd__and2b_1 into sky130_fd_sc_hd__and2b_1.ext:
-Extracting sky130_fd_sc_hd__o22a_1 into sky130_fd_sc_hd__o22a_1.ext:
-Extracting sky130_fd_sc_hd__and4_2 into sky130_fd_sc_hd__and4_2.ext:
-Extracting sky130_fd_sc_hd__and4bb_4 into sky130_fd_sc_hd__and4bb_4.ext:
-Extracting sky130_fd_sc_hd__and4b_4 into sky130_fd_sc_hd__and4b_4.ext:
-Extracting sky130_fd_sc_hd__and4bb_2 into sky130_fd_sc_hd__and4bb_2.ext:
-Extracting sky130_fd_sc_hd__or4bb_4 into sky130_fd_sc_hd__or4bb_4.ext:
-Extracting sky130_fd_sc_hd__and4b_2 into sky130_fd_sc_hd__and4b_2.ext:
-Extracting sky130_fd_sc_hd__or3b_4 into sky130_fd_sc_hd__or3b_4.ext:
-Extracting sky130_fd_sc_hd__nor2_1 into sky130_fd_sc_hd__nor2_1.ext:
-Extracting sky130_fd_sc_hd__a22o_2 into sky130_fd_sc_hd__a22o_2.ext:
-Extracting sky130_fd_sc_hd__dfxtp_2 into sky130_fd_sc_hd__dfxtp_2.ext:
-Extracting sky130_fd_sc_hd__nand3_1 into sky130_fd_sc_hd__nand3_1.ext:
-Extracting sky130_fd_sc_hd__nand4b_4 into sky130_fd_sc_hd__nand4b_4.ext:
-Extracting sky130_fd_sc_hd__o2bb2ai_4 into sky130_fd_sc_hd__o2bb2ai_4.ext:
-Extracting sky130_fd_sc_hd__or2_1 into sky130_fd_sc_hd__or2_1.ext:
-Extracting sky130_fd_sc_hd__inv_2 into sky130_fd_sc_hd__inv_2.ext:
-Extracting sky130_fd_sc_hd__a221o_4 into sky130_fd_sc_hd__a221o_4.ext:
-Extracting sky130_fd_sc_hd__and2_1 into sky130_fd_sc_hd__and2_1.ext:
-Extracting sky130_fd_sc_hd__o21a_1 into sky130_fd_sc_hd__o21a_1.ext:
 Extracting sky130_fd_sc_hd__a211o_1 into sky130_fd_sc_hd__a211o_1.ext:
+Extracting sky130_fd_sc_hd__a21o_1 into sky130_fd_sc_hd__a21o_1.ext:
+Extracting sky130_fd_sc_hd__and4b_4 into sky130_fd_sc_hd__and4b_4.ext:
+Extracting sky130_fd_sc_hd__or3b_4 into sky130_fd_sc_hd__or3b_4.ext:
+Extracting sky130_fd_sc_hd__o21a_1 into sky130_fd_sc_hd__o21a_1.ext:
+Extracting sky130_fd_sc_hd__nand3_1 into sky130_fd_sc_hd__nand3_1.ext:
+Extracting sky130_fd_sc_hd__and4bb_4 into sky130_fd_sc_hd__and4bb_4.ext:
+Extracting sky130_fd_sc_hd__a21oi_1 into sky130_fd_sc_hd__a21oi_1.ext:
 Extracting sky130_fd_sc_hd__nand2_1 into sky130_fd_sc_hd__nand2_1.ext:
+Extracting sky130_fd_sc_hd__nor2_1 into sky130_fd_sc_hd__nor2_1.ext:
+Extracting sky130_fd_sc_hd__or4bb_4 into sky130_fd_sc_hd__or4bb_4.ext:
+Extracting sky130_fd_sc_hd__or2b_1 into sky130_fd_sc_hd__or2b_1.ext:
+Extracting sky130_fd_sc_hd__a32oi_4 into sky130_fd_sc_hd__a32oi_4.ext:
+Extracting sky130_fd_sc_hd__and4_4 into sky130_fd_sc_hd__and4_4.ext:
+Extracting sky130_fd_sc_hd__nand4b_4 into sky130_fd_sc_hd__nand4b_4.ext:
+Extracting sky130_fd_sc_hd__or2_1 into sky130_fd_sc_hd__or2_1.ext:
+Extracting sky130_fd_sc_hd__and2_1 into sky130_fd_sc_hd__and2_1.ext:
+Extracting sky130_fd_sc_hd__o21bai_1 into sky130_fd_sc_hd__o21bai_1.ext:
 Extracting sky130_fd_sc_hd__o2bb2ai_1 into sky130_fd_sc_hd__o2bb2ai_1.ext:
 Extracting sky130_fd_sc_hd__o211ai_1 into sky130_fd_sc_hd__o211ai_1.ext:
-Extracting sky130_fd_sc_hd__o22ai_1 into sky130_fd_sc_hd__o22ai_1.ext:
-Extracting sky130_fd_sc_hd__a2bb2o_1 into sky130_fd_sc_hd__a2bb2o_1.ext:
-Extracting sky130_fd_sc_hd__o21ba_1 into sky130_fd_sc_hd__o21ba_1.ext:
-Extracting sky130_fd_sc_hd__or3_1 into sky130_fd_sc_hd__or3_1.ext:
-Extracting sky130_fd_sc_hd__a21boi_1 into sky130_fd_sc_hd__a21boi_1.ext:
-Extracting sky130_fd_sc_hd__and4_1 into sky130_fd_sc_hd__and4_1.ext:
-Extracting sky130_fd_sc_hd__a21oi_1 into sky130_fd_sc_hd__a21oi_1.ext:
-Extracting sky130_fd_sc_hd__o21ai_1 into sky130_fd_sc_hd__o21ai_1.ext:
+Extracting sky130_fd_sc_hd__nand3b_1 into sky130_fd_sc_hd__nand3b_1.ext:
+Extracting sky130_fd_sc_hd__a22o_2 into sky130_fd_sc_hd__a22o_2.ext:
 Extracting sky130_fd_sc_hd__a22oi_1 into sky130_fd_sc_hd__a22oi_1.ext:
-Extracting sky130_fd_sc_hd__o221ai_1 into sky130_fd_sc_hd__o221ai_1.ext:
-Extracting sky130_fd_sc_hd__a221o_2 into sky130_fd_sc_hd__a221o_2.ext:
-Extracting sky130_fd_sc_hd__a22o_1 into sky130_fd_sc_hd__a22o_1.ext:
-Extracting sky130_fd_sc_hd__xor2_1 into sky130_fd_sc_hd__xor2_1.ext:
-Extracting sky130_fd_sc_hd__nor4_1 into sky130_fd_sc_hd__nor4_1.ext:
+Extracting sky130_fd_sc_hd__and4_1 into sky130_fd_sc_hd__and4_1.ext:
+Extracting sky130_fd_sc_hd__o22ai_1 into sky130_fd_sc_hd__o22ai_1.ext:
+Extracting sky130_fd_sc_hd__o211a_1 into sky130_fd_sc_hd__o211a_1.ext:
 Extracting sky130_fd_sc_hd__a31o_1 into sky130_fd_sc_hd__a31o_1.ext:
-Extracting sky130_fd_sc_hd__a31o_2 into sky130_fd_sc_hd__a31o_2.ext:
-Extracting sky130_fd_sc_hd__o311a_1 into sky130_fd_sc_hd__o311a_1.ext:
-Extracting sky130_fd_sc_hd__o21ai_2 into sky130_fd_sc_hd__o21ai_2.ext:
-Extracting sky130_fd_sc_hd__o31a_1 into sky130_fd_sc_hd__o31a_1.ext:
-Extracting sky130_fd_sc_hd__or2b_1 into sky130_fd_sc_hd__or2b_1.ext:
-Extracting sky130_fd_sc_hd__a221o_1 into sky130_fd_sc_hd__a221o_1.ext:
-Extracting sky130_fd_sc_hd__ebufn_1 into sky130_fd_sc_hd__ebufn_1.ext:
+Extracting sky130_fd_sc_hd__xor2_1 into sky130_fd_sc_hd__xor2_1.ext:
+Extracting sky130_fd_sc_hd__or3b_1 into sky130_fd_sc_hd__or3b_1.ext:
+Extracting sky130_fd_sc_hd__o21ai_1 into sky130_fd_sc_hd__o21ai_1.ext:
+Extracting sky130_fd_sc_hd__inv_2 into sky130_fd_sc_hd__inv_2.ext:
 Extracting sky130_fd_sc_hd__a32o_2 into sky130_fd_sc_hd__a32o_2.ext:
+Extracting sky130_fd_sc_hd__a22o_1 into sky130_fd_sc_hd__a22o_1.ext:
+Extracting sky130_fd_sc_hd__ebufn_1 into sky130_fd_sc_hd__ebufn_1.ext:
+Extracting sky130_fd_sc_hd__a21o_2 into sky130_fd_sc_hd__a21o_2.ext:
+Extracting sky130_fd_sc_hd__o311a_1 into sky130_fd_sc_hd__o311a_1.ext:
+Extracting sky130_fd_sc_hd__a2bb2o_1 into sky130_fd_sc_hd__a2bb2o_1.ext:
+Extracting sky130_fd_sc_hd__a311o_1 into sky130_fd_sc_hd__a311o_1.ext:
+Extracting sky130_fd_sc_hd__nor4_1 into sky130_fd_sc_hd__nor4_1.ext:
+Extracting sky130_fd_sc_hd__a221o_1 into sky130_fd_sc_hd__a221o_1.ext:
+Extracting sky130_fd_sc_hd__and2_2 into sky130_fd_sc_hd__and2_2.ext:
+Extracting sky130_fd_sc_hd__or3_1 into sky130_fd_sc_hd__or3_1.ext:
+Extracting sky130_fd_sc_hd__o221a_1 into sky130_fd_sc_hd__o221a_1.ext:
 Extracting sky130_fd_sc_hd__o21bai_2 into sky130_fd_sc_hd__o21bai_2.ext:
 Extracting sky130_fd_sc_hd__xnor2_1 into sky130_fd_sc_hd__xnor2_1.ext:
-Extracting sky130_fd_sc_hd__a32o_4 into sky130_fd_sc_hd__a32o_4.ext:
-Extracting sky130_fd_sc_hd__or4_2 into sky130_fd_sc_hd__or4_2.ext:
-Extracting sky130_fd_sc_hd__o211a_1 into sky130_fd_sc_hd__o211a_1.ext:
-Extracting sky130_fd_sc_hd__and3_1 into sky130_fd_sc_hd__and3_1.ext:
-Extracting sky130_fd_sc_hd__nor2_2 into sky130_fd_sc_hd__nor2_2.ext:
-Extracting sky130_fd_sc_hd__o221ai_4 into sky130_fd_sc_hd__o221ai_4.ext:
-Extracting sky130_fd_sc_hd__o31ai_4 into sky130_fd_sc_hd__o31ai_4.ext:
-Extracting sky130_fd_sc_hd__a2bb2oi_1 into sky130_fd_sc_hd__a2bb2oi_1.ext:
-Extracting sky130_fd_sc_hd__a211oi_1 into sky130_fd_sc_hd__a211oi_1.ext:
-Extracting sky130_fd_sc_hd__o31ai_1 into sky130_fd_sc_hd__o31ai_1.ext:
-Extracting sky130_fd_sc_hd__nand4_2 into sky130_fd_sc_hd__nand4_2.ext:
+Extracting sky130_fd_sc_hd__a221o_2 into sky130_fd_sc_hd__a221o_2.ext:
 Extracting sky130_fd_sc_hd__or2_2 into sky130_fd_sc_hd__or2_2.ext:
+Extracting sky130_fd_sc_hd__o2111ai_1 into sky130_fd_sc_hd__o2111ai_1.ext:
+Extracting sky130_fd_sc_hd__clkinv_2 into sky130_fd_sc_hd__clkinv_2.ext:
+Extracting sky130_fd_sc_hd__nor2_2 into sky130_fd_sc_hd__nor2_2.ext:
+Extracting sky130_fd_sc_hd__a211oi_1 into sky130_fd_sc_hd__a211oi_1.ext:
+Extracting sky130_fd_sc_hd__o22ai_4 into sky130_fd_sc_hd__o22ai_4.ext:
+Extracting sky130_fd_sc_hd__a221oi_4 into sky130_fd_sc_hd__a221oi_4.ext:
+Extracting sky130_fd_sc_hd__o32ai_2 into sky130_fd_sc_hd__o32ai_2.ext:
 Extracting sky130_fd_sc_hd__nand3_2 into sky130_fd_sc_hd__nand3_2.ext:
-Extracting sky130_fd_sc_hd__o2111ai_2 into sky130_fd_sc_hd__o2111ai_2.ext:
-Extracting sky130_fd_sc_hd__a32o_1 into sky130_fd_sc_hd__a32o_1.ext:
+Extracting sky130_fd_sc_hd__o31a_1 into sky130_fd_sc_hd__o31a_1.ext:
+Extracting sky130_fd_sc_hd__o31ai_1 into sky130_fd_sc_hd__o31ai_1.ext:
 Extracting sky130_fd_sc_hd__a22oi_2 into sky130_fd_sc_hd__a22oi_2.ext:
-Extracting sky130_fd_sc_hd__o211ai_4 into sky130_fd_sc_hd__o211ai_4.ext:
-Extracting sky130_fd_sc_hd__o2bb2a_1 into sky130_fd_sc_hd__o2bb2a_1.ext:
-Extracting sky130_fd_sc_hd__o22ai_2 into sky130_fd_sc_hd__o22ai_2.ext:
-Extracting sky130_fd_sc_hd__or4_1 into sky130_fd_sc_hd__or4_1.ext:
-Extracting sky130_fd_sc_hd__nor3_2 into sky130_fd_sc_hd__nor3_2.ext:
-Extracting sky130_fd_sc_hd__o31ai_2 into sky130_fd_sc_hd__o31ai_2.ext:
+Extracting sky130_fd_sc_hd__a221o_4 into sky130_fd_sc_hd__a221o_4.ext:
 Extracting sky130_fd_sc_hd__nand2_2 into sky130_fd_sc_hd__nand2_2.ext:
-Extracting sky130_fd_sc_hd__dfxtp_4 into sky130_fd_sc_hd__dfxtp_4.ext:
-Extracting sky130_fd_sc_hd__xor2_2 into sky130_fd_sc_hd__xor2_2.ext:
-Extracting sky130_fd_sc_hd__or3b_1 into sky130_fd_sc_hd__or3b_1.ext:
-Extracting sky130_fd_sc_hd__a311oi_1 into sky130_fd_sc_hd__a311oi_1.ext:
-Extracting sky130_fd_sc_hd__o211ai_2 into sky130_fd_sc_hd__o211ai_2.ext:
-Extracting sky130_fd_sc_hd__o32a_1 into sky130_fd_sc_hd__o32a_1.ext:
-Extracting sky130_fd_sc_hd__a21oi_2 into sky130_fd_sc_hd__a21oi_2.ext:
 Extracting sky130_fd_sc_hd__a31oi_4 into sky130_fd_sc_hd__a31oi_4.ext:
-Extracting sky130_fd_sc_hd__nand2_4 into sky130_fd_sc_hd__nand2_4.ext:
-Extracting sky130_fd_sc_hd__or3_2 into sky130_fd_sc_hd__or3_2.ext:
-Extracting sky130_fd_sc_hd__a41o_1 into sky130_fd_sc_hd__a41o_1.ext:
-Extracting sky130_fd_sc_hd__a31oi_1 into sky130_fd_sc_hd__a31oi_1.ext:
-Extracting sky130_fd_sc_hd__nand3b_1 into sky130_fd_sc_hd__nand3b_1.ext:
-Extracting sky130_fd_sc_hd__or4bb_2 into sky130_fd_sc_hd__or4bb_2.ext:
-Extracting sky130_fd_sc_hd__and4bb_1 into sky130_fd_sc_hd__and4bb_1.ext:
-Extracting sky130_fd_sc_hd__and3b_1 into sky130_fd_sc_hd__and3b_1.ext:
-Extracting sky130_fd_sc_hd__o221a_1 into sky130_fd_sc_hd__o221a_1.ext:
-Extracting sky130_fd_sc_hd__a2111o_1 into sky130_fd_sc_hd__a2111o_1.ext:
-Extracting sky130_fd_sc_hd__a311oi_2 into sky130_fd_sc_hd__a311oi_2.ext:
-Extracting sky130_fd_sc_hd__a41oi_1 into sky130_fd_sc_hd__a41oi_1.ext:
+Extracting sky130_fd_sc_hd__o2111ai_4 into sky130_fd_sc_hd__o2111ai_4.ext:
 Extracting sky130_fd_sc_hd__nand4_1 into sky130_fd_sc_hd__nand4_1.ext:
-Extracting sky130_fd_sc_hd__o311ai_4 into sky130_fd_sc_hd__o311ai_4.ext:
-Extracting sky130_fd_sc_hd__a22oi_4 into sky130_fd_sc_hd__a22oi_4.ext:
+Extracting sky130_fd_sc_hd__and3b_1 into sky130_fd_sc_hd__and3b_1.ext:
+Extracting sky130_fd_sc_hd__a2bb2oi_2 into sky130_fd_sc_hd__a2bb2oi_2.ext:
+Extracting sky130_fd_sc_hd__or4_1 into sky130_fd_sc_hd__or4_1.ext:
+Extracting sky130_fd_sc_hd__nand4_2 into sky130_fd_sc_hd__nand4_2.ext:
+Extracting sky130_fd_sc_hd__a21oi_2 into sky130_fd_sc_hd__a21oi_2.ext:
+Extracting sky130_fd_sc_hd__o2111ai_2 into sky130_fd_sc_hd__o2111ai_2.ext:
+Extracting sky130_fd_sc_hd__dfxtp_2 into sky130_fd_sc_hd__dfxtp_2.ext:
+Extracting sky130_fd_sc_hd__o22ai_2 into sky130_fd_sc_hd__o22ai_2.ext:
+Extracting sky130_fd_sc_hd__a2bb2oi_1 into sky130_fd_sc_hd__a2bb2oi_1.ext:
+Extracting sky130_fd_sc_hd__a211oi_4 into sky130_fd_sc_hd__a211oi_4.ext:
+Extracting sky130_fd_sc_hd__a21boi_1 into sky130_fd_sc_hd__a21boi_1.ext:
+Extracting sky130_fd_sc_hd__and3_1 into sky130_fd_sc_hd__and3_1.ext:
+Extracting sky130_fd_sc_hd__and3_2 into sky130_fd_sc_hd__and3_2.ext:
+Extracting sky130_fd_sc_hd__or4b_2 into sky130_fd_sc_hd__or4b_2.ext:
+Extracting sky130_fd_sc_hd__o32ai_4 into sky130_fd_sc_hd__o32ai_4.ext:
+Extracting sky130_fd_sc_hd__a31o_2 into sky130_fd_sc_hd__a31o_2.ext:
+Extracting sky130_fd_sc_hd__or3_2 into sky130_fd_sc_hd__or3_2.ext:
+Extracting sky130_fd_sc_hd__o211ai_2 into sky130_fd_sc_hd__o211ai_2.ext:
+Extracting sky130_fd_sc_hd__a32o_1 into sky130_fd_sc_hd__a32o_1.ext:
+Extracting sky130_fd_sc_hd__o41ai_1 into sky130_fd_sc_hd__o41ai_1.ext:
+Extracting sky130_fd_sc_hd__o21ai_4 into sky130_fd_sc_hd__o21ai_4.ext:
+Extracting sky130_fd_sc_hd__o21ba_1 into sky130_fd_sc_hd__o21ba_1.ext:
+Extracting sky130_fd_sc_hd__nor4b_2 into sky130_fd_sc_hd__nor4b_2.ext:
+Extracting sky130_fd_sc_hd__o2111a_1 into sky130_fd_sc_hd__o2111a_1.ext:
+Extracting sky130_fd_sc_hd__o41a_1 into sky130_fd_sc_hd__o41a_1.ext:
+Extracting sky130_fd_sc_hd__a31oi_1 into sky130_fd_sc_hd__a31oi_1.ext:
+Extracting sky130_fd_sc_hd__or4b_1 into sky130_fd_sc_hd__or4b_1.ext:
+Extracting sky130_fd_sc_hd__a41o_1 into sky130_fd_sc_hd__a41o_1.ext:
+Extracting sky130_fd_sc_hd__and4b_1 into sky130_fd_sc_hd__and4b_1.ext:
+Extracting sky130_fd_sc_hd__nor3_2 into sky130_fd_sc_hd__nor3_2.ext:
+Extracting sky130_fd_sc_hd__o32a_1 into sky130_fd_sc_hd__o32a_1.ext:
+Extracting sky130_fd_sc_hd__o2bb2a_1 into sky130_fd_sc_hd__o2bb2a_1.ext:
+Extracting sky130_fd_sc_hd__a2111o_1 into sky130_fd_sc_hd__a2111o_1.ext:
+Extracting sky130_fd_sc_hd__dfxtp_4 into sky130_fd_sc_hd__dfxtp_4.ext:
 Extracting vahid6i into vahid6i.ext:
-vahid6i: 11381 errors
-Total of 11381 errors (check feedback entries).
+vahid6i: 11851 errors
+Total of 11851 errors (check feedback entries).
 exttospice finished.

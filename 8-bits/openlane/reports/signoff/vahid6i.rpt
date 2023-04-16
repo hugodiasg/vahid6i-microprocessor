@@ -1,17 +1,17 @@
-CVC: Log output to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/reports/signoff/vahid6i.rpt
-CVC: Error output to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/reports/signoff/vahid6i.rpt.error.gz
-CVC: Debug output to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/reports/signoff/vahid6i.rpt.debug.gz
+CVC: Log output to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/reports/signoff/vahid6i.rpt
+CVC: Error output to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/reports/signoff/vahid6i.rpt.error.gz
+CVC: Debug output to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/reports/signoff/vahid6i.rpt.debug.gz
 CVC: Circuit Validation Check  Version 1.1.4
-CVC: Start: Thu Apr  6 14:29:38 2023
+CVC: Start: Sun Apr 16 13:58:41 2023
 
 Using the following parameters for CVC (Circuit Validation Check) from /home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/cvc/cvcrc
 CVC_TOP = 'vahid6i'
-CVC_NETLIST = '/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/signoff/vahid6i.cdl'
+CVC_NETLIST = '/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/signoff/vahid6i.cdl'
 CVC_MODE = 'vahid6i'
 CVC_MODEL_FILE = '/home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.tech/openlane/cvc/models'
-CVC_POWER_FILE = '/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/signoff/vahid6i.power'
+CVC_POWER_FILE = '/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/signoff/vahid6i.power'
 CVC_FUSE_FILE = ''
-CVC_REPORT_FILE = '/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/reports/signoff/vahid6i.rpt'
+CVC_REPORT_FILE = '/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/reports/signoff/vahid6i.rpt'
 CVC_REPORT_TITLE = 'CVC $CVC_TOP'
 CVC_CIRCUIT_ERROR_LIMIT = '100'
 CVC_SEARCH_LIMIT = '100'
@@ -45,7 +45,7 @@ End of parameters
 
 CVC: Reading device model settings...
 CVC: Reading power settings...
-CVC: Parsing netlist /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/signoff/vahid6i.cdl
+CVC: Parsing netlist /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/signoff/vahid6i.cdl
 Cdl fixed data size 75738
-Usage CDL: Time: 0  Memory: 8888  I/O: 4280  Swap: 0
+Usage CDL: Time: 0  Memory: 8940  I/O: 8  Swap: 0
 CVC: Counting and linking...

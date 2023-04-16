@@ -129,4 +129,4 @@ Reading "sky130_fd_sc_hd__nand4_4".
 Reading "sky130_fd_sc_hd__nand4b_4".
 Reading "sky130_fd_sc_hd__conb_1".
 Reading "vahid6i".
-[INFO]: Wrote /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/signoff/gds_ptrs.mag including GDS pointers.
+[INFO]: Wrote /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/signoff/gds_ptrs.mag including GDS pointers.

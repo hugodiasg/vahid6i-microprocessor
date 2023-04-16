@@ -1,5 +1,5 @@
 [WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
-To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/merged.nom.lef at line 930.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/merged.nom.lef at line 930.
 [WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
 [WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
 [WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.

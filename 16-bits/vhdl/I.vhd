@@ -23,7 +23,7 @@ TYPE RAM IS ARRAY(natural RANGE <>) OF std_logic_vector (15 DOWNTO 0);
 		"0000010100000101",	--Carrega D(5) em RF(5)
 		"0000011000000110",	--Carrega D(6) em RF(6)
 		"0000011100000111",	--Carrega D(7) em RF(7)
-		"0010000000011000",	--Soma RF(0) com RF(1) e armazena em RF(8)
+		"0010000000011000",	--Subtrai RF(0) com RF(1) e armazena em RF(8)
 		"0010001010001000",	--Soma RF(2) com RF(8) e armazena em RF(8)
 		"0010001110001000",	--Soma RF(3) com RF(8) e armazena em RF(8)
 		"0010010010001000",	--Soma RF(4) com RF(8) e armazena em RF(8)

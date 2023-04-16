@@ -44,7 +44,7 @@ Generating RTLIL representation for module `\vahid6i'.
 Successfully finished Verilog frontend.
 
 2. Generating Graphviz representation of design.
-Writing dot description to `/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/hierarchy.dot'.
+Writing dot description to `/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/synthesis/hierarchy.dot'.
 Dumping module vahid6i to page 1.
 
 3. Executing HIERARCHY pass (managing design hierarchy).
@@ -1271,7 +1271,7 @@ Checking module vahid6i...
 Found and reported 0 problems.
 
 6. Generating Graphviz representation of design.
-Writing dot description to `/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/post_techmap.dot'.
+Writing dot description to `/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/synthesis/post_techmap.dot'.
 Dumping module vahid6i to page 1.
 Warning: WIDTHLABEL \uc_0.bc_0._14_ [4] 1
 Warning: WIDTHLABEL \uc_0.bc_0._14_ [5] 1
@@ -2692,15 +2692,15 @@ Mapping DFF cells in module `\vahid6i':
 
 17. Executing ABC pass (technology mapping using ABC).
 
-17.1. Extracting gate netlist of module `\vahid6i' to `/tmp/yosys-abc-g4PI7x/input.blif'..
+17.1. Extracting gate netlist of module `\vahid6i' to `/tmp/yosys-abc-luI9jK/input.blif'..
 Extracted 859 gates and 1096 wires to a netlist network with 237 inputs and 232 outputs.
 
 17.1.1. Executing ABC.
-Running ABC command: "/build/bin/yosys-abc" -s -f /tmp/yosys-abc-g4PI7x/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-g4PI7x/abc.script".
+Running ABC command: "/build/bin/yosys-abc" -s -f /tmp/yosys-abc-luI9jK/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-luI9jK/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-g4PI7x/input.blif 
-ABC: + read_lib -w /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/trimmed.lib 
+ABC: + read_blif /tmp/yosys-abc-luI9jK/input.blif 
+ABC: + read_lib -w /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/synthesis/trimmed.lib 
 ABC: Parsing finished successfully.  Parsing time =     0.03 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
@@ -2719,13 +2719,13 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
-ABC: Library "sky130A_merged" from "/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.05 sec
+ABC: Library "sky130A_merged" from "/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.05 sec
 ABC: Memory =    9.54 MB. Time =     0.05 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
-ABC: + read_constr -v /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/synthesis.sdc 
+ABC: + read_constr -v /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/synthesis/synthesis.sdc 
 ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
 ABC: Setting output load to be 33.442001.
-ABC: + read_constr /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/tmp/synthesis/synthesis.sdc 
+ABC: + read_constr /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/tmp/synthesis/synthesis.sdc 
 ABC: + fx 
 ABC: + mfs 
 ABC: + strash 
@@ -2770,7 +2770,7 @@ ABC: Path  8 --    1364 : 1    1 sky130_fd_sc_hd__buf_1   A =   3.75  Df =2815.8
 ABC: Start-point = pi8 (\uc_0.bc_0._12_ [2]).  End-point = po215 ($auto$rtlil.cc:2560:MuxGate$4205).
 ABC: + print_stats -m 
 ABC: netlist                       : i/o =  237/  232  lat =    0  nd =   929  edge =   2381  area =3555.83  delay =1392.06  lev = 12
-ABC: + write_blif /tmp/yosys-abc-g4PI7x/output.blif 
+ABC: + write_blif /tmp/yosys-abc-luI9jK/output.blif 
 
 17.1.2. Re-integrating ABC results.
 ABC RESULTS:   sky130_fd_sc_hd__nor2b_2 cells:        1
@@ -2990,6 +2990,6 @@ Checking module vahid6i...
 Found and reported 0 problems.
 
 Warnings: 335 unique messages, 1284 total
-End of script. Logfile hash: b58a41ed6b, CPU: user 0.84s system 0.00s, MEM: 34.07 MB peak
+End of script. Logfile hash: ed13840bf5, CPU: user 0.84s system 0.01s, MEM: 34.23 MB peak
 Yosys 0.22 (git sha1 f109fa3d4c5, gcc 8.3.1 -fPIC -Os)
 Time spent: 39% 2x abc (0 sec), 10% 24x opt_expr (0 sec), ...

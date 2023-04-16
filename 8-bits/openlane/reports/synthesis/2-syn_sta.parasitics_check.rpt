@@ -1464,5 +1464,5 @@ area_report
 Design area 12765 u^2 100% utilization.
 area_report_end
 [WARNING] Did not save OpenROAD database!
-Writing SDF to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.28.11/results/synthesis/vahid6i.sdf...
+Writing SDF to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.57.13/results/synthesis/vahid6i.sdf...
 

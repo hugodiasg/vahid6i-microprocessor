@@ -1,15 +1,15 @@
 Design Name: vahid6i
-Run Directory: /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18
+Run Directory: /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40
 ----------------------------------------
 
 Magic DRC Summary:
-Source: /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/reports/signoff/drc.rpt
+Source: /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/reports/signoff/drc.rpt
 Total Magic DRC violations is 0
 ----------------------------------------
 
 LVS Summary:
-Source: /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/logs/signoff/34-vahid6i.lef.lvs.log
-Number of nets: 2220                       |Number of nets: 2220                       
+Source: /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/logs/signoff/34-vahid6i.lef.lvs.log
+Number of nets: 2306                       |Number of nets: 2306                       
 Design is LVS clean.
 ----------------------------------------
 

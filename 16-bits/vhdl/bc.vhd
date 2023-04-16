@@ -14,7 +14,7 @@ ENTITY bc IS
 	--Sinais para o I
 	I_rd	: OUT STD_LOGIC;
 	-- Leds para ver os estados
-	--leds	: OUT STD_LOGIC_VECTOR (7 downto 0);
+	leds	: OUT STD_LOGIC_VECTOR (3 downto 0);
 	--Sinais de controle
 	--Memd
 	D_addr		:	OUT STD_LOGIC_VECTOR(7 downto 0); 
@@ -39,7 +39,7 @@ ARCHITECTURE arc_bc OF bc IS
 	
 BEGIN
 --Valor da Constante para o estado Carregar Const.
-RF_W_data<=IR_data_out(7 DOWNTO 0);
+
 
 	att: PROCESS(clock,reset,next_state)
 	BEGIN
@@ -49,10 +49,11 @@ RF_W_data<=IR_data_out(7 DOWNTO 0);
 			CASE next_state IS
 				WHEN Inicio =>
 					PC_clr<='1';
+					PC_inc<='0';
 				WHEN Busca1 =>
-					--IR_ld<='1';
-					PC_inc<='1';
 					I_rd<='1';	
+					IR_ld<='1';
+					--PC_inc<='1';
 					--CONTROLANDO SINAIS DE ESTADOS ANTERIORES
 					PC_clr<='0';
 					PC_ld<='0';
@@ -65,21 +66,7 @@ RF_W_data<=IR_data_out(7 DOWNTO 0);
 					RF_Rp_rd<='0';
 					RF_Rq_rd<='0';
 				WHEN Busca2 =>
-					IR_ld<='1';
-					--PC_inc<='1';
-					I_rd<='1';	
-					--CONTROLANDO SINAIS DE ESTADOS ANTERIORES
-					PC_inc<='0';
-					PC_clr<='0';
-					PC_ld<='0';
-					--Sinais de controle
-					--Memd
-					D_rd<='0';
-					D_wr<='0';
-					--Regf
-					RF_W_wr<='0';
-					RF_Rp_rd<='0';
-					RF_Rq_rd<='0';	
+					PC_inc<='1';
 				WHEN Carregar =>
 				-- oooo	aaaa	dddddddd
 				--	15-12	11-8	7-0
@@ -125,6 +112,7 @@ RF_W_data<=IR_data_out(7 DOWNTO 0);
 					RF_s0<='0';
 					RF_W_addr<=IR_data_out(11 DOWNTO 8); --Ra
 					RF_W_wr<='1';
+					RF_W_data<=IR_data_out(7 DOWNTO 0);
 				WHEN Subtrair=>
 				-- oooo 	aaaa 	bbbb 	cccc
 				-- 15-12 11-8	7-4	3-0
@@ -146,9 +134,8 @@ RF_W_data<=IR_data_out(7 DOWNTO 0);
 					PC_ld<='1';
 				WHEN Decod=>
 				--CONTROLANDO SINAIS DE ESTADOS ANTERIORES
-					IR_ld<='0';
 					PC_inc<='0';
-					I_rd<='0';	
+					IR_ld<='0';
 				WHEN OTHERS=>
 				
 			END CASE;
@@ -163,7 +150,7 @@ RF_W_data<=IR_data_out(7 DOWNTO 0);
 		ELSE
 			CASE current_state IS
 				WHEN Inicio =>
-					next_state<=Busca2;
+					next_state<=Busca1;
 					--leds_aux<="00000010";
 				WHEN Busca1 =>
 					next_state<=Busca2;
@@ -212,6 +199,37 @@ RF_W_data<=IR_data_out(7 DOWNTO 0);
 			END CASE;
 		END IF;
 	END PROCESS states;
+
+	leds_process: PROCESS(current_state)
+	BEGIN
+			CASE current_state IS
+				WHEN Inicio =>
+					leds<="0001";
+				WHEN Busca1 =>
+					leds<="0010";
+				WHEN Busca2 =>
+					leds<="0011";
+				WHEN Decod =>
+					leds<="0100";
+
+				WHEN Carregar =>
+					leds<="0101";
+				WHEN Armazenar =>
+					leds<="0110";
+				WHEN Somar =>
+					leds<="0111";
+				WHEN Carregar_const =>
+					leds<="1000";
+				WHEN Subtrair =>
+					leds<="1001";
+				WHEN Saltar_se_zero =>
+					leds<="1010";
+				WHEN Saltar => 
+					leds<="1011";
+				WHEN OTHERS => 
+					leds<="1111";
+			END CASE;
+	END PROCESS leds_process;
 END arc_bc;
 
  

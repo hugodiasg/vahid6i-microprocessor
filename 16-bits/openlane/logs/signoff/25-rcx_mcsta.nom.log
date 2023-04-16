@@ -1,7 +1,7 @@
 OpenROAD 6840b7481d49c83870f79646cf979e66f22f6833 
 This program is licensed under the BSD-3 license. See the LICENSE file for details.
 Components of this program may be licensed under more restrictive licenses which must be honored.
-[INFO]: Reading ODB at '/openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/vahid6i.odb'...
+[INFO]: Reading ODB at '/openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/results/routing/vahid6i.odb'...
 [WARNING STA-0122] /home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib line 619, table template ccsn_ovrf not found.
 [WARNING STA-0122] /home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib line 625, table template ccsn_ovrf not found.
 [WARNING STA-0122] /home/hugodg/sky130_workspace/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib line 633, table template ccsn_ovrf not found.
@@ -1026,28 +1026,28 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.02    0.01    3.01 v clock (in)
      1    0.00                           clock (net)
                   0.02    0.00    3.01 v input33/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.09    0.16    3.17 v input33/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.08    0.15    3.16 v input33/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.01                           net33 (net)
-                  0.09    0.00    3.17 v fanout183/A (sky130_fd_sc_hd__buf_2)
-                  0.25    0.40    3.57 v fanout183/X (sky130_fd_sc_hd__buf_2)
-     4    0.05                           net183 (net)
-                  0.25    0.00    3.57 v fanout169/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.23    0.39    3.96 v fanout169/X (sky130_fd_sc_hd__clkbuf_2)
-     4    0.03                           net169 (net)
-                  0.23    0.00    3.97 v fanout165/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.15    0.30    4.27 v fanout165/X (sky130_fd_sc_hd__clkbuf_1)
-     3    0.01                           net165 (net)
-                  0.15    0.00    4.27 v fanout164/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.15    0.29    4.56 v fanout164/X (sky130_fd_sc_hd__clkbuf_2)
-     6    0.02                           net164 (net)
-                  0.15    0.00    4.56 v _3558_/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.05    0.18    4.74 v _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.08    0.00    3.16 v fanout191/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.28    0.35    3.51 v fanout191/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.04                           net191 (net)
+                  0.28    0.00    3.51 v fanout190/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.21    0.38    3.89 v fanout190/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net190 (net)
+                  0.21    0.00    3.90 v fanout177/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.22    0.45    4.35 v fanout177/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     3    0.02                           net177 (net)
+                  0.22    0.00    4.35 v fanout173/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.15    0.32    4.67 v fanout173/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net173 (net)
+                  0.15    0.00    4.67 v _3702_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.05    0.18    4.86 v _3702_/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.00                           net78 (net)
-                  0.05    0.00    4.74 v output78/A (sky130_fd_sc_hd__clkbuf_4)
-                  0.14    0.30    5.04 v output78/X (sky130_fd_sc_hd__clkbuf_4)
+                  0.05    0.00    4.86 v output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.14    0.30    5.16 v output78/X (sky130_fd_sc_hd__clkbuf_4)
      1    0.03                           led_clock (net)
-                  0.14    0.00    5.04 v led_clock (out)
-                                  5.04   data arrival time
+                  0.14    0.00    5.16 v led_clock (out)
+                                  5.16   data arrival time
 
                   0.00    0.00    0.00   clock clk_48 (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -1057,9 +1057,9 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  -2.75   data required time
 -----------------------------------------------------------------------------
                                  -2.75   data required time
-                                 -5.04   data arrival time
+                                 -5.16   data arrival time
 -----------------------------------------------------------------------------
-                                  7.79   slack (MET)
+                                  7.91   slack (MET)
 
 
 
@@ -1079,28 +1079,28 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.01    0.00    3.00 v clock (in)
      1    0.00                           clock (net)
                   0.01    0.00    3.00 v input33/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.05    0.09    3.09 v input33/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.08    3.08 v input33/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.01                           net33 (net)
-                  0.05    0.00    3.09 v fanout183/A (sky130_fd_sc_hd__buf_2)
-                  0.13    0.20    3.29 v fanout183/X (sky130_fd_sc_hd__buf_2)
-     4    0.05                           net183 (net)
-                  0.13    0.00    3.30 v fanout169/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.13    0.21    3.51 v fanout169/X (sky130_fd_sc_hd__clkbuf_2)
-     4    0.03                           net169 (net)
-                  0.13    0.00    3.51 v fanout165/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.08    0.16    3.67 v fanout165/X (sky130_fd_sc_hd__clkbuf_1)
-     3    0.01                           net165 (net)
-                  0.08    0.00    3.67 v fanout164/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.08    0.16    3.82 v fanout164/X (sky130_fd_sc_hd__clkbuf_2)
-     6    0.02                           net164 (net)
-                  0.08    0.00    3.83 v _3558_/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.03    0.10    3.92 v _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.00    3.09 v fanout191/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.15    0.19    3.27 v fanout191/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.04                           net191 (net)
+                  0.15    0.00    3.27 v fanout190/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.21    3.48 v fanout190/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net190 (net)
+                  0.11    0.00    3.48 v fanout177/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.12    0.22    3.71 v fanout177/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     3    0.02                           net177 (net)
+                  0.12    0.00    3.71 v fanout173/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.17    3.88 v fanout173/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net173 (net)
+                  0.08    0.00    3.88 v _3702_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.02    0.10    3.98 v _3702_/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.00                           net78 (net)
-                  0.03    0.00    3.92 v output78/A (sky130_fd_sc_hd__clkbuf_4)
-                  0.08    0.17    4.09 v output78/X (sky130_fd_sc_hd__clkbuf_4)
+                  0.02    0.00    3.98 v output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.08    0.17    4.15 v output78/X (sky130_fd_sc_hd__clkbuf_4)
      1    0.03                           led_clock (net)
-                  0.08    0.00    4.09 v led_clock (out)
-                                  4.09   data arrival time
+                  0.08    0.00    4.15 v led_clock (out)
+                                  4.15   data arrival time
 
                   0.00    0.00    0.00   clock clk_48 (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -1110,9 +1110,9 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  -2.75   data required time
 -----------------------------------------------------------------------------
                                  -2.75   data required time
-                                 -4.09   data arrival time
+                                 -4.15   data arrival time
 -----------------------------------------------------------------------------
-                                  6.84   slack (MET)
+                                  6.90   slack (MET)
 
 
 
@@ -1132,28 +1132,28 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.01    0.00    3.00 v clock (in)
      1    0.00                           clock (net)
                   0.01    0.00    3.00 v input33/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.03    0.06    3.06 v input33/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.03    0.05    3.05 v input33/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.01                           net33 (net)
-                  0.03    0.00    3.06 v fanout183/A (sky130_fd_sc_hd__buf_2)
-                  0.09    0.13    3.19 v fanout183/X (sky130_fd_sc_hd__buf_2)
-     4    0.05                           net183 (net)
-                  0.09    0.00    3.20 v fanout169/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.09    0.14    3.34 v fanout169/X (sky130_fd_sc_hd__clkbuf_2)
-     4    0.03                           net169 (net)
-                  0.09    0.00    3.34 v fanout165/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.06    0.10    3.44 v fanout165/X (sky130_fd_sc_hd__clkbuf_1)
-     3    0.01                           net165 (net)
-                  0.06    0.00    3.44 v fanout164/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.06    0.11    3.55 v fanout164/X (sky130_fd_sc_hd__clkbuf_2)
-     6    0.02                           net164 (net)
-                  0.06    0.00    3.55 v _3558_/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.02    0.06    3.61 v _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.03    0.00    3.06 v fanout191/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.11    0.13    3.18 v fanout191/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.04                           net191 (net)
+                  0.11    0.00    3.18 v fanout190/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.14    3.32 v fanout190/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net190 (net)
+                  0.08    0.00    3.33 v fanout177/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.08    0.15    3.47 v fanout177/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     3    0.02                           net177 (net)
+                  0.08    0.00    3.47 v fanout173/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.12    3.59 v fanout173/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net173 (net)
+                  0.06    0.00    3.59 v _3702_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.02    0.06    3.65 v _3702_/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.00                           net78 (net)
-                  0.02    0.00    3.61 v output78/A (sky130_fd_sc_hd__clkbuf_4)
-                  0.06    0.11    3.72 v output78/X (sky130_fd_sc_hd__clkbuf_4)
+                  0.02    0.00    3.65 v output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.06    0.11    3.76 v output78/X (sky130_fd_sc_hd__clkbuf_4)
      1    0.03                           led_clock (net)
-                  0.06    0.00    3.73 v led_clock (out)
-                                  3.73   data arrival time
+                  0.06    0.00    3.76 v led_clock (out)
+                                  3.76   data arrival time
 
                   0.00    0.00    0.00   clock clk_48 (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -1163,9 +1163,9 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  -2.75   data required time
 -----------------------------------------------------------------------------
                                  -2.75   data required time
-                                 -3.73   data arrival time
+                                 -3.76   data arrival time
 -----------------------------------------------------------------------------
-                                  6.48   slack (MET)
+                                  6.51   slack (MET)
 
 
 min_report_end
@@ -1188,31 +1188,31 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock clk_48 (rise edge)
                           0.00    0.00   clock network delay (ideal)
                           3.00    3.00 ^ input external delay
-                  0.03    0.02    3.02 ^ clock (in)
+                  0.04    0.02    3.02 ^ clock (in)
      1    0.00                           clock (net)
-                  0.03    0.00    3.02 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.15    0.20    3.22 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.00    3.02 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.12    0.18    3.20 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.01                           net33 (net)
-                  0.15    0.00    3.22 ^ fanout183/A (sky130_fd_sc_hd__buf_2)
-                  0.43    0.51    3.73 ^ fanout183/X (sky130_fd_sc_hd__buf_2)
-     4    0.06                           net183 (net)
-                  0.43    0.00    3.73 ^ fanout169/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.29    0.52    4.26 ^ fanout169/X (sky130_fd_sc_hd__clkbuf_2)
-     4    0.03                           net169 (net)
-                  0.29    0.00    4.26 ^ fanout165/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.26    0.39    4.64 ^ fanout165/X (sky130_fd_sc_hd__clkbuf_1)
-     3    0.01                           net165 (net)
-                  0.26    0.00    4.64 ^ fanout164/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.18    0.38    5.02 ^ fanout164/X (sky130_fd_sc_hd__clkbuf_2)
-     6    0.02                           net164 (net)
-                  0.18    0.00    5.02 ^ _3558_/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.07    0.21    5.22 ^ _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.12    0.00    3.20 ^ fanout191/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.35    0.43    3.63 ^ fanout191/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.04                           net191 (net)
+                  0.35    0.00    3.63 ^ fanout190/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.25    0.46    4.09 ^ fanout190/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net190 (net)
+                  0.25    0.00    4.09 ^ fanout177/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.36    0.47    4.56 ^ fanout177/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     3    0.02                           net177 (net)
+                  0.36    0.00    4.56 ^ fanout173/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.19    0.42    4.98 ^ fanout173/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net173 (net)
+                  0.19    0.00    4.98 ^ _3702_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.07    0.21    5.19 ^ _3702_/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.00                           net78 (net)
-                  0.07    0.00    5.22 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
-                  0.18    0.35    5.57 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
+                  0.07    0.00    5.19 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.18    0.35    5.54 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
      1    0.03                           led_clock (net)
-                  0.18    0.00    5.57 ^ led_clock (out)
-                                  5.57   data arrival time
+                  0.18    0.00    5.54 ^ led_clock (out)
+                                  5.54   data arrival time
 
                   0.00   15.00   15.00   clock clk_48 (rise edge)
                           0.00   15.00   clock network delay (ideal)
@@ -1222,9 +1222,9 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  11.75   data required time
 -----------------------------------------------------------------------------
                                  11.75   data required time
-                                 -5.57   data arrival time
+                                 -5.54   data arrival time
 -----------------------------------------------------------------------------
-                                  6.18   slack (MET)
+                                  6.21   slack (MET)
 
 
 
@@ -1244,22 +1244,22 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.02    0.01    3.01 ^ clock (in)
      1    0.00                           clock (net)
                   0.02    0.00    3.01 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.09    0.11    3.12 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.07    0.10    3.11 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.01                           net33 (net)
-                  0.09    0.00    3.12 ^ fanout183/A (sky130_fd_sc_hd__buf_2)
-                  0.27    0.30    3.42 ^ fanout183/X (sky130_fd_sc_hd__buf_2)
-     4    0.06                           net183 (net)
-                  0.27    0.00    3.42 ^ fanout169/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.19    0.28    3.71 ^ fanout169/X (sky130_fd_sc_hd__clkbuf_2)
-     4    0.03                           net169 (net)
-                  0.19    0.00    3.71 ^ fanout165/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.16    0.20    3.91 ^ fanout165/X (sky130_fd_sc_hd__clkbuf_1)
-     3    0.01                           net165 (net)
-                  0.16    0.00    3.91 ^ fanout164/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.12    0.21    4.12 ^ fanout164/X (sky130_fd_sc_hd__clkbuf_2)
-     6    0.02                           net164 (net)
-                  0.12    0.00    4.12 ^ _3558_/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.04    0.11    4.23 ^ _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.07    0.00    3.11 ^ fanout191/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.22    0.25    3.36 ^ fanout191/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.04                           net191 (net)
+                  0.22    0.00    3.36 ^ fanout190/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.25    3.62 ^ fanout190/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net190 (net)
+                  0.16    0.00    3.62 ^ fanout177/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.24    0.27    3.89 ^ fanout177/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     3    0.02                           net177 (net)
+                  0.24    0.00    3.89 ^ fanout173/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.12    0.23    4.12 ^ fanout173/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net173 (net)
+                  0.12    0.00    4.12 ^ _3702_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.11    4.23 ^ _3702_/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.00                           net78 (net)
                   0.04    0.00    4.23 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
                   0.11    0.19    4.42 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
@@ -1297,24 +1297,24 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.02    0.01    3.01 ^ clock (in)
      1    0.00                           clock (net)
                   0.02    0.00    3.01 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.07    0.08    3.09 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.06    0.07    3.08 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.01                           net33 (net)
-                  0.07    0.00    3.09 ^ fanout183/A (sky130_fd_sc_hd__buf_2)
-                  0.20    0.21    3.30 ^ fanout183/X (sky130_fd_sc_hd__buf_2)
-     4    0.06                           net183 (net)
-                  0.20    0.00    3.30 ^ fanout169/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.14    0.18    3.48 ^ fanout169/X (sky130_fd_sc_hd__clkbuf_2)
-     4    0.03                           net169 (net)
-                  0.14    0.00    3.48 ^ fanout165/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.12    0.13    3.61 ^ fanout165/X (sky130_fd_sc_hd__clkbuf_1)
-     3    0.01                           net165 (net)
-                  0.12    0.00    3.61 ^ fanout164/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.09    0.14    3.75 ^ fanout164/X (sky130_fd_sc_hd__clkbuf_2)
-     6    0.02                           net164 (net)
-                  0.09    0.00    3.75 ^ _3558_/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.03    0.06    3.81 ^ _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.06    0.00    3.08 ^ fanout191/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.17    0.18    3.25 ^ fanout191/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.04                           net191 (net)
+                  0.17    0.00    3.25 ^ fanout190/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.13    0.17    3.42 ^ fanout190/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net190 (net)
+                  0.13    0.00    3.42 ^ fanout177/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.18    0.19    3.61 ^ fanout177/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     3    0.02                           net177 (net)
+                  0.18    0.00    3.61 ^ fanout173/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.10    0.15    3.76 ^ fanout173/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net173 (net)
+                  0.10    0.00    3.76 ^ _3702_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.03    0.06    3.82 ^ _3702_/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.00                           net78 (net)
-                  0.03    0.00    3.81 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.03    0.00    3.82 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
                   0.08    0.13    3.95 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
      1    0.03                           led_clock (net)
                   0.08    0.00    3.95 ^ led_clock (out)
@@ -1353,31 +1353,31 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock clk_48 (rise edge)
                           0.00    0.00   clock network delay (ideal)
                           3.00    3.00 ^ input external delay
-                  0.03    0.02    3.02 ^ clock (in)
+                  0.04    0.02    3.02 ^ clock (in)
      1    0.00                           clock (net)
-                  0.03    0.00    3.02 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.15    0.20    3.22 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.00    3.02 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.12    0.18    3.20 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.01                           net33 (net)
-                  0.15    0.00    3.22 ^ fanout183/A (sky130_fd_sc_hd__buf_2)
-                  0.43    0.51    3.73 ^ fanout183/X (sky130_fd_sc_hd__buf_2)
-     4    0.06                           net183 (net)
-                  0.43    0.00    3.73 ^ fanout169/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.29    0.52    4.26 ^ fanout169/X (sky130_fd_sc_hd__clkbuf_2)
-     4    0.03                           net169 (net)
-                  0.29    0.00    4.26 ^ fanout165/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.26    0.39    4.64 ^ fanout165/X (sky130_fd_sc_hd__clkbuf_1)
-     3    0.01                           net165 (net)
-                  0.26    0.00    4.64 ^ fanout164/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.18    0.38    5.02 ^ fanout164/X (sky130_fd_sc_hd__clkbuf_2)
-     6    0.02                           net164 (net)
-                  0.18    0.00    5.02 ^ _3558_/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.07    0.21    5.22 ^ _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.12    0.00    3.20 ^ fanout191/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.35    0.43    3.63 ^ fanout191/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.04                           net191 (net)
+                  0.35    0.00    3.63 ^ fanout190/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.25    0.46    4.09 ^ fanout190/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net190 (net)
+                  0.25    0.00    4.09 ^ fanout177/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.36    0.47    4.56 ^ fanout177/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     3    0.02                           net177 (net)
+                  0.36    0.00    4.56 ^ fanout173/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.19    0.42    4.98 ^ fanout173/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net173 (net)
+                  0.19    0.00    4.98 ^ _3702_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.07    0.21    5.19 ^ _3702_/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.00                           net78 (net)
-                  0.07    0.00    5.22 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
-                  0.18    0.35    5.57 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
+                  0.07    0.00    5.19 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.18    0.35    5.54 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
      1    0.03                           led_clock (net)
-                  0.18    0.00    5.57 ^ led_clock (out)
-                                  5.57   data arrival time
+                  0.18    0.00    5.54 ^ led_clock (out)
+                                  5.54   data arrival time
 
                   0.00   15.00   15.00   clock clk_48 (rise edge)
                           0.00   15.00   clock network delay (ideal)
@@ -1387,9 +1387,9 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  11.75   data required time
 -----------------------------------------------------------------------------
                                  11.75   data required time
-                                 -5.57   data arrival time
+                                 -5.54   data arrival time
 -----------------------------------------------------------------------------
-                                  6.18   slack (MET)
+                                  6.21   slack (MET)
 
 
 
@@ -1409,22 +1409,22 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.02    0.01    3.01 ^ clock (in)
      1    0.00                           clock (net)
                   0.02    0.00    3.01 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.09    0.11    3.12 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.07    0.10    3.11 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.01                           net33 (net)
-                  0.09    0.00    3.12 ^ fanout183/A (sky130_fd_sc_hd__buf_2)
-                  0.27    0.30    3.42 ^ fanout183/X (sky130_fd_sc_hd__buf_2)
-     4    0.06                           net183 (net)
-                  0.27    0.00    3.42 ^ fanout169/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.19    0.28    3.71 ^ fanout169/X (sky130_fd_sc_hd__clkbuf_2)
-     4    0.03                           net169 (net)
-                  0.19    0.00    3.71 ^ fanout165/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.16    0.20    3.91 ^ fanout165/X (sky130_fd_sc_hd__clkbuf_1)
-     3    0.01                           net165 (net)
-                  0.16    0.00    3.91 ^ fanout164/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.12    0.21    4.12 ^ fanout164/X (sky130_fd_sc_hd__clkbuf_2)
-     6    0.02                           net164 (net)
-                  0.12    0.00    4.12 ^ _3558_/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.04    0.11    4.23 ^ _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.07    0.00    3.11 ^ fanout191/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.22    0.25    3.36 ^ fanout191/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.04                           net191 (net)
+                  0.22    0.00    3.36 ^ fanout190/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.16    0.25    3.62 ^ fanout190/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net190 (net)
+                  0.16    0.00    3.62 ^ fanout177/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.24    0.27    3.89 ^ fanout177/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     3    0.02                           net177 (net)
+                  0.24    0.00    3.89 ^ fanout173/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.12    0.23    4.12 ^ fanout173/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net173 (net)
+                  0.12    0.00    4.12 ^ _3702_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.11    4.23 ^ _3702_/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.00                           net78 (net)
                   0.04    0.00    4.23 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
                   0.11    0.19    4.42 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
@@ -1462,24 +1462,24 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.02    0.01    3.01 ^ clock (in)
      1    0.00                           clock (net)
                   0.02    0.00    3.01 ^ input33/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.07    0.08    3.09 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.06    0.07    3.08 ^ input33/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.01                           net33 (net)
-                  0.07    0.00    3.09 ^ fanout183/A (sky130_fd_sc_hd__buf_2)
-                  0.20    0.21    3.30 ^ fanout183/X (sky130_fd_sc_hd__buf_2)
-     4    0.06                           net183 (net)
-                  0.20    0.00    3.30 ^ fanout169/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.14    0.18    3.48 ^ fanout169/X (sky130_fd_sc_hd__clkbuf_2)
-     4    0.03                           net169 (net)
-                  0.14    0.00    3.48 ^ fanout165/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.12    0.13    3.61 ^ fanout165/X (sky130_fd_sc_hd__clkbuf_1)
-     3    0.01                           net165 (net)
-                  0.12    0.00    3.61 ^ fanout164/A (sky130_fd_sc_hd__clkbuf_2)
-                  0.09    0.14    3.75 ^ fanout164/X (sky130_fd_sc_hd__clkbuf_2)
-     6    0.02                           net164 (net)
-                  0.09    0.00    3.75 ^ _3558_/A (sky130_fd_sc_hd__clkbuf_1)
-                  0.03    0.06    3.81 ^ _3558_/X (sky130_fd_sc_hd__clkbuf_1)
+                  0.06    0.00    3.08 ^ fanout191/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.17    0.18    3.25 ^ fanout191/X (sky130_fd_sc_hd__clkbuf_2)
+     5    0.04                           net191 (net)
+                  0.17    0.00    3.25 ^ fanout190/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.13    0.17    3.42 ^ fanout190/X (sky130_fd_sc_hd__clkbuf_2)
+     3    0.03                           net190 (net)
+                  0.13    0.00    3.42 ^ fanout177/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+                  0.18    0.19    3.61 ^ fanout177/X (sky130_fd_sc_hd__dlymetal6s2s_1)
+     3    0.02                           net177 (net)
+                  0.18    0.00    3.61 ^ fanout173/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.10    0.15    3.76 ^ fanout173/X (sky130_fd_sc_hd__clkbuf_2)
+     6    0.02                           net173 (net)
+                  0.10    0.00    3.76 ^ _3702_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.03    0.06    3.82 ^ _3702_/X (sky130_fd_sc_hd__clkbuf_1)
      1    0.00                           net78 (net)
-                  0.03    0.00    3.81 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.03    0.00    3.82 ^ output78/A (sky130_fd_sc_hd__clkbuf_4)
                   0.08    0.13    3.95 ^ output78/X (sky130_fd_sc_hd__clkbuf_4)
      1    0.03                           led_clock (net)
                   0.08    0.00    3.95 ^ led_clock (out)
@@ -1535,16 +1535,9 @@ max fanout
 
 Pin                                   Limit Fanout  Slack
 ---------------------------------------------------------
-_1695_/X                                  6      7        (VIOLATED)
-_1708_/X                                  6      7        (VIOLATED)
-_1854_/X                                  6      7        (VIOLATED)
-_2173_/X                                  6      7        (VIOLATED)
-_2216_/X                                  6      7        (VIOLATED)
-_2271_/X                                  6      7        (VIOLATED)
-_2287_/X                                  6      7        (VIOLATED)
-_2297_/X                                  6      7        (VIOLATED)
-_3471_/Q                                  6      7        (VIOLATED)
-fanout83/X                                6      7        (VIOLATED)
+_1736_/X                                  6      7        (VIOLATED)
+_1968_/X                                  6      7        (VIOLATED)
+_2473_/Y                                  6      7        (VIOLATED)
 fanout96/X                                6      7        (VIOLATED)
 
 
@@ -1554,16 +1547,9 @@ max fanout
 
 Pin                                   Limit Fanout  Slack
 ---------------------------------------------------------
-_1695_/X                                  6      7        (VIOLATED)
-_1708_/X                                  6      7        (VIOLATED)
-_1854_/X                                  6      7        (VIOLATED)
-_2173_/X                                  6      7        (VIOLATED)
-_2216_/X                                  6      7        (VIOLATED)
-_2271_/X                                  6      7        (VIOLATED)
-_2287_/X                                  6      7        (VIOLATED)
-_2297_/X                                  6      7        (VIOLATED)
-_3471_/Q                                  6      7        (VIOLATED)
-fanout83/X                                6      7        (VIOLATED)
+_1736_/X                                  6      7        (VIOLATED)
+_1968_/X                                  6      7        (VIOLATED)
+_2473_/Y                                  6      7        (VIOLATED)
 fanout96/X                                6      7        (VIOLATED)
 
 
@@ -1573,22 +1559,15 @@ max fanout
 
 Pin                                   Limit Fanout  Slack
 ---------------------------------------------------------
-_1695_/X                                  6      7        (VIOLATED)
-_1708_/X                                  6      7        (VIOLATED)
-_1854_/X                                  6      7        (VIOLATED)
-_2173_/X                                  6      7        (VIOLATED)
-_2216_/X                                  6      7        (VIOLATED)
-_2271_/X                                  6      7        (VIOLATED)
-_2287_/X                                  6      7        (VIOLATED)
-_2297_/X                                  6      7        (VIOLATED)
-_3471_/Q                                  6      7        (VIOLATED)
-fanout83/X                                6      7        (VIOLATED)
+_1736_/X                                  6      7        (VIOLATED)
+_1968_/X                                  6      7        (VIOLATED)
+_2473_/Y                                  6      7        (VIOLATED)
 fanout96/X                                6      7        (VIOLATED)
 
 
 ===========================================================================
 max slew violation count 0
-max fanout violation count 11
+max fanout violation count 4
 max cap violation count 0
 ============================================================================
 check_slew_end
@@ -1611,12 +1590,12 @@ worst_slack
 ===========================================================================
  report_worst_slack -max (Setup)
 ============================================================================
-worst slack 6.18
+worst slack 6.21
 
 ===========================================================================
  report_worst_slack -min (Hold)
 ============================================================================
-worst slack 6.48
+worst slack 6.51
 worst_slack_end
 clock_skew
 
@@ -1654,26 +1633,26 @@ power_report
 Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
-Sequential             4.16e-04   2.83e-04   5.31e-06   7.04e-04  29.0%
-Combinational          7.55e-04   9.58e-04   1.18e-05   1.73e-03  71.0%
+Sequential             4.38e-04   2.98e-04   5.43e-06   7.42e-04  39.5%
+Combinational          5.41e-04   5.83e-04   1.21e-05   1.14e-03  60.5%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  1.17e-03   1.24e-03   1.71e-05   2.43e-03 100.0%
-                          48.2%      51.1%       0.7%
+Total                  9.79e-04   8.82e-04   1.75e-05   1.88e-03 100.0%
+                          52.1%      46.9%       0.9%
 
 ======================= Typical Corner ===================================
 
 Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
-Sequential             5.10e-04   3.65e-04   1.04e-07   8.75e-04  28.7%
-Combinational          9.42e-04   1.23e-03   1.24e-08   2.17e-03  71.3%
+Sequential             5.37e-04   3.84e-04   1.04e-07   9.21e-04  39.4%
+Combinational          6.68e-04   7.51e-04   1.28e-08   1.42e-03  60.6%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  1.45e-03   1.60e-03   1.17e-07   3.05e-03 100.0%
-                          47.6%      52.4%       0.0%
+Total                  1.21e-03   1.14e-03   1.17e-07   2.34e-03 100.0%
+                          51.5%      48.5%       0.0%
 
 
 ======================= Fastest Corner =================================
@@ -1681,28 +1660,28 @@ Total                  1.45e-03   1.60e-03   1.17e-07   3.05e-03 100.0%
 Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
-Sequential             5.77e-04   4.37e-04   1.07e-07   1.01e-03  28.8%
-Combinational          1.04e-03   1.48e-03   1.42e-08   2.51e-03  71.2%
+Sequential             6.07e-04   4.60e-04   1.07e-07   1.07e-03  39.4%
+Combinational          7.38e-04   9.00e-04   1.48e-08   1.64e-03  60.6%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  1.61e-03   1.91e-03   1.21e-07   3.53e-03 100.0%
-                          45.7%      54.2%       0.0%
+Total                  1.35e-03   1.36e-03   1.22e-07   2.71e-03 100.0%
+                          49.7%      50.3%       0.0%
 power_report_end
 area_report
 
 ===========================================================================
  report_design_area
 ============================================================================
-Design area 24237 u^2 44% utilization.
+Design area 24958 u^2 44% utilization.
 area_report_end
 Setting global connections for newly added cells...
 [WARNING] Did not save OpenROAD database!
 Writing SDF files for all corners...
-Writing SDF for the ff corner to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/mca/process_corner_nom/vahid6i.ff.sdf...
-Writing SDF for the ss corner to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/mca/process_corner_nom/vahid6i.ss.sdf...
-Writing SDF for the tt corner to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/mca/process_corner_nom/vahid6i.tt.sdf...
+Writing SDF for the ff corner to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/results/routing/mca/process_corner_nom/vahid6i.ff.sdf...
+Writing SDF for the ss corner to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/results/routing/mca/process_corner_nom/vahid6i.ss.sdf...
+Writing SDF for the tt corner to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/results/routing/mca/process_corner_nom/vahid6i.tt.sdf...
 Writing timing models for all corners...
-Writing timing models for the ff corner to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/mca/process_corner_nom/vahid6i.ff.lib...
-Writing timing models for the ss corner to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/mca/process_corner_nom/vahid6i.ss.lib...
-Writing timing models for the tt corner to /openlane/designs/vahid6i/runs/RUN_2023.04.06_14.48.18/results/routing/mca/process_corner_nom/vahid6i.tt.lib...
+Writing timing models for the ff corner to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/results/routing/mca/process_corner_nom/vahid6i.ff.lib...
+Writing timing models for the ss corner to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/results/routing/mca/process_corner_nom/vahid6i.ss.lib...
+Writing timing models for the tt corner to /openlane/designs/vahid6i/runs/RUN_2023.04.16_13.47.40/results/routing/mca/process_corner_nom/vahid6i.tt.lib...
