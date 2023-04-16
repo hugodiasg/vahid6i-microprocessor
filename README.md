@@ -21,18 +21,18 @@ Here are the information about the RTL Diagram, layout and maximum clock frequen
 
 #### RTL Diagram
 
-<img src="https://user-images.githubusercontent.com/80465879/228379555-ff2255a5-49d2-4142-ae36-4e472c4b6562.png" width="800h" >
+<img src="https://user-images.githubusercontent.com/80465879/232315904-6c98ede9-3cd3-4c56-82a0-f3cb94e03011.png" width="800h" >
 
 #### Layout
 
-<img src="https://user-images.githubusercontent.com/80465879/228379957-f285fc67-3ca5-4dd2-88d6-6cde5ba81787.png" width="800h" >
+<img src="https://user-images.githubusercontent.com/80465879/232316036-2147de3c-6a65-48a9-8c9d-328f5d807efe.png" width="800h" >
 
 #### Specs
 
 Name | Value
 --------- | ------:
 Number of pins | 80
-Area | 0.062 mm² (245.52 x 256.24 μm)
+Area | 0.065 mm² (249.555 x 260.275 μm)
 Max. freq. |  Hz
 
 ### 8 Bits Microprocessor
@@ -41,16 +41,16 @@ Here are the information about the RTL Diagram, layout and maximum clock frequen
 
 #### RTL Diagram
 
-<img src="https://user-images.githubusercontent.com/80465879/230418664-d0ec618e-008e-4fb3-bdec-0cbdd9868bb4.png" width="800h" >
+<img src="https://user-images.githubusercontent.com/80465879/232316463-2c5806de-67e2-49a9-8054-f755c6e9239a.png" width="800h" >
 
 #### Layout
 
-<img src="https://user-images.githubusercontent.com/80465879/230413767-720b84a8-2e50-4b70-bcd1-7164395dee97.png" width="800h" >
+<img src="https://user-images.githubusercontent.com/80465879/232316628-0d7ebab1-255b-4fc7-bbcf-994ff6b012b3.png" width="800h" >
 
 #### Specs
 
 Name | Value
 --------- | ------:
 Number of pins | 50
-Area | 0.038 mm² (189.68 x 200.40 μm)
+Area | 0.038 mm² (189.680 x 200.400 μm)
 Max. freq. |  Hz
