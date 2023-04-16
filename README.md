@@ -58,4 +58,4 @@ Max. freq. |  Hz
 ### Next Steps...
 - Run the STA (Static Timing Analysis) with OpenSTA to find the maximum clock frequency;
 - Add shift registers to reduce number of pins;
-- And send the design to Tiny Tapeout.
+- Send the design to Tiny Tapeout.
